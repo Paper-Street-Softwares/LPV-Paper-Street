@@ -16,6 +16,7 @@ import SolutionLPV from "../components/sections/lp01/Solution";
 import NwesPosts from "../components/sections/NewsPosts";
 import Steppers from "../components/sections/lp01/Steppers";
 import Testimonial from "../components/sections/lp01/Testimonials";
+import Faq from "../components/sections/Faq";
 
 export default function Lp01() {
   useEffect(() => {
@@ -61,6 +62,8 @@ export default function Lp01() {
 
       <CtaLP />
       {/* <Faq /> */}
+      <Faq />
+
       <ContactLP />
       <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
