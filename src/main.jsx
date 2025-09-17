@@ -26,8 +26,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     {mode === "LP" ? (
       <Routes>
-        <Route path="/" element={<Index mode={mode} />} />
-        {/* <Route path="/" element={<Lp01 />} /> */}
+        {/* <Route path="/" element={<Index mode={mode} />} /> */}
+        <Route path="/" element={<Lp01 />} />
         {/* <Route path="/whatsapp" element={<WhatsAppLinks />} /> */}
 
         {/* <Route path="/whatsapp" element={<WhatsAppLinks form={true} />} /> */}
