@@ -10,6 +10,7 @@ import content from "../../../content/content";
 import img1 from "../../../assets/imgs/testimonials/testimonials1.png";
 import img2 from "../../../assets/imgs/testimonials/testimonials2.png";
 import img3 from "../../../assets/imgs/testimonials/testimonials3.png";
+import contentLp01 from "../../../content/contentLp01";
 
 export default function Testimonial() {
   // Array de imagens
@@ -36,9 +37,11 @@ export default function Testimonial() {
         <div className="w-full">
           <SectionHeader
             className="justify-center text-center desktop1:flex"
-            miniTitle="ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES"
-            sectionHeaderTitle="Veja como outros escritórios conquistaram clientes e autoridade com um site profissional."
-            sectionHeaderSubtitle="Sites modernos, rápidos e otimizados que captam clientes 24/7."
+            miniTitle={contentLp01.testimonials.sectionHeader.miniTag}
+            sectionHeaderTitle={contentLp01.testimonials.sectionHeader.title}
+            sectionHeaderSubtitle={
+              contentLp01.testimonials.sectionHeader.subtitle
+            }
             titleColorSet="text-white"
             subtitleColorSet="text-white"
           />
@@ -52,7 +55,7 @@ export default function Testimonial() {
               autoplayInterval={3000}
               showNavigators
               showIndicators={false}
-              className="w-full custom-carousel"
+              className="w-[80%] custom-carousel"
               prevIcon={
                 // <span style={{ color: "#FACC15", fontSize: "200%" }}>❮</span>
                 <span style={{ color: "#000000", fontSize: "200%" }}>❮</span>
@@ -66,7 +69,7 @@ export default function Testimonial() {
             <div className="pt-[10%] tablet1:pt-[5%]">
               <Button
                 className="flex justify-center"
-                aria-label="A_Definir"
+                aria-label="Botao de contato"
                 label="NÃO FIQUE PRA TRÁS"
                 // onClick={() => navigate("/whatsapp")}
                 buttonLink={content.texts.links.ctaWhatsapp}

@@ -15,7 +15,7 @@ export default function SolutionLPV() {
           <SectionHeader
             className="justify-center hidden text-center desktop1:flex "
             miniTitle="TENHA SEU SITE JURÍDICO PROFISSIONAL"
-            sectionHeaderTitle="Nunca teve um site? Não importa. Conquiste clientes e autoridade rapidamente."
+            sectionHeaderTitle="Nunca teve um site? Não importa!"
             sectionHeaderSubtitle="Criamos seu site passo a passo, garantindo profissionalismo, design moderno e ferramentas que realmente atraem clientes. São três etapas simples:"
             color=""
             type=""
@@ -25,7 +25,7 @@ export default function SolutionLPV() {
           <SectionHeader
             className="text-center desktop1:hidden"
             miniTitle="TENHA SEU SITE JURÍDICO PROFISSIONAL"
-            sectionHeaderTitle="Nunca teve um site? Não importa. Conquiste clientes e autoridade rapidamente."
+            sectionHeaderTitle="Conquiste clientes e autoridade rapidamente."
             sectionHeaderSubtitle="Criamos seu site passo a passo, garantindo profissionalismo, design moderno e ferramentas que realmente atraem clientes. São três etapas simples:"
             color=""
             type=""
@@ -61,7 +61,7 @@ export default function SolutionLPV() {
             className={`text-[12px] m-auto mt-[45px] desktop1:mt-[80px] text-white/50 text-center desktop1:w-[35%] }`}
           >
             Chega de perder clientes e autoridade: tenha um site completo,
-            moderno e pronto para atrair e fechar clientes 24/7, sem
+            moderno e pronto para atrair e fechar clientes o tempo todo, sem
             complicação.
           </p>
         </div>
