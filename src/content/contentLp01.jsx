@@ -56,7 +56,7 @@ const contentLp01 = {
     },
   },
   urgency: {
-    miniTag: "SEU ESCRITÓRIO SEM SITE?",
+    miniTag: "SEU ESCRITÓRIO AINDA SEM SITE?",
     title: "Clientes estão indo para a concorrência todos os dias.",
     subtitle:
       "Enquanto você espera, eles escolhem outro advogado e você perde dinheiro e oportunidades que não voltam. Entenda:",
@@ -248,26 +248,30 @@ const contentLp01 = {
             <circle cx="17" cy="17" r="2" />
           </svg>
         ),
-        title: "Personalizado",
-        paragraph: "A_Definir",
+        title: "Plano Personalizado",
+        paragraph:
+          "Um site sob medida para sua necessidade, com recursos exclusivos e estrutura feita especialmente para destacar sua marca no digital.",
         description: (
           <p>
-            ✔️ 1 ano de Domínio e hospedagem gratuitos
+            ✔️ Projeto desenvolvido 100% sob demanda
             <br />
             <br />
-            ✔️ Botão direto para o WhatsApp
+            ✔️ Funcionalidades exclusivas de acordo com seu negócio
             <br />
             <br />
-            ✔️ Links integrados para suas redes sociais
+            ✔️ Design diferenciado e totalmente personalizável
             <br />
             <br />
-            ✔️ Design moderno e otimizado para celulares
+            ✔️ Integrações especiais (sistemas, automações e mais)
             <br />
             <br />
-            ✔️ Entrega completa, com acesso total ao painel
+            ✔️ Entrega completa, com acesso total ao código fonte
+            <br />
+            <br />
+            ✔️ Suporte técnico dedicado
           </p>
         ),
-        buttonLabel: "A partir de 0x de R$00,00",
+        buttonLabel: "Solicite um orçamento",
       },
       card4: {
         icon: (
@@ -354,11 +358,11 @@ const contentLp01 = {
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "",
+      miniTag: "TRANSFORME E CONQUISTE",
       title:
-        "Realize seus maiores sonhos com um site que trabalha por você 24/7.",
+        "Tenha um site que trabalha por você e viva a vida que sempre quis",
       subtitle:
-        "Cada cliente conquistado é um passo mais próximo de transformar seus sonhos em realidade. Com um site moderno e otimizado, você atrai clientes enquanto foca no que realmente importa.",
+        "Com um site moderno e funcional, você atrai clientes e fecha contratos sem precisar se preocupar o tempo todo. Mais tempo para viver, viajar e realizar seus sonhos.",
     },
     cards: {
       card1: {
@@ -378,9 +382,9 @@ const contentLp01 = {
             <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
           </svg>
         ),
-        title: "Viaje para o exterior com sua família",
+        title: "Viaje sem preocupações",
         description:
-          "Imagine explorar novos destinos com quem você ama, sem se preocupar com o trabalho. Um site profissional atrai clientes enquanto você desfruta de merecidas férias.",
+          "Explore novos destinos com quem você ama. Enquanto você descansa, seu site capta clientes e mantém seu negócio funcionando.",
       },
       card2: {
         icon: (
@@ -402,9 +406,9 @@ const contentLp01 = {
             <circle cx="17" cy="17" r="2" />
           </svg>
         ),
-        title: "Conquiste o carro dos seus sonhos",
+        title: "Conquiste o carro que sempre quis",
         description:
-          "Sinta a liberdade de dirigir o carro que sempre desejou. Com um fluxo constante de clientes, seu sonho se torna uma conquista real e tangível.",
+          "Ter um fluxo constante de clientes significa poder investir no que deseja. Seu site trabalha por você, enquanto você aproveita a vida.",
       },
       card3: {
         icon: (
@@ -424,9 +428,9 @@ const contentLp01 = {
             <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           </svg>
         ),
-        title: "Compre a casa ideal",
+        title: "Realize o sonho da casa própria",
         description:
-          "Realize o sonho da casa própria, com conforto e segurança para sua família. Um site eficiente gera clientes e estabilidade financeira para alcançar esse objetivo.",
+          "Com estabilidade financeira gerada por clientes conquistados online, você pode investir no conforto e segurança do lar ideal para sua família.",
       },
       card4: {
         icon: (
@@ -455,9 +459,9 @@ const contentLp01 = {
             <rect x="4" y="2" width="16" height="20" rx="2" />
           </svg>
         ),
-        title: "Construa um escritório de sucesso",
+        title: "Cresça seu escritório sem sobrecarga",
         description:
-          "Transforme seu escritório em uma referência no mercado jurídico. Um site profissional atrai clientes e fortalece sua autoridade, impulsionando seu crescimento.",
+          "Deixe seu site atrair clientes e fechar contratos enquanto você foca em estratégias, na sua equipe ou simplesmente na sua vida pessoal.",
       },
     },
   },
@@ -496,6 +500,15 @@ const contentLp01 = {
     buttonLabel: "A_Definir",
     ctaButtonAriaLabel: "Botão de Contato",
   },
+  testimonials: {
+    sectionHeader: {
+      miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
+      title:
+        "Veja como outros escritórios conquistaram clientes e autoridade com um site profissional.",
+      subtitle:
+        "Sites modernos, rápidos e otimizados que captam clientes 24/7.",
+    },
+  },
   video: {
     sectionHeader: {
       miniTag: "A_Definir",
@@ -508,9 +521,14 @@ const contentLp01 = {
     sectionHeader: {
       miniTag: "A_Definir",
       title: "Deixa a gente cuidar da vida digital do seu negócio",
-      subtitle: <p className="opacity-80"></p>,
+      subtitle: (
+        <p className="opacity-80">
+          Seu site captando clientes enquanto você foca na vida e no crescimento
+          do seu negócio.
+        </p>
+      ),
     },
-    buttonLabel: "Adquira agora mesmo",
+    buttonLabel: "Quero meu site agora",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   contact: {

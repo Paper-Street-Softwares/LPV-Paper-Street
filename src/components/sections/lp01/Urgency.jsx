@@ -52,7 +52,7 @@ export default function Urgency() {
           </div>
 
           <p
-            className={`text-paragraph3 m-auto  font-mainFont text-center desktop1:w-[35%] }`}
+            className={`text-paragraph3 m-auto pt-12 font-mainFont text-center desktop1:w-[35%] }`}
           >
             Cada dia sem site é uma oportunidade que some, uma chance de fechar
             contrato que vai para outro escritório.
