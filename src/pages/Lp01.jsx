@@ -49,18 +49,17 @@ export default function Lp01() {
       </div> */}
       <HeroLP fullImg={false} />
       <Urgency />
-      <Testimonial />
-      <Steppers />
-
       <SolutionLPV />
       <NwesPosts />
-
+      <Steppers />
+      <Testimonial />
       <WhyUs />
-      <FeaturesLPCards />
+
+      {/* <FeaturesLPCards /> */}
 
       {/* <AboutParalaxeLP logo={true} /> */}
 
-      <CtaLP />
+      {/* <CtaLP /> */}
       {/* <Faq /> */}
       <Faq />
 

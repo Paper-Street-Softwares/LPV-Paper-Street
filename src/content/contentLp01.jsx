@@ -506,7 +506,7 @@ const contentLp01 = {
       title:
         "Veja como outros escritórios conquistaram clientes e autoridade com um site profissional.",
       subtitle:
-        "Sites modernos, rápidos e otimizados que captam clientes 24/7.",
+        "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
     },
   },
   video: {

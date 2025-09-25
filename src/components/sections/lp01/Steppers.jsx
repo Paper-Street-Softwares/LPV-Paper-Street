@@ -7,16 +7,16 @@ import FeatureCardLP from "./FeatureCardLP";
 export default function Steppers({}) {
   return (
     <>
-      <SectionArea className="bg-white">
+      <SectionArea className="bg-secondary">
         <SectionWrapper>
           <SectionHeader
             miniTitle={contentLp01.steppers.sectionHeader.miniTag}
-            className="text-center"
+            className="text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]"
             sectionHeaderTitle={contentLp01.steppers.sectionHeader.title}
             color=""
-            titleColorSet="text-black"
+            titleColorSet="text-white"
           />
-          <div className="w-full flex flex-wrap justify-evenly gap-y-[32px]">
+          <div className="w-full flex flex-wrap justify-evenly gap-y-[42px]">
             <FeatureCardLP
               number={contentLp01.steppers.cards.card1.icon}
               title={contentLp01.steppers.cards.card1.title}

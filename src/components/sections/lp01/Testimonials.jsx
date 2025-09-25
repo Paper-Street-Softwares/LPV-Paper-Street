@@ -32,7 +32,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <SectionArea className="bg-secondary" paddingtop={true}>
+    <SectionArea className="squares" paddingtop={true}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
@@ -42,8 +42,8 @@ export default function Testimonial() {
             sectionHeaderSubtitle={
               contentLp01.testimonials.sectionHeader.subtitle
             }
-            titleColorSet="text-white"
-            subtitleColorSet="text-white"
+            titleColorSet="text-black"
+            subtitleColorSet="text-black"
           />
 
           <div className="flex flex-col desktop1:flex-row items-center w-full justify-center gap-[32px] desktop1:mt-0">

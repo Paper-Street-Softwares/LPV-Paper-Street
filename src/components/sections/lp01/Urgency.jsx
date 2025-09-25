@@ -9,7 +9,7 @@ import content from "../../../content/content";
 
 export default function Urgency() {
   return (
-    <SectionArea className="bg-white" paddingbot={true}>
+    <SectionArea className="squares" paddingbot={true}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
@@ -33,7 +33,7 @@ export default function Urgency() {
             subtitleColorSet="text-black"
           />
 
-          <div className="flex flex-col desktop1:flex-row items-center w-full justify-center gap-[32px] mt-[28px] desktop1:mt-0 ">
+          <div className="flex flex-wrap desktop1:flex-nowrap desktop1:flex-row items-center w-full justify-center gap-[32px] mt-[28px] desktop1:mt-0 ">
             <HowltWorksCardLPV
               icon={contentLp01.urgency.cards.card1.stepNumber}
               title={contentLp01.urgency.cards.card1.cardTitle}
@@ -58,7 +58,7 @@ export default function Urgency() {
             contrato que vai para outro escritório.
           </p>
         </div>
-        <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center desktop1:pt-[36px]">
+        <MotionDivDownToUp className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] desktop2:pt-[28px] flex justify-center">
           <div className="">
             <Button
               aria-label={contentLp01.urgency.cards.ariaLabel}
