@@ -59,10 +59,8 @@ export default function Lp01() {
 
       {/* <AboutParalaxeLP logo={true} /> */}
 
-      {/* <CtaLP /> */}
-      {/* <Faq /> */}
       <Faq />
-
+      <CtaLP />
       <ContactLP />
       <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
