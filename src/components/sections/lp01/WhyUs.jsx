@@ -7,19 +7,19 @@ import FeatureCardLP from "./FeatureCardLP";
 export default function WhyUs({}) {
   return (
     <>
-      <SectionArea paddingtop={false} className="bg-secondary">
+      <SectionArea paddingtop={true} className="bg-secondary">
         <SectionWrapper>
           <SectionHeader
-            // miniTitle={contentLp01.whyUs.sectionHeader.miniTag}
+            miniTitle={contentLp01.whyUs.sectionHeader.miniTag}
             className="text-center"
             sectionHeaderTitle={contentLp01.whyUs.sectionHeader.title}
             sectionHeaderSubtitle={contentLp01.whyUs.sectionHeader.subtitle}
             color=""
             titleColorSet="text-white"
             subtitleColorSet="text-white"
-            miniTitleBgColor={false}
+            miniTitleBgColor={true}
           />
-          <div className="w-full flex flex-wrap justify-evenly gap-y-[32px]">
+          <div className="w-full flex flex-wrap justify-evenly gap-y-[48px] pt-6">
             <FeatureCardLP
               number={contentLp01.whyUs.cards.card1.icon}
               title={contentLp01.whyUs.cards.card1.title}

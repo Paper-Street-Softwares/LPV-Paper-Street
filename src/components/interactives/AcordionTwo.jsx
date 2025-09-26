@@ -42,14 +42,14 @@ export default function AccordionExpandDefault() {
             id={`panel${num}-header`}
           >
             <Typography>
-              <h1 className="font-bold font-secondFont">
+              <h1 className="font-bold font-poppins">
                 {t(`faq.questions.question${num}.question`)}
               </h1>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <p className="font-secondFont text-paragraph4 text-paragraphLight">
+              <p className="font-lora text-paragraph4 text-paragraphLight">
                 {t(`faq.questions.question${num}.answer`)}
               </p>
             </Typography>

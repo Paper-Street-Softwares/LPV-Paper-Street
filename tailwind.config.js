@@ -48,11 +48,18 @@ export default {
         "custom-opacityButton": "-5px 5px 0px", // 30% de opacidade no Botão
       },
       fontFamily: {
-        mainFont: ["Merriweather", "sans-serif"],
-        secondFont: ["Merriweather", "sans-serif"],
-        league: ["League Gothic"],
-        barlow: ["Barlow Condensed"],
+        // mainFont: ["Merriweather", "sans-serif"],
+        // secondFont: ["Poppins", "sans-serif"],
+        mainFont: ["Poppins", "sans-serif"],
+        secondFont: ["Lora", "sans-serif"],
+        league: ["League Gothic", "sans-serif"],
+        barlow: ["Barlow Condensed", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
+        lora: ["Lora", "sans-serif"],
       },
+
       fontSize: {
         paragraph1: "0.625rem",
         paragraph2: "0.75rem",
