@@ -113,7 +113,7 @@ export default function SolutionLPV() {
           </div>
 
           <p
-            className={`text-paragraph3 m-auto mt-[28px] text-white/50 text-center desktop1:w-[35%] }`}
+            className={`text-paragraph3 font-mainFont m-auto mt-[28px] text-white/50 text-center desktop1:w-[35%] }`}
           >
             Chega de perder clientes e autoridade: tenha um site completo,
             moderno e pronto para atrair e fechar clientes o tempo todo, sem

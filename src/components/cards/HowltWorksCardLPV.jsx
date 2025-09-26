@@ -26,16 +26,16 @@ export default function HowltWorksCardLPV({
   }
 
   const BaseContent = (
-    <div className="flex flex-col items-center transition desktop1:items-center font-mainFont text-center min-w-[255px] desktop1:max-w-[180px] m-auto tablet1:m-0 desktop1:hover:scale-110 h-auto justify-between p-4 ">
+    <div className="flex flex-col items-center transition desktop1:items-center text-center min-w-[255px] desktop1:max-w-[180px] m-auto tablet1:m-0 desktop1:hover:scale-110 h-auto justify-between p-4 ">
       <div
         className={`p-[18px] mb-[18px] flex justify-center items-center text-labelButtons bg-primary rounded-md`}
       >
         {icon}
       </div>
 
-      <h1 className={`text-[20px] min-h-[60px] ${textColor}`}>{title}</h1>
+      <h1 className={`text-[20px] min-h-[60px] font-mainFont ${textColor}`}>{title}</h1>
       <p
-        className={`text-[16px] text-center w-full ${textColor} ${textOpacity}`}
+        className={`text-[16px] text-center w-full font-secondFont ${textColor} ${textOpacity}`}
       >
         {description}
       </p>
@@ -61,7 +61,7 @@ export default function HowltWorksCardLPV({
       </h1>
 
       <p
-        className={`text-paragraph3 text-center w-full min-h-[100px] flex items-start text-gray-400 ${textOpacity}`}
+        className={`text-paragraph3 font-secondFont text-center w-full min-h-[100px] flex items-start text-gray-400 ${textOpacity}`}
       >
         {description}
       </p>
