@@ -64,12 +64,12 @@ export default function SectionHeader({
           </div>
         </div>
         <h1
-          className={`${titleColor} ${titleOrientation} text-title4 bg-transparent leading-[34px] tablet1:leading-[42px] tablet1:text-title5 font-poppins font-bold mb-[16px]`}
+          className={`${titleColor} ${titleOrientation} text-title4 bg-transparent leading-[34px] tablet1:leading-[42px] tablet1:text-title5 font-mainFont font-bold mb-[16px]`}
         >
           {sectionHeaderTitle}
         </h1>
         <p
-          className={`text-title1 font-lora leading-[26px] bg-transparent ${marginBottomOption} ${subtitleOrientation} ${subtitleColor}`}
+          className={`text-title1 font-secondFont leading-[26px] bg-transparent ${marginBottomOption} ${subtitleOrientation} ${subtitleColor}`}
         >
           {sectionHeaderSubtitle}
         </p>
