@@ -45,7 +45,7 @@ export default function Lp01() {
   }, []);
 
   return (
-    <div className="bg-bgFixedDark">
+    <div className="bg-bgFixedLight">
       {/* <div className="bg-green-300 text-black dark:bg-green-300 dark:text-black h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Teste Darkmode</h1>
       </div> */}
@@ -66,6 +66,7 @@ export default function Lp01() {
       {/* <Testimonial /> */}
       <SocialProof />
       <AboutParalaxeLP logo={true} />
+      <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
       <FloatingWhatsappButton />
       {/* <WhatsChat /> */}

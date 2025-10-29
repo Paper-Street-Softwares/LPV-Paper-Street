@@ -7,10 +7,10 @@ import contentLp01 from "../../../../content/contentLp01";
 function DefaultHero() {
   return (
     <div className="">
-      <div className="bg-top bg-no-repeat bg-cover font-mainFont bg-darker ">
+      <div className="bg-top bg-no-repeat bg-cover font-mainFont bg-bgSectionOpacityLight ">
         <SectionArea
           paddingTopAndBottom={false}
-          className="bg-black bg-opacity-70"
+          // className="bg-black bg-opacity-70"
         >
           <SectionWrapper className="">
             <div className="flex w-full ">
@@ -18,7 +18,7 @@ function DefaultHero() {
                 <div className="flex flex-col w-full gap-0">
                   <div className="">
                     <MotionDivDownToUp className="w-[98%] m-auto">
-                      <div className="flex text-white justify-center desktop1:justify-center font-light leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[50px] text-center desktop1:text-center text-[26px] desktop1:text-[35px] mb-[10px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                      <div className="flex text-black justify-center desktop1:justify-center font-light leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[50px] text-center desktop1:text-center text-[26px] desktop1:text-[35px] mb-[10px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_0%)]">
                         {contentLp01.hero.textArea.title}
                       </div>
                     </MotionDivDownToUp>
@@ -26,8 +26,8 @@ function DefaultHero() {
 
                   <div className="">
                     <MotionDivDownToUp className="">
-                      <div className="flex justify-center text-center text-white desktop1:text-center desktop1:justify-center phone1:w-full font-secondFont text-[22px] phone3:text-paragraph5 desktop1:text-[22px]">
-                        <p className="mb-[20px] opacity-100 [text-shadow:_2px_2px_1px_rgb(0_0_0_/_100%)]">
+                      <div className="flex justify-center text-center text-black desktop1:text-center desktop1:justify-center phone1:w-full font-secondFont text-[22px] phone3:text-paragraph5 desktop1:text-[22px]">
+                        <p className="mb-[20px] opacity-100 [text-shadow:_2px_2px_1px_rgb(0_0_0_/_0%)]">
                           {contentLp01.hero.textArea.subtitle}
                         </p>
                       </div>
