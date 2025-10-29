@@ -45,16 +45,14 @@ export default function Lp01() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-bgFixedDark">
       {/* <div className="bg-green-300 text-black dark:bg-green-300 dark:text-black h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Teste Darkmode</h1>
       </div> */}
       <HeroLP fullImg={false} />
-      <div className="absolute left-1/2 -translate-x-1/2 top-[100%] phone2:top-[90%] phone3:top-[80%] tablet1:top-[75%] tablet2:top-[60%] desktop1:top-[45%] desktop2:top-[350px] z-20 w-full flex justify-center">
-        <div className="w-full">
-          <VideoCarousel />
-        </div>
-      </div>
+
+      <VideoCarousel />
+
       {/* <Urgency />
       <SolutionLPV />
       <NwesPosts />

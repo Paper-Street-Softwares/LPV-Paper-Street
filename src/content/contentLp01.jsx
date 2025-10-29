@@ -38,16 +38,12 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Coloque seu{" "}
-          <span className="font-extrabold">Escritório no Google </span> e
-          Transforme Visitas em
-          <span className="font-extrabold"> Novos Contratos</span> Todos os
-          Dias.
+          Coloque seu escritório no Google e conquiste clientes todos os dias
         </h1>
       ),
       subtitle:
-        "Criamos sites jurídicos de alta conversão que atraem clientes sem depender de indicações — mesmo que você não entenda nada de tecnologia.",
-      buttonLabel: "Solicite um orçamento por Whatsapp",
+        "Criamos sites jurídicos de alta conversão que atraem clientes mesmo que você não entenda nada de tecnologia — sem depender de indicações.",
+      buttonLabel: "Peça seu orçamento por WhatsApp",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -522,8 +518,7 @@ const contentLp01 = {
   testimonials: {
     sectionHeader: {
       miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
-      title:
-        "Veja como outros escritórios conquistaram clientes e autoridade com um site profissional.",
+      title: "O que nossos clientes dizem",
       subtitle:
         "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
     },
