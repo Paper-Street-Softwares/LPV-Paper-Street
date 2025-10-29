@@ -17,6 +17,8 @@ import NwesPosts from "../components/sections/NewsPosts";
 import Steppers from "../components/sections/lp01/Steppers";
 import Testimonial from "../components/sections/lp01/Testimonials";
 import Faq from "../components/sections/Faq";
+import VideoCarousel from "../components/interactives/CarouselVideos";
+import SocialProof from "../components/sections/lp01/SocialProof";
 
 export default function Lp01() {
   useEffect(() => {
@@ -43,26 +45,27 @@ export default function Lp01() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-bgFixedDark">
       {/* <div className="bg-green-300 text-black dark:bg-green-300 dark:text-black h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Teste Darkmode</h1>
       </div> */}
       <HeroLP fullImg={false} />
-      <Urgency />
+
+      <VideoCarousel />
+
+      {/* <Urgency />
       <SolutionLPV />
       <NwesPosts />
       <Steppers />
-      <Testimonial />
-      <WhyUs />
-
+      <WhyUs /> */}
       {/* <FeaturesLPCards /> */}
-
-      {/* <AboutParalaxeLP logo={true} /> */}
-
-      <Faq />
+      {/* <Faq />
       <CtaLP />
       <ContactLP />
-      <FooterLP />
+      <FooterLP /> */}
+      {/* <Testimonial /> */}
+      <SocialProof />
+      <AboutParalaxeLP logo={true} />
       {/* <LPFloatingWhatsappButton /> */}
       <FloatingWhatsappButton />
       {/* <WhatsChat /> */}

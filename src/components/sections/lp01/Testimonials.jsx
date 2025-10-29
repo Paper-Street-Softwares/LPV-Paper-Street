@@ -33,7 +33,7 @@ export default function Testimonial() {
 
   return (
     <SectionArea className="squares" paddingtop={true}>
-      <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
+      <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between pt-[400px]">
         <div className="w-full">
           <SectionHeader
             className="justify-center text-center desktop1:flex"
@@ -52,17 +52,16 @@ export default function Testimonial() {
               itemTemplate={itemTemplate}
               responsiveOptions={responsiveOptions}
               circular
-              autoplayInterval={3000}
-              showNavigators
+              autoplayInterval={false}
+              // showNavigators
               showIndicators={false}
               className="w-[80%] custom-carousel"
-              prevIcon={
-                // <span style={{ color: "#FACC15", fontSize: "200%" }}>❮</span>
-                <span style={{ color: "#000000", fontSize: "200%" }}>❮</span>
-              }
-              nextIcon={
-                <span style={{ color: "#000000", fontSize: "200%" }}>❯</span>
-              }
+              // prevIcon={
+              //   <span style={{ color: "#000000", fontSize: "200%" }}>❮</span>
+              // }
+              // nextIcon={
+              //   <span style={{ color: "#000000", fontSize: "200%" }}>❯</span>
+              // }
             />
           </div>
           <MotionDivDownToUp className="w-full flex justify-center ">

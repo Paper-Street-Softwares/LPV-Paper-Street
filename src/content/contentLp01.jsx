@@ -38,19 +38,12 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <span className="text-primary ">
-            Chega de perder clientes todos os dias.
-          </span>{" "}
-          <span className="text-lpTitle">
-            {" "}
-            Conquiste-os agora com um site jurídico{" "}
-          </span>{" "}
-          <span className="text-lpTitle">profissional! </span>
+          Coloque seu escritório no Google e conquiste clientes todos os dias
         </h1>
       ),
       subtitle:
-        "Cada cliente que não te encontra é uma causa perdida, um processo que você nunca verá e sua reputação que desmorona. Mostre que você é um advogado confiável. ",
-      buttonLabel: "Quero meu site jurídico agora",
+        "Criamos sites jurídicos de alta conversão que atraem clientes mesmo que você não entenda nada de tecnologia — sem depender de indicações.",
+      buttonLabel: "Peça seu orçamento por WhatsApp",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -480,31 +473,52 @@ const contentLp01 = {
       alt: "logomarca",
     },
     sectionHeader: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
+      miniTag: "Ei, Advogado(a)! 👋",
+      title:
+        "Se você está lendo isso, provavelmente sabe que uma presença digital forte faz toda a diferença na conquista de clientes, não é mesmo?",
     },
     paragraph: (
       <p>
-        A_Definir
+        Na <span className="font-extrabold">Paper Street</span>, somos
+        especialistas em{" "}
+        <span className="font-extrabold">desenvolver páginas web</span> que
+        realmente entregam resultados. Cada site que criamos passa por{" "}
+        <span className="font-extrabold">
+          checagens super criteriosas de performance
+        </span>
+        , garantindo que ele seja rápido, estável e{" "}
+        <span className="font-extrabold">
+          alinhado aos objetivos do seu escritório
+        </span>
+        .
         <br />
         <br />
-        A_Definir
+        Levamos a{" "}
+        <span className="font-extrabold">
+          experiência do usuário muito a sério
+        </span>
+        , desenvolvendo sites{" "}
+        <span className="font-extrabold">
+          bonitos, modernos e fáceis de usar
+        </span>
+        , pensados para todos, dos mais jovens aos mais idosos. Nosso foco é
+        entregar uma solução que{" "}
+        <span className="font-extrabold">
+          posicione você da melhor forma possível e atraia novos clientes sem
+          depender de indicações
+        </span>
+        .
         <br />
         <br />
-        A_Definir
-        <br />
-        <br />
-        A_Definir
       </p>
     ),
-    buttonLabel: "A_Definir",
+    buttonLabel: "Fale agora com a gente!",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   testimonials: {
     sectionHeader: {
       miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
-      title:
-        "Veja como outros escritórios conquistaram clientes e autoridade com um site profissional.",
+      title: "O que nossos clientes dizem",
       subtitle:
         "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
     },
