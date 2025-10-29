@@ -35,27 +35,27 @@ export default function SocialProof() {
             <img
               src={img1}
               alt="Imagem de Depoimento1"
-              className="w-[220px] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
             <img
               src={img2}
               alt="Imagem de Depoimento2"
-              className="w-[220px] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
             <img
               src={img3}
               alt="Imagem de Depoimento3"
-              className="w-[220px] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
             <img
               src={img4}
               alt="Imagem de Depoimento4"
-              className="w-[220px] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
             <img
               src={img5}
               alt="Imagem de Depoimento5"
-              className="w-[220px] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
           </div>
         </div>

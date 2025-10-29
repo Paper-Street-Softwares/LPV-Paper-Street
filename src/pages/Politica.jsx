@@ -33,9 +33,9 @@ function Politica() {
         <div className="flex flex-col gap-3 mb-5">
           <span className="font-bold">Definições</span>
           <p className="">
-            Definições Autoridade Nacional de Proteção de Dados (ANPD): Órgão
-            responsável pela fiscalização e orientação da aplicação da LGPD,
-            além da aplicação de sanções administrativas em caso de violações.
+            Autoridade Nacional de Proteção de Dados (ANPD): Órgão responsável
+            pela fiscalização e orientação da aplicação da LGPD, além da
+            aplicação de sanções administrativas em caso de violações.
           </p>
           <p className="mt-3">
             {" "}

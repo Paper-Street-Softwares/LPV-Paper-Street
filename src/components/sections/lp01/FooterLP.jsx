@@ -5,7 +5,7 @@ import SectionWrapper from "../../sectionElements/SectionWrapper";
 
 export default function FooterLP() {
   return (
-    <div>
+    <div className="bg-bgSectionOpacityLight">
       <SectionArea paddingTopAndBottom={false}>
         <SectionWrapper>
           <div className="w-full text-center font-mainFont pt-[36px] phone1:pb-[27%] tablet1:pb-[80px] tablet2:pb-[36px] opacity-70">
@@ -30,7 +30,7 @@ export default function FooterLP() {
                 href="/privacidade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-50 p-3 rounded-md"
+                className="bg-black/20 p-3 rounded-md"
               >
                 Políticas de Privacidade
               </a>
