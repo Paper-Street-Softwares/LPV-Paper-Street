@@ -11,7 +11,7 @@ export default function SiteLayout({ section, mode }) {
       <Navbar colorMode={colorMode} mode={mode} />
       <Hero defaultHero={true} colorMode={colorMode} />
       {section && <div className="">{section}</div>}
-      <CtaSecondary/>
+      <CtaSecondary />
       <FooterSocial colorMode={colorMode} mode={mode} instagram={true} />
     </>
   );

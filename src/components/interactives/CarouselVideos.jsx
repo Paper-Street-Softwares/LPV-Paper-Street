@@ -36,7 +36,7 @@ export default function VideoCarousel() {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full max-w-[1215px] m-auto justify-evenly py-10 bg-bgFixedDark ">
+    <div className="flex flex-col items-center w-full max-w-[1215px] m-auto justify-evenly py-10 bg-bgFixedLight ">
       {/* VIEWPORT */}
       <div className="overflow-hidden w-[95%] m-auto " ref={emblaRef}>
         {/* CONTAINER */}

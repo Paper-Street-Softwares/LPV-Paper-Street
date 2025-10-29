@@ -16,7 +16,7 @@ import contentLp01 from "../../../content/contentLp01";
 
 export default function SocialProof() {
   return (
-    <SectionArea className="bg-bgSectionOpacityDark" paddingtop={false}>
+    <SectionArea className="bg-bgSectionOpacityLight" paddingtop={false}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
@@ -27,8 +27,8 @@ export default function SocialProof() {
             // sectionHeaderSubtitle={
             //   contentLp01.testimonials.sectionHeader.subtitle
             // }
-            titleColorSet="text-white"
-            subtitleColorSet="text-white"
+            titleColorSet="text-black"
+            subtitleColorSet="text-black"
           />
 
           <div className="flex flex-wrap justify-evenly items-start gap-5 desktop1:gap-0">

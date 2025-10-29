@@ -18,6 +18,7 @@ import "./styles/backgrounds.css";
 import BlogPosts from "./components/sections/BlogPosts.jsx";
 import Maps from "./components/sections/Maps.jsx";
 import AboutInstagram from "./components/sections/AboutInstagram.jsx";
+import Politica from "./pages/Politica.jsx";
 
 // Altere aqui para "LP" ou "site"
 const mode = "LP"; // só muda isso e o resto se adapta
@@ -28,6 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         {/* <Route path="/" element={<Index mode={mode} />} /> */}
         <Route path="/" element={<Lp01 />} />
+        <Route path="/privacidade" element={<Politica />} />
         {/* <Route path="/whatsapp" element={<WhatsAppLinks />} /> */}
 
         {/* <Route path="/whatsapp" element={<WhatsAppLinks form={true} />} /> */}
