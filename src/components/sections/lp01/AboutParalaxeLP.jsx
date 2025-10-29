@@ -14,14 +14,14 @@ export default function AboutParalaxeLP({ logo }) {
 
   return (
     <div
-      className="bg-scroll relative bg-center bg-cover desktop1:bg-fixed"
-      style={{
-        backgroundImage: `url(${contentLp01.about.bgImg})`,
-        backgroundRepeat: "no-repeat",
-      }}
+      className="bg-scroll relative bg-center bg-cover desktop1:bg-fixed bg-bgFixedLight"
+      // style={{
+      //   backgroundImage: `url(${contentLp01.about.bgImg})`,
+      //   backgroundRepeat: "no-repeat",
+      // }}
       id="contact"
     >
-      <div className="absolute inset-0 bg-black/80 z-0 pointer-events-none" />
+      {/* <div className="absolute inset-0 bg-black/80 z-0 pointer-events-none" /> */}
       <div className="relative z-10 flex justify-center w-full text-colorWhite bg-opacity-10">
         <div className="flex justify-center w-full bg-colorBlack bg-opacity-80">
           <SectionArea>
@@ -40,10 +40,10 @@ export default function AboutParalaxeLP({ logo }) {
                     sectionHeaderTitle={contentLp01.about.sectionHeader.title}
                     color=""
                     type="article"
-                    titleColorSet="text-white"
+                    titleColorSet="text-black"
                   />
                   <MotionDivDownToUp>
-                    <p className="font-mainFont mb-[36px] font-light text-white">
+                    <p className="font-mainFont mb-[36px] font-light text-black">
                       {contentLp01.about.paragraph}
                     </p>
                   </MotionDivDownToUp>
