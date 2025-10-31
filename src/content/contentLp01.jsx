@@ -23,9 +23,10 @@ const currentYear = new Date().getFullYear();
 
 const contentLp01 = {
   infos: {
-    title: "Paper Street Desenvolvimento Web | Sites Profissionais no Brasil",
+    title:
+      "Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street",
     description:
-      "A Paper Street oferece desenvolvimento de sites modernos, responsivos e personalizados para empresas em todo o Brasil. Transforme sua presença online com design profissional, otimização para celular e funcionalidades que atraem clientes.",
+      "Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.",
     keywords:
       "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
@@ -518,7 +519,7 @@ const contentLp01 = {
   testimonials: {
     sectionHeader: {
       miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
-      title: "O que nossos clientes dizem",
+      title: "Somos referência no ramo jurídico",
       subtitle:
         "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
     },

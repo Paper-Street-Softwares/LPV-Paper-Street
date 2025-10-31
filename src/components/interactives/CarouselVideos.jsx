@@ -47,12 +47,12 @@ export default function VideoCarousel() {
               className="
                 flex justify-center
                 flex-[0_0_50%]     /* 👈 2 slides no mobile */
-                tablet2:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
+                tablet1:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
                 desktop2:flex-[0_0_25%]     /* 👈 4 slides no desktop */
                 px-2
               "
             >
-              <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-white p-0.5 desktop1:border-8 w-full max-w-[300px] h-[400px] tablet1:h-[400px] tablet2:max-w-[232px] tablet2:h-[500px] desktop1:max-w-[309.33px] desktop1:h-[600px] desktop2:max-w-[277.5px] ">
+              <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-white p-0.5 desktop1:border-8 w-full max-w-[132px] h-[255px] tablet2:max-w-[226px] tablet2:h-[441px] desktop1:max-w-[309.32px] desktop1:h-[515px] desktop2:max-w-[277.5px] ">
                 <video
                   src={video}
                   autoPlay={true}

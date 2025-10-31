@@ -54,6 +54,7 @@ export default function AboutParalaxeLP({ logo }) {
                           contentLp01.hero.textArea.ctaButtonAriaLabel
                         }
                         label={contentLp01.about.buttonLabel}
+                        color="bg-[#25D366]"
                         animation
                         className=""
                         icon={

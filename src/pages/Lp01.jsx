@@ -19,6 +19,7 @@ import Testimonial from "../components/sections/lp01/Testimonials";
 import Faq from "../components/sections/Faq";
 import VideoCarousel from "../components/interactives/CarouselVideos";
 import SocialProof from "../components/sections/lp01/SocialProof";
+import Client from "../components/sections/lp01/Client";
 
 export default function Lp01() {
   useEffect(() => {
@@ -49,11 +50,11 @@ export default function Lp01() {
       {/* <div className="bg-green-300 text-black dark:bg-green-300 dark:text-black h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Teste Darkmode</h1>
       </div> */}
-      <HeroLP fullImg={false} />
+      <HeroLP fullImg={true} />
 
       <VideoCarousel />
 
-      {/* <Urgency />
+      {/* 
       <SolutionLPV />
       <NwesPosts />
       <Steppers />
@@ -65,6 +66,8 @@ export default function Lp01() {
       <FooterLP /> */}
       {/* <Testimonial /> */}
       <SocialProof />
+      <Client />
+      {/* <Urgency /> */}
       <AboutParalaxeLP logo={true} />
       <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
