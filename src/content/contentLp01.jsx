@@ -14,6 +14,7 @@ import { ChartNoAxesCombined } from "lucide-react";
 import { Ban } from "lucide-react";
 import { IdCard } from "lucide-react";
 import { Gavel } from "lucide-react";
+import { Check } from "lucide-react";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -23,9 +24,10 @@ const currentYear = new Date().getFullYear();
 
 const contentLp01 = {
   infos: {
-    title: "Paper Street Desenvolvimento Web | Sites Profissionais no Brasil",
+    title:
+      "Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street",
     description:
-      "A Paper Street oferece desenvolvimento de sites modernos, responsivos e personalizados para empresas em todo o Brasil. Transforme sua presença online com design profissional, otimização para celular e funcionalidades que atraem clientes.",
+      "Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.",
     keywords:
       "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
@@ -38,12 +40,19 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Coloque seu escritório no Google e conquiste clientes todos os dias
+          <strong>Advogado</strong>, precisando conquistar{" "}
+          <strong>novos clientes</strong> ou{" "}
+          <strong>melhorar sua imagem</strong> na internet?
         </h1>
       ),
-      subtitle:
-        "Criamos sites jurídicos de alta conversão que atraem clientes mesmo que você não entenda nada de tecnologia — sem depender de indicações.",
-      buttonLabel: "Peça seu orçamento por WhatsApp",
+      subtitle: (
+        <p>
+          <strong>Pare de depender de indicações tendo um site</strong> ou
+          <strong>landing page que leva clientes pro seu WhatsApp</strong> -
+          mesmo que você não entenda nada de tecnologia.
+        </p>
+      ),
+      buttonLabel: "Fale com um especialista no WhatsApp",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -458,6 +467,42 @@ const contentLp01 = {
       },
     },
   },
+  ctaClient: {
+    sectionHeader: {
+      miniTag: "",
+      title: "Não deixe pra depois",
+      subtitle:
+        "Faça com quem já ajudou centenas de advogados e tenha seu site/landing page com as melhores condições do mercado",
+    },
+    paragraph: (
+      <p>
+        {" "}
+        <span className="flex gap-2 text-start justify-start">
+          <Check /> Domínio e hospedagem grátis por 1 ano
+        </span>
+        <span className="flex gap-2 text-start justify-start">
+          {" "}
+          <Check /> Pronto em apenas 5 dias úteis
+        </span>{" "}
+        <span className="flex gap-2 text-start justify-start">
+          {" "}
+          <Check /> Caixas de e-mails profissionais
+        </span>{" "}
+        <span className="flex gap-2 text-start justify-start">
+          {" "}
+          <Check /> Reembolso total em caso de arrependimento
+        </span>{" "}
+        <span className="flex gap-2 text-start justify-start">
+          {" "}
+          <Check /> Sem mensalidades
+        </span>{" "}
+        <br />
+        🎉 Por apenas 10 x R$ 59,00 sem juros (ou R$ 545,00 à vista)
+      </p>
+    ),
+    ariaLabel: "Botão de whatsApp",
+    buttonLabel: "Fale com a gente agora mesmo",
+  },
   about: {
     bgImg: bgImg,
     imagesGaleria: {
@@ -473,61 +518,49 @@ const contentLp01 = {
       alt: "logomarca",
     },
     sectionHeader: {
-      miniTag: "Ei, Advogado(a)! 👋",
-      title:
-        "Se você está lendo isso, provavelmente sabe que uma presença digital forte faz toda a diferença na conquista de clientes, não é mesmo?",
+      miniTag: "",
+      title: "Ei, Advogado(a)! 👋",
+      subtitle:
+        "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
       <p>
-        Na <span className="font-extrabold">Paper Street</span>, somos
-        especialistas em{" "}
-        <span className="font-extrabold">desenvolver páginas web</span> que
-        realmente entregam resultados. Cada site que criamos passa por{" "}
-        <span className="font-extrabold">
-          checagens super criteriosas de performance
-        </span>
-        , garantindo que ele seja rápido, estável e{" "}
-        <span className="font-extrabold">
-          alinhado aos objetivos do seu escritório
-        </span>
-        .
+        Na Paper, levamos prazos a sério — nada de sumiço ou demora nas
+        respostas. Temos uma equipe de profissionais especializados, cada um
+        focado em uma parte do seu projeto — do design ao atendimento técnico.
+        <br />
+        Mesmo após a entrega, você pode contar com a gente sempre que precisar.
         <br />
         <br />
-        Levamos a{" "}
-        <span className="font-extrabold">
-          experiência do usuário muito a sério
-        </span>
-        , desenvolvendo sites{" "}
-        <span className="font-extrabold">
-          bonitos, modernos e fáceis de usar
-        </span>
-        , pensados para todos, dos mais jovens aos mais idosos. Nosso foco é
-        entregar uma solução que{" "}
-        <span className="font-extrabold">
-          posicione você da melhor forma possível e atraia novos clientes sem
-          depender de indicações
-        </span>
-        .
+        Além disso, temos centenas de depoimentos reais em nossas redes sociais,
+        provando a satisfação de quem já confiou no nosso trabalho.
+        <br />E o melhor: se em qualquer momento do processo você desistir,
+        devolvemos 100% do valor investido, sem dor de cabeça — tudo garantido
+        em contrato.
         <br />
         <br />
+        Nosso processo é simples e sem complicação: cuidamos de tudo pra que
+        você tenha um site leve, direto ao ponto e pronto pra mostrar autoridade
+        na internet.
       </p>
     ),
-    buttonLabel: "Fale agora com a gente!",
+    buttonLabel: "Fale agora comigo",
     ctaButtonAriaLabel: "Botão de Contato",
   },
-  testimonials: {
-    sectionHeader: {
-      miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
-      title: "O que nossos clientes dizem",
-      subtitle:
-        "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
-    },
-  },
-  video: {
+  socialProof: {
     sectionHeader: {
       miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      title: "Você também vai se encantar",
+      subtitle:
+        "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
+    },
+  },
+  videos: {
+    sectionHeader: {
+      miniTag: "A_Definir",
+      title: "Entregamos alto padrão",
+      subtitle:
+        "Nossa páginas encantam e também são perfeitas pra anúncios de tráfego pago",
     },
   },
   cta: {

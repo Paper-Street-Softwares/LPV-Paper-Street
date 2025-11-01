@@ -14,7 +14,7 @@ export default function AboutParalaxeLP({ logo }) {
 
   return (
     <div
-      className="bg-scroll relative bg-center bg-cover desktop1:bg-fixed bg-bgFixedLight"
+      className="bg-scroll relative bg-center bg-cover desktop1:bg-fixed bg-bgSectionOpacityLight"
       // style={{
       //   backgroundImage: `url(${contentLp01.about.bgImg})`,
       //   backgroundRepeat: "no-repeat",
@@ -38,9 +38,14 @@ export default function AboutParalaxeLP({ logo }) {
                     className="text-center"
                     miniTitle={contentLp01.about.sectionHeader.miniTag}
                     sectionHeaderTitle={contentLp01.about.sectionHeader.title}
+                    sectionHeaderSubtitle={
+                      contentLp01.about.sectionHeader.subtitle
+                    }
                     color=""
                     type="article"
                     titleColorSet="text-black"
+                    subtitleColorSet="text-black"
+                    miniTitleBgColor={false}
                   />
                   <MotionDivDownToUp>
                     <p className="font-mainFont mb-[36px] font-light text-black">
@@ -54,6 +59,8 @@ export default function AboutParalaxeLP({ logo }) {
                           contentLp01.hero.textArea.ctaButtonAriaLabel
                         }
                         label={contentLp01.about.buttonLabel}
+                        color="bg-[#075e54]"
+                        textclassName="text-white"
                         animation
                         className=""
                         icon={
@@ -61,7 +68,7 @@ export default function AboutParalaxeLP({ logo }) {
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
-                            fill="currentColor"
+                            fill="white"
                             className="bi bi-whatsapp"
                             viewBox="0 0 16 16"
                           >

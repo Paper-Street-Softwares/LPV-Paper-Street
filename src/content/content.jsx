@@ -100,7 +100,7 @@ export const infos = {
   tiktokProfile: "A_Definir",
 
   whatsappDefaultMessage:
-    "Olá! Sou advogado e queria saber mais sobre landing pages. Pode me ajudar?",
+    "Olá! Vim do Google e gostaria de saber mais. Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",

@@ -34,14 +34,14 @@ function FullImg({ obs }) {
               />
             </MotionDivDownToUp>
 
-            <SectionArea paddingTopAndBottom={false}>
+            <SectionArea>
               <SectionWrapper>
                 <div className="flex w-full mt-[-4%]">
                   <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[46px] pt-[15%] desktop1:pt-[68px] desktop1:pb-[96px]">
                     <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                       <div className="desktop1:mt-0">
                         <MotionDivDownToUp>
-                          <div className="flex text-white justify-center desktop1:justify-start font-bold leading-[35px] phone2:leading-[40px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title3 phone2:text-title4 phone3:text-title5 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                          <div className="flex text-white justify-center desktop1:justify-start font-medium leading-[35px] phone2:leading-[40px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title3 phone2:text-title4 phone3:text-title5 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                             {contentLp01.hero.textArea.title}
                           </div>
                         </MotionDivDownToUp>
@@ -62,6 +62,8 @@ function FullImg({ obs }) {
                                   contentLp01.hero.textArea.ctaButtonAriaLabel
                                 }
                                 label={contentLp01.hero.textArea.buttonLabel}
+                                color="bg-[#075e54]"
+                                textclassName="text-white"
                                 animation
                                 className="w-[100%]"
                                 icon={
@@ -69,7 +71,7 @@ function FullImg({ obs }) {
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
                                     height="24"
-                                    fill="currentColor"
+                                    fill="white"
                                     className="bi bi-whatsapp"
                                     viewBox="0 0 16 16"
                                   >
@@ -111,10 +113,7 @@ function FullImg({ obs }) {
           backgroundPosition: "top",
         }}
       >
-        <SectionArea
-          paddingTopAndBottom={false}
-          className="h-full bg-black bg-opacity-60"
-        >
+        <SectionArea className="h-full bg-black bg-opacity-60">
           <SectionWrapper className="">
             <div className="flex w-full">
               <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between w-full max-w-[1215px] items-center pb-[64px] pt-[46px] desktop1:pt-[68px] desktop1:pb-[96px]">
@@ -128,7 +127,7 @@ function FullImg({ obs }) {
                   </MotionDivDownToUp>
                   <div className="mt-[30%] phone3:mt-[35%] tablet1:mt-[30px] desktop1:mt-0">
                     <MotionDivDownToUp className="">
-                      <div className="flex text-white justify-center desktop1:justify-start font-bold leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                      <div className="flex text-white justify-center desktop1:justify-start font-medium leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                         {contentLp01.hero.textArea.title}
                       </div>
                     </MotionDivDownToUp>
@@ -148,13 +147,15 @@ function FullImg({ obs }) {
                             }
                             label={contentLp01.hero.textArea.buttonLabel}
                             animation
-                            className="w-[100%] text-colorBlack"
+                            className="w-[100%]"
+                            color="bg-[#075e54]"
+                            textclassName="text-white"
                             icon={
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
-                                fill="currentColor"
+                                fill="white"
                                 className="bi bi-whatsapp"
                                 viewBox="0 0 16 16"
                               >
