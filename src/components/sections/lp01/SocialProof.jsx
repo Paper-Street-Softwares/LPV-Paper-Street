@@ -16,7 +16,7 @@ import contentLp01 from "../../../content/contentLp01";
 
 export default function SocialProof() {
   return (
-    <SectionArea className="bg-bgSectionOpacityLight" paddingtop={false}>
+    <SectionArea className="bg-bgSectionOpacityLight">
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader

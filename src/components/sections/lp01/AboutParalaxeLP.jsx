@@ -38,9 +38,14 @@ export default function AboutParalaxeLP({ logo }) {
                     className="text-center"
                     miniTitle={contentLp01.about.sectionHeader.miniTag}
                     sectionHeaderTitle={contentLp01.about.sectionHeader.title}
+                    sectionHeaderSubtitle={
+                      contentLp01.about.sectionHeader.subtitle
+                    }
                     color=""
                     type="article"
                     titleColorSet="text-black"
+                    subtitleColorSet="text-black"
+                    miniTitleBgColor={false}
                   />
                   <MotionDivDownToUp>
                     <p className="font-mainFont mb-[36px] font-light text-black">

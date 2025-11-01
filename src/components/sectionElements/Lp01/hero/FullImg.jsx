@@ -34,7 +34,7 @@ function FullImg({ obs }) {
               />
             </MotionDivDownToUp>
 
-            <SectionArea paddingTopAndBottom={false}>
+            <SectionArea>
               <SectionWrapper>
                 <div className="flex w-full mt-[-4%]">
                   <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[46px] pt-[15%] desktop1:pt-[68px] desktop1:pb-[96px]">
@@ -113,10 +113,7 @@ function FullImg({ obs }) {
           backgroundPosition: "top",
         }}
       >
-        <SectionArea
-          paddingTopAndBottom={false}
-          className="h-full bg-black bg-opacity-60"
-        >
+        <SectionArea className="h-full bg-black bg-opacity-60">
           <SectionWrapper className="">
             <div className="flex w-full">
               <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between w-full max-w-[1215px] items-center pb-[64px] pt-[46px] desktop1:pt-[68px] desktop1:pb-[96px]">

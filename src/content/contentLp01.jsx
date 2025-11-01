@@ -14,6 +14,7 @@ import { ChartNoAxesCombined } from "lucide-react";
 import { Ban } from "lucide-react";
 import { IdCard } from "lucide-react";
 import { Gavel } from "lucide-react";
+import { Check } from "lucide-react";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -470,15 +471,25 @@ const contentLp01 = {
     paragraph: (
       <p>
         {" "}
-        ✅ Domínio e hospedagem grátis por 1 ano
-        <br />
-        ✅ Pronto em apenas 5 dias úteis
-        <br />
-        ✅ Caixas de e-mails profissionais
-        <br />
-        ✅ Reembolso total em caso de arrependimento
-        <br />✅ Sem mensalidades
-        <br />
+        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+          <Check /> Domínio e hospedagem grátis por 1 ano
+        </span>
+        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+          {" "}
+          <Check /> Pronto em apenas 5 dias úteis
+        </span>{" "}
+        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+          {" "}
+          <Check /> Caixas de e-mails profissionais
+        </span>{" "}
+        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+          {" "}
+          <Check /> Reembolso total em caso de arrependimento
+        </span>{" "}
+        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+          {" "}
+          <Check /> Sem mensalidades
+        </span>{" "}
         <br />
         <strong> Por apenas 10 x R$ 59,00 sem juros (ou 545 à vista)</strong>
       </p>
@@ -501,8 +512,9 @@ const contentLp01 = {
       alt: "logomarca",
     },
     sectionHeader: {
-      miniTag: "Ei, Advogado(a)! 👋",
-      title:
+      miniTag: "",
+      title: "Ei, Advogado(a)! 👋",
+      subtitle:
         "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
