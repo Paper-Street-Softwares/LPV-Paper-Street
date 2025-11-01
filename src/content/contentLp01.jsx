@@ -39,12 +39,13 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Coloque seu escritório no Google e conquiste clientes todos os dias
+          Advogado, conquiste clientes todos os dias divulgando seus serviços na
+          internet
         </h1>
       ),
       subtitle:
-        "Criamos sites jurídicos de alta conversão que atraem clientes mesmo que você não entenda nada de tecnologia — sem depender de indicações.",
-      buttonLabel: "Peça seu orçamento por WhatsApp",
+        "Pare de depender de indicações tendo um site ou landing page que leva clientes pro seu WhatsApp - mesmo que você não entenda nada de tecnologia.",
+      buttonLabel: "Clique aqui e fale com a gente agora mesmo",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -459,6 +460,32 @@ const contentLp01 = {
       },
     },
   },
+  ctaClient: {
+    sectionHeader: {
+      miniTag: "",
+      title: "Não deixe pra depois",
+      subtitle:
+        "Faça com quem já ajudou centenas de advogados e tenha seu site/landing page com as melhores condições do mercado",
+    },
+    paragraph: (
+      <p>
+        {" "}
+        ✅ Domínio e hospedagem grátis por 1 ano
+        <br />
+        ✅ Pronto em apenas 5 dias úteis
+        <br />
+        ✅ Caixas de e-mails profissionais
+        <br />
+        ✅ Reembolso total em caso de arrependimento
+        <br />✅ Sem mensalidades
+        <br />
+        <br />
+        <strong> Por apenas 10 x R$ 59,00 sem juros (ou 545 à vista)</strong>
+      </p>
+    ),
+    ariaLabel: "Botão de whatsApp",
+    buttonLabel: "Fale com a gente agora mesmo",
+  },
   about: {
     bgImg: bgImg,
     imagesGaleria: {
@@ -476,44 +503,30 @@ const contentLp01 = {
     sectionHeader: {
       miniTag: "Ei, Advogado(a)! 👋",
       title:
-        "Se você está lendo isso, provavelmente sabe que uma presença digital forte faz toda a diferença na conquista de clientes, não é mesmo?",
+        "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
       <p>
-        Na <span className="font-extrabold">Paper Street</span>, somos
-        especialistas em{" "}
-        <span className="font-extrabold">desenvolver páginas web</span> que
-        realmente entregam resultados. Cada site que criamos passa por{" "}
-        <span className="font-extrabold">
-          checagens super criteriosas de performance
-        </span>
-        , garantindo que ele seja rápido, estável e{" "}
-        <span className="font-extrabold">
-          alinhado aos objetivos do seu escritório
-        </span>
-        .
+        Na Paper, levamos prazos a sério — nada de sumiço ou demora nas
+        respostas. Temos uma equipe de profissionais especializados, cada um
+        focado em uma parte do seu projeto — do design ao atendimento técnico.
+        <br />
+        Mesmo após a entrega, você pode contar com a gente sempre que precisar.
         <br />
         <br />
-        Levamos a{" "}
-        <span className="font-extrabold">
-          experiência do usuário muito a sério
-        </span>
-        , desenvolvendo sites{" "}
-        <span className="font-extrabold">
-          bonitos, modernos e fáceis de usar
-        </span>
-        , pensados para todos, dos mais jovens aos mais idosos. Nosso foco é
-        entregar uma solução que{" "}
-        <span className="font-extrabold">
-          posicione você da melhor forma possível e atraia novos clientes sem
-          depender de indicações
-        </span>
-        .
+        Além disso, temos centenas de depoimentos reais em nossas redes sociais,
+        provando a satisfação de quem já confiou no nosso trabalho.
+        <br />E o melhor: se em qualquer momento do processo você desistir,
+        devolvemos 100% do valor investido, sem dor de cabeça — tudo garantido
+        em contrato.
         <br />
         <br />
+        Nosso processo é simples e sem complicação: cuidamos de tudo pra que
+        você tenha um site leve, direto ao ponto e pronto pra mostrar autoridade
+        na internet.
       </p>
     ),
-    buttonLabel: "Fale agora com a gente!",
+    buttonLabel: "Fale agora comigo",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   testimonials: {

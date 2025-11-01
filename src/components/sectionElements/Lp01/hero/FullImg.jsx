@@ -62,7 +62,8 @@ function FullImg({ obs }) {
                                   contentLp01.hero.textArea.ctaButtonAriaLabel
                                 }
                                 label={contentLp01.hero.textArea.buttonLabel}
-                                color="bg-[#25D366]"
+                                color="bg-[#075e54]"
+                                textclassName="text-white"
                                 animation
                                 className="w-[100%]"
                                 icon={
@@ -70,7 +71,7 @@ function FullImg({ obs }) {
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
                                     height="24"
-                                    fill="currentColor"
+                                    fill="white"
                                     className="bi bi-whatsapp"
                                     viewBox="0 0 16 16"
                                   >
@@ -149,14 +150,15 @@ function FullImg({ obs }) {
                             }
                             label={contentLp01.hero.textArea.buttonLabel}
                             animation
-                            className="w-[100%] text-colorBlack"
-                            color="bg-[#25D366]"
+                            className="w-[100%]"
+                            color="bg-[#075e54]"
+                            textclassName="text-white"
                             icon={
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
-                                fill="currentColor"
+                                fill="white"
                                 className="bi bi-whatsapp"
                                 viewBox="0 0 16 16"
                               >
