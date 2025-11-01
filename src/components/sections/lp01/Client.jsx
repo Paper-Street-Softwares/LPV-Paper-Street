@@ -5,6 +5,7 @@ import SectionHeader from "../../sectionElements/SectionHeader";
 import contentLp01 from "../../../content/contentLp01";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
+// comentario
 
 function Client() {
   return (
@@ -15,9 +16,11 @@ function Client() {
             <div className="flex flex-col items-center justify-start desktop1:w-[45%] desktop1:items-start">
               <SectionHeader
                 className="justify-center text-center desktop1:justify-start desktop1:hidden "
-                miniTitle={contentLp01.ctaClient.miniTag}
-                sectionHeaderTitle={contentLp01.urgency.title}
-                sectionHeaderSubtitle={contentLp01.urgency.subtitle}
+                miniTitle={contentLp01.ctaClient.sectionHeader.miniTag}
+                sectionHeaderTitle={contentLp01.ctaClient.sectionHeader.title}
+                sectionHeaderSubtitle={
+                  contentLp01.ctaClient.sectionHeader.subtitle
+                }
                 color=""
                 type=""
                 titleColorSet="text-black"
