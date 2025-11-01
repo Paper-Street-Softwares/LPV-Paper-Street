@@ -44,7 +44,10 @@ export default function SocialProof() {
         <div className="w-full">
           <SectionHeader
             className="justify-center text-center desktop1:flex"
-            sectionHeaderTitle={contentLp01.testimonials.sectionHeader.title}
+            sectionHeaderTitle={contentLp01.socialProof.sectionHeader.title}
+            sectionHeaderSubtitle={
+              contentLp01.socialProof.sectionHeader.subtitle
+            }
             miniTitleBgColor={false}
             titleColorSet="text-black"
             subtitleColorSet="text-black"

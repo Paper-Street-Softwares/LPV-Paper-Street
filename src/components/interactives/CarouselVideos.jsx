@@ -3,6 +3,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeader from "../sectionElements/SectionHeader";
+import contentLp01 from "../../content/contentLp01";
 
 export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -41,6 +43,14 @@ export default function VideoCarousel() {
     <SectionArea>
       <SectionWrapper>
         <div className="flex flex-col items-center w-full max-w-[1215px] m-auto justify-evenly  bg-bgFixedLight ">
+          <SectionHeader
+            className="justify-center text-center desktop1:flex"
+            sectionHeaderTitle={contentLp01.videos.sectionHeader.title}
+            sectionHeaderSubtitle={contentLp01.videos.sectionHeader.subtitle}
+            miniTitleBgColor={false}
+            titleColorSet="text-black"
+            subtitleColorSet="text-black"
+          />
           {/* VIEWPORT */}
           <div className="overflow-hidden w-[95%] m-auto " ref={emblaRef}>
             {/* CONTAINER */}

@@ -40,13 +40,19 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Advogado, conquiste clientes todos os dias divulgando seus serviços na
-          internet
+          <strong>Advogado</strong>, precisando conquistar{" "}
+          <strong>novos clientes</strong> ou{" "}
+          <strong>melhorar sua imagem</strong> na internet?
         </h1>
       ),
-      subtitle:
-        "Pare de depender de indicações tendo um site ou landing page que leva clientes pro seu WhatsApp - mesmo que você não entenda nada de tecnologia.",
-      buttonLabel: "Clique aqui e fale com a gente agora mesmo",
+      subtitle: (
+        <p>
+          <strong>Pare de depender de indicações tendo um site</strong> ou
+          <strong>landing page que leva clientes pro seu WhatsApp</strong> -
+          mesmo que você não entenda nada de tecnologia.
+        </p>
+      ),
+      buttonLabel: "Fale com um especialista no WhatsApp",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -471,27 +477,27 @@ const contentLp01 = {
     paragraph: (
       <p>
         {" "}
-        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+        <span className="flex gap-2 text-start justify-start">
           <Check /> Domínio e hospedagem grátis por 1 ano
         </span>
-        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+        <span className="flex gap-2 text-start justify-start">
           {" "}
           <Check /> Pronto em apenas 5 dias úteis
         </span>{" "}
-        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+        <span className="flex gap-2 text-start justify-start">
           {" "}
           <Check /> Caixas de e-mails profissionais
         </span>{" "}
-        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+        <span className="flex gap-2 text-start justify-start">
           {" "}
           <Check /> Reembolso total em caso de arrependimento
         </span>{" "}
-        <span className="flex gap-2 text-center justify-center desktop1:justify-start">
+        <span className="flex gap-2 text-start justify-start">
           {" "}
           <Check /> Sem mensalidades
         </span>{" "}
         <br />
-        <strong> Por apenas 10 x R$ 59,00 sem juros (ou 545 à vista)</strong>
+        🎉 Por apenas 10 x R$ 59,00 sem juros (ou R$ 545,00 à vista)
       </p>
     ),
     ariaLabel: "Botão de whatsApp",
@@ -541,19 +547,20 @@ const contentLp01 = {
     buttonLabel: "Fale agora comigo",
     ctaButtonAriaLabel: "Botão de Contato",
   },
-  testimonials: {
-    sectionHeader: {
-      miniTag: "ADVOGADOS QUE JÁ NÃO PERDEM MAIS CLIENTES",
-      title: "Somos referência no ramo jurídico",
-      subtitle:
-        "Sites modernos, rápidos e otimizados que captam clientes o tempo inteiro pra você.",
-    },
-  },
-  video: {
+  socialProof: {
     sectionHeader: {
       miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      title: "Você também vai se encantar",
+      subtitle:
+        "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
+    },
+  },
+  videos: {
+    sectionHeader: {
+      miniTag: "A_Definir",
+      title: "Entregamos alto padrão",
+      subtitle:
+        "Nossa páginas encantam e também são perfeitas pra anúncios de tráfego pago",
     },
   },
   cta: {
