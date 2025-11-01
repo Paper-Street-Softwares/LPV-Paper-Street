@@ -5,7 +5,6 @@ import SectionHeader from "../../sectionElements/SectionHeader";
 import contentLp01 from "../../../content/contentLp01";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
-// comentario
 
 function Client() {
   return (
