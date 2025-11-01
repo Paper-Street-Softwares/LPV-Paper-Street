@@ -48,7 +48,7 @@ export default function AboutParalaxeLP({ logo }) {
                     miniTitleBgColor={false}
                   />
                   <MotionDivDownToUp>
-                    <p className="font-mainFont mb-[36px] font-light text-black">
+                    <p className="font-secondFont mb-[36px] font-light text-black">
                       {contentLp01.about.paragraph}
                     </p>
                   </MotionDivDownToUp>

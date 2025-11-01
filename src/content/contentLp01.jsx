@@ -48,8 +48,11 @@ const contentLp01 = {
       subtitle: (
         <p>
           <strong>Pare de depender de indicações tendo um site</strong> ou
-          <strong>landing page que leva clientes pro seu WhatsApp</strong> -
-          mesmo que você não entenda nada de tecnologia.
+          landing page que leva clientes pro seu <strong>WhatsApp</strong> -
+          <span className=" opacity-70">
+            {" "}
+            mesmo que você não entenda nada de tecnologia.
+          </span>
         </p>
       ),
       buttonLabel: "Fale com um especialista no WhatsApp",
@@ -519,24 +522,24 @@ const contentLp01 = {
     },
     sectionHeader: {
       miniTag: "",
-      title: "Ei, Advogado(a)! 👋",
+      title: "Ei, Advogado(a)!",
       subtitle:
         "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
-      <p>
+      <p className="leading-[20px]">
         Na Paper, levamos prazos a sério — nada de sumiço ou demora nas
         respostas. Temos uma equipe de profissionais especializados, cada um
         focado em uma parte do seu projeto — do design ao atendimento técnico.
         <br />
         Mesmo após a entrega, você pode contar com a gente sempre que precisar.
-        <br />
+        {/* <br />
         <br />
         Além disso, temos centenas de depoimentos reais em nossas redes sociais,
         provando a satisfação de quem já confiou no nosso trabalho.
         <br />E o melhor: se em qualquer momento do processo você desistir,
         devolvemos 100% do valor investido, sem dor de cabeça — tudo garantido
-        em contrato.
+        em contrato. */}
         <br />
         <br />
         Nosso processo é simples e sem complicação: cuidamos de tudo pra que
