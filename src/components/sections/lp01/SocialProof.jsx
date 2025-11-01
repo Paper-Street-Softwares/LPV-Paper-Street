@@ -3,8 +3,8 @@ import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
 import React, { useRef, useState } from "react";
 
-import img1 from "../../../assets/imgs/testimonials/testimonials1.webp";
-import img5 from "../../../assets/imgs/testimonials/testimonials5.webp";
+import img1 from "../../../../public/socialProof/printhernani.webp";
+import img5 from "../../../../public/socialProof/printperez.webp";
 import contentLp01 from "../../../content/contentLp01";
 
 function SocialProofVideo({ src }) {
