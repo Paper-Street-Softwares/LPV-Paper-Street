@@ -29,7 +29,7 @@ export default function Button({
     gap = "gap-[10px]";
   } else {
     sizeFeatures = "rounded-[8px] px-[30px] py-[16px]";
-    textSizeClass = "text-paragraph4 font-secondFont";
+    textSizeClass = "text-paragraph2 tablet1:text-paragraph4 font-secondFont";
     gap = "gap-[20px]";
   }
 
