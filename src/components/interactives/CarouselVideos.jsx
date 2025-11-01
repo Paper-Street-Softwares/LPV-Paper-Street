@@ -88,7 +88,7 @@ export default function VideoCarousel() {
                 key={index}
                 onClick={() => emblaApi?.scrollTo(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === selectedIndex ? "bg-primary w-5" : "bg-white"
+                  index === selectedIndex ? "bg-[#075e54] w-5" : "bg-white"
                 }`}
               ></button>
             ))}

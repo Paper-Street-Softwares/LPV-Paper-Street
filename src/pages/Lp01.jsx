@@ -73,7 +73,7 @@ export default function Lp01() {
       {/* <LPFloatingWhatsappButton /> */}
       <FloatingWhatsappButton />
       {/* <WhatsChat /> */}
-      <BackToTopButton />
+      {/* <BackToTopButton /> */}
     </div>
   );
 }
