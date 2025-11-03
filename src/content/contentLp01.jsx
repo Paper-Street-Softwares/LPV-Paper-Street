@@ -61,6 +61,7 @@ const contentLp01 = {
         </p>
       ),
       buttonLabel: "Fale com um especialista no WhatsApp",
+      buttonLabel2: "Quero um orçamento sem compromisso",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -478,7 +479,24 @@ const contentLp01 = {
   ctaClient: {
     sectionHeader: {
       miniTag: "",
-      title: "Não deixe pra depois",
+      title: (
+        <p class="">
+          <span class="text-[#075e54] relative inline-block stroke-current">
+            Não deixe pra depois
+            <svg
+              class="absolute -bottom-0.5 w-full max-h-1.5"
+              viewBox="0 0 55 5"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </span>
+        </p>
+      ),
       subtitle:
         "Faça com quem já ajudou centenas de advogados e tenha seu site/landing page com as melhores condições do mercado",
     },
@@ -486,26 +504,28 @@ const contentLp01 = {
       <p>
         {" "}
         <span className="flex justify-start gap-2 text-start">
-          <Check /> Domínio e hospedagem grátis por 1 ano
+          <Check /> Domínio e hospedagem{" "}
+          <span className="text-[#075e54]">grátis por 1 ano</span>
         </span>
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> Pronto em apenas 5 dias úteis
+          <Check /> Pronto em apenas{" "}
+          <span className="text-[#075e54]">5 dias úteis</span>
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> Caixas de e-mails profissionais
+          <Check /> Caixas de{" "}
+          <span className="text-[#075e54]">e-mails profissionais</span>
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> Reembolso total em caso de arrependimento
+          <Check /> <span className="text-[#075e54]">Reembolso total</span> em
+          caso de arrependimento
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> Sem mensalidades
+          <Check /> <span className="text-[#075e54]">Sem mensalidades</span>
         </span>{" "}
-        <br />
-        🎉 Por apenas 10 x R$ 59,00 sem juros (ou R$ 545,00 à vista)
       </p>
     ),
     ariaLabel: "Botão de whatsApp",

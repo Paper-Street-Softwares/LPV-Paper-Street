@@ -11,7 +11,7 @@ function Client() {
     <div>
       <SectionArea>
         <SectionWrapper>
-          <div className="flex flex-col desktop1:flex-row items-center justify-between max-w-[1215px] w-full gap-12 desktop1:gap-0">
+          <div className="flex flex-col desktop1:flex-row items-center justify-evenly max-w-[1215px] w-full gap-12 desktop1:gap-0">
             <div className="flex flex-col items-center justify-start desktop1:w-[45%] desktop1:items-start">
               <SectionHeader
                 className="justify-center text-center desktop1:justify-start desktop1:hidden "
@@ -27,7 +27,7 @@ function Client() {
                 miniTitleBgColor={false}
               />
               <SectionHeader
-                className="justify-center text-center desktop1:justify-start hidden desktop1:flex "
+                className="justify-center hidden text-center desktop1:justify-start desktop1:flex "
                 miniTitle={contentLp01.ctaClient.sectionHeader.miniTag}
                 sectionHeaderTitle={contentLp01.ctaClient.sectionHeader.title}
                 sectionHeaderSubtitle={
@@ -61,7 +61,7 @@ function Client() {
               />
             </div>
 
-            <div className="flex flex-col justify-center text-start font-secondFont">
+            <div className="flex flex-col justify-center text-start font-secondFont text-title2">
               <p>{contentLp01.ctaClient.paragraph}</p>
             </div>
           </div>
