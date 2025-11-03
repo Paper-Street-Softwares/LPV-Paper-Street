@@ -28,8 +28,8 @@ function SocialProofVideo({ src }) {
     <div className="relative w-[90%] desktop1:w-[170px] desktop2:w-[220px] rounded-lg overflow-hidden shadow-md">
       <video ref={videoRef} src={src} loop playsInline className="w-full" />
 
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2 bg-black/60 px-3 py-1 rounded-full text-white text-xs items-center">
-        <button onClick={togglePlay} className="hover:scale-110 transition">
+      <div className="absolute flex items-center gap-2 px-3 py-1 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-black/60">
+        <button onClick={togglePlay} className="transition hover:scale-110">
           {isPlaying ? "⏸️ Pausar" : "▶️ Play"}
         </button>
       </div>
@@ -53,22 +53,21 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <div className="flex flex-wrap justify-evenly items-start gap-5 desktop1:gap-0">
+          <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0">
             <img
               src={img1}
               alt="Imagem de Depoimento1"
               className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
 
-            <SocialProofVideo src="socialProof/videogabriele.mp4" />
-            <SocialProofVideo src="socialProof/videoperez.mp4" />
-            <SocialProofVideo src="socialProof/videovivianepinheiro.mp4" />
-
             <img
               src={img5}
               alt="Imagem de Depoimento5"
               className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
             />
+            <SocialProofVideo src="socialProof/videoperez.mp4" />
+            <SocialProofVideo src="socialProof/videovivianepinheiro.mp4" />
+            <SocialProofVideo src="socialProof/videogabriele.mp4" />
           </div>
         </div>
       </SectionWrapper>

@@ -50,7 +50,7 @@ export default function SectionHeader({
     marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[32px]";
   } else {
     usage = "w-[90%] tablet1:w-[80%] desktop1:w-[60%] max-w-[920px]";
-    marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]";
+    marginBottomOption = "mb-[48px] tablet1:mb-[40px] desktop1:mb-[72px]";
   }
 
   const Content = (

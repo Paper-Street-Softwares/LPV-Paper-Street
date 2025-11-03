@@ -527,7 +527,25 @@ const contentLp01 = {
     },
     sectionHeader: {
       miniTag: "",
-      title: "Ei, Advogado(a)!",
+      title: (
+        <p class="">
+          Ei,
+          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+            Advogado(a)!
+            <svg
+              class="absolute -bottom-0.5 w-full max-h-1.5"
+              viewBox="0 0 55 5"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </span>
+        </p>
+      ),
       subtitle:
         "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
     },
@@ -552,13 +570,31 @@ const contentLp01 = {
         na internet.
       </p>
     ),
-    buttonLabel: "Fale agora comigo",
+    buttonLabel: "Fale comigo agora mesmo",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   socialProof: {
     sectionHeader: {
       miniTag: "A_Definir",
-      title: "Você também vai se encantar",
+      title: (
+        <p class="">
+          Você também vai se
+          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+            encantar
+            <svg
+              class="absolute -bottom-0.5 w-full max-h-1.5"
+              viewBox="0 0 55 5"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </span>
+        </p>
+      ),
       subtitle:
         "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
     },
@@ -566,7 +602,25 @@ const contentLp01 = {
   videos: {
     sectionHeader: {
       miniTag: "A_Definir",
-      title: "Entregamos alto padrão",
+      title: (
+        <p class="">
+          Entregamos
+          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+            alto padrão
+            <svg
+              class="absolute -bottom-0.5 w-full max-h-1.5"
+              viewBox="0 0 55 5"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </span>
+        </p>
+      ),
       subtitle:
         "Nossa páginas encantam e também são perfeitas pra anúncios de tráfego pago",
     },
