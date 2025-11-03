@@ -8,33 +8,17 @@ export default function FooterLP() {
     <div className="bg-bgFixedLight">
       <SectionArea paddingTopAndBottom={false}>
         <SectionWrapper>
-          <div className="w-full text-center font-mainFont pt-[36px] phone1:pb-[27%] tablet1:pb-[80px] tablet2:pb-[36px] opacity-70">
-            <p>
-              {/* {contentLp01.footer.copyrightLine}
-              <br /> */}
-
-              {/* {contentLp01.footer.disclaimer} */}
-              {/* <p>
-                <a
-                  className="transition hover:underline"
-                  target="_blank"
-                  href="https://www.paperstreet.com.br"
-                >
-                  {" "}
-                  {content.texts.footer.footerDivulgacaoText}
-                </a>
-              </p> */}
-            </p>
-            <p>
+          <div className="w-full text-center font-mainFont py-[36px] opacity-70">
+            <button>
               <a
                 href="/privacidade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black/20 p-3 rounded-md"
+                className="p-3 rounded-md bg-black/20"
               >
                 Políticas de Privacidade
               </a>
-            </p>
+            </button>
           </div>
         </SectionWrapper>
       </SectionArea>

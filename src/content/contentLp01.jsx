@@ -40,15 +40,20 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, precisando conquistar{" "}
-          <strong>novos clientes</strong> ou{" "}
-          <strong>melhorar sua imagem</strong> na internet?
+          <strong>Advogado</strong>, precisando{" "}
+          <strong className="text-[#8EDBD3]">conquistar novos clientes</strong>{" "}
+          ou <strong className="text-[#8EDBD3]">melhorar sua imagem</strong> na
+          internet?
         </h1>
       ),
       subtitle: (
         <p>
-          <strong>Pare de depender de indicações tendo um site</strong> ou
-          landing page que leva clientes pro seu <strong>WhatsApp</strong> -
+          <strong className="text-[#8EDBD3]">
+            Pare de depender de indicações
+          </strong>{" "}
+          tendo um <strong className="text-[#8EDBD3]">site</strong> ou{" "}
+          <strong className="text-[#8EDBD3]">landing page</strong> que leva
+          clientes pro seu WhatsApp -
           <span className=" opacity-70">
             {" "}
             mesmo que você não entenda nada de tecnologia.
@@ -480,22 +485,22 @@ const contentLp01 = {
     paragraph: (
       <p>
         {" "}
-        <span className="flex gap-2 text-start justify-start">
+        <span className="flex justify-start gap-2 text-start">
           <Check /> Domínio e hospedagem grátis por 1 ano
         </span>
-        <span className="flex gap-2 text-start justify-start">
+        <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Pronto em apenas 5 dias úteis
         </span>{" "}
-        <span className="flex gap-2 text-start justify-start">
+        <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Caixas de e-mails profissionais
         </span>{" "}
-        <span className="flex gap-2 text-start justify-start">
+        <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Reembolso total em caso de arrependimento
         </span>{" "}
-        <span className="flex gap-2 text-start justify-start">
+        <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Sem mensalidades
         </span>{" "}
