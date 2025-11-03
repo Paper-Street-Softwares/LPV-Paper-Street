@@ -61,7 +61,7 @@ function Client() {
               />
             </div>
 
-            <div className="flex flex-col justify-center text-start font-secondFont text-title2">
+            <div className="flex flex-col justify-center text-start font-secondFont text-paragraph2 phone2:text-paragraph3 phone3:text-paragraph4 tablet1:text-title2">
               <p>{contentLp01.ctaClient.paragraph}</p>
             </div>
           </div>
