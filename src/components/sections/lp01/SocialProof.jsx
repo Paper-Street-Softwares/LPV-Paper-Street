@@ -57,13 +57,13 @@ export default function SocialProof() {
             <img
               src={img1}
               alt="Imagem de Depoimento1"
-              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px] rounded-xl"
             />
 
             <img
               src={img5}
               alt="Imagem de Depoimento5"
-              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px]"
+              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px] rounded-xl"
             />
             <SocialProofVideo src="socialProof/videoperez.mp4" />
             <SocialProofVideo src="socialProof/videovivianepinheiro.mp4" />
