@@ -87,15 +87,19 @@ export default function VideoCarousel() {
           <div className="flex justify-center gap-2 mt-6">
             {scrollSnaps.map((_, index) => (
               <button
-                aria-label="Botões de passar o Carosel"
                 key={index}
                 onClick={() => emblaApi?.scrollTo(index)}
+                aria-label={`Ir para o slide ${index + 1}`}
+                aria-current={index === selectedIndex ? "true" : "false"}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === selectedIndex ? "bg-[#075e54] w-5" : "bg-white w-3"
+                  index === selectedIndex
+                    ? "bg-[#075e54] w-5 h-5"
+                    : "bg-white w-3 h-3"
                 }`}
               ></button>
             ))}
           </div>
+
           <div className="flex justify-center w-full pt-[40px]">
             <MotionDivDownToUp>
               <Button
