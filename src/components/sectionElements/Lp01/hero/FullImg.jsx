@@ -133,6 +133,8 @@ function FullImg({ obs }) {
                     <img
                       src={contentLp01.hero.logo.logoImg}
                       alt={contentLp01.hero.logo.alt}
+                      width="250"
+                      height="54"
                       className="tablet1:w-[280px] desktop1:w-[250px] desktop1:mb-[60px] "
                     />
                   </MotionDivDownToUp>
@@ -158,6 +160,7 @@ function FullImg({ obs }) {
                             width="850"
                             height="440"
                             className=""
+                            fetchPriority="high"
                           />
                         </MotionDivDownToUp>
                         <MotionDivDownToUp>
