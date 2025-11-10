@@ -30,6 +30,8 @@ function FullImg({ obs }) {
               <img
                 src={contentLp01.hero.logo.logoImg}
                 alt={contentLp01.hero.logo.alt}
+                width="250"
+                height="54"
                 className="ml-[5%] max-w-[50%] mt-[15%] p-[5px] tablet1:py-[7px]"
               />
             </MotionDivDownToUp>
@@ -59,6 +61,9 @@ function FullImg({ obs }) {
                             <img
                               src={contentLp01.hero.mockupHeroImg}
                               alt="Site de Advogado"
+                              width="850"
+                              height="440"
+                              fetchPriority="high"
                               className=""
                             />
                           </MotionDivDownToUp>

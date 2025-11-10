@@ -8,6 +8,8 @@ function LogoAboutLpv() {
       <img
         src={contentLp01.about.imgAbout.img}
         alt={contentLp01.about.logo.alt}
+        width="485"
+        height="485"
         className="w-[90%] tablet1:w-[90%] desktop1:w-full rounded-xl shadow-custom-opacity shadow-[#075e54]/10 "
       />
     </MotionDivDownToUp>
