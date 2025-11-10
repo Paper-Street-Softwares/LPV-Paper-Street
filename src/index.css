@@ -1,32 +1,52 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("/src/assets/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Merriweather";
+  src: url("/src/assets/fonts/Merriweather/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/assets/fonts/Roboto/Roboto-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/assets/fonts/Roboto/Roboto-Italic-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 body {
   background-color: #fff !important;
   color: #000 !important;
 }
 
-
-
-
-
-
-
 .unfix-ios-bg {
   @supports (-webkit-touch-callout: none) {
     background-attachment: initial !important;
   }
-}
-
-@font-face {
-  font-family: "Keep Calm";
-  src: url("./assets/fonts/KeepCalm-Medium.ttf") format("opentype");
-  font-style: normal;
-  font-display: swap;
 }
 
 @keyframes fadeIn {
@@ -199,4 +219,3 @@ body {
   height: 50px !important;
   flex-shrink: 0 !important; /* Impede que o botão diminua se o tooltip aumentar */
 }
-
