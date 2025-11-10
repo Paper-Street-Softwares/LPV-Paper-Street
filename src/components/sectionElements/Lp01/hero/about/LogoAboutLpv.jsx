@@ -5,13 +5,17 @@ import MotionDivDownToUp from "../../../../animation/MotionDivDownToUp";
 function LogoAboutLpv() {
   return (
     <MotionDivDownToUp className=" w-[100%] justify-center desktop1:w-[415px] desktop2:w-[485px] flex desktop1:justify-center">
-      <img
-        src={contentLp01.about.imgAbout.img}
-        alt={contentLp01.about.logo.alt}
-        width="485"
-        height="485"
-        className="w-[90%] tablet1:w-[90%] desktop1:w-full rounded-xl shadow-custom-opacity shadow-[#075e54]/10 "
-      />
+      <picture>
+        <source
+          srcSet={contentLp01.about.imgAbout.imgMobile}
+          media="(max-width: 424px)"
+        />
+        <img
+          src={contentLp01.about.imgAbout.img}
+          alt={contentLp01.about.logo.alt}
+          className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+        />
+      </picture>
     </MotionDivDownToUp>
   );
 }

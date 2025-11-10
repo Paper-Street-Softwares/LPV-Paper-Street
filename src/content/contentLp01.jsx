@@ -1,6 +1,7 @@
 import bgImg from "../assets/imgs/hero/bgHeroLp.webp";
 import logo from "../assets/imgs/logo/logoLp.webp";
 import imagemAbout from "../assets/imgs/about/aboutImg.webp";
+import imagemAboutMobile from "../assets/imgs/about/aboutImgMobile.webp";
 import { infos } from "./content";
 import { Shield } from "lucide-react";
 import { File } from "lucide-react";
@@ -542,6 +543,7 @@ const contentLp01 = {
     },
     imgAbout: {
       img: imagemAbout,
+      imgMobile: imagemAboutMobile,
     },
     logo: {
       logoImg: logo,

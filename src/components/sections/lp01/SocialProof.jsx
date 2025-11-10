@@ -4,7 +4,10 @@ import SectionWrapper from "../../sectionElements/SectionWrapper";
 import React, { useRef, useState } from "react";
 
 import img1 from "../../../../public/socialProof/printhernani.webp";
+import imgMobile1 from "../../../../public/socialProof/printhernaniMobile.webp";
+
 import img5 from "../../../../public/socialProof/printperez.webp";
+import imgMobile5 from "../../../../public/socialProof/printperezMobile.webp";
 import contentLp01 from "../../../content/contentLp01";
 
 function SocialProofVideo({ src }) {
@@ -54,21 +57,23 @@ export default function SocialProof() {
           />
 
           <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0">
-            <img
-              src={img1}
-              alt="Imagem de Depoimento1"
-              width="220"
-              height="197"
-              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px] rounded-xl"
-            />
+            <picture>
+              <source srcSet={imgMobile1} media="(max-width: 424px)" />
+              <img
+                src={img1}
+                alt="Imagem de Feedback"
+                className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+              />
+            </picture>
 
-            <img
-              src={img5}
-              alt="Imagem de Depoimento5"
-              width="220"
-              height="197"
-              className="w-[90%] desktop1:w-[170px] desktop2:w-[220px] rounded-xl"
-            />
+            <picture>
+              <source srcSet={imgMobile5} media="(max-width: 424px)" />
+              <img
+                src={img5}
+                alt="Imagem de Feedback"
+                className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+              />
+            </picture>
             <SocialProofVideo src="socialProof/videoperez.mp4" />
             <SocialProofVideo src="socialProof/videovivianepinheiro.mp4" />
             <SocialProofVideo src="socialProof/videogabriele.mp4" />
