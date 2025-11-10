@@ -49,13 +49,6 @@ body {
   }
 }
 
-@font-face {
-  font-family: "Keep Calm";
-  src: url("./assets/fonts/KeepCalm-Medium.ttf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
