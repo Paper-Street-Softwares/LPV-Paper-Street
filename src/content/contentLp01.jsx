@@ -17,6 +17,7 @@ import { IdCard } from "lucide-react";
 import { Gavel } from "lucide-react";
 import { Check } from "lucide-react";
 import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
+import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -36,6 +37,7 @@ const contentLp01 = {
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
+    mockupHeroImgMobile,
     logo: {
       logoImg: logo,
       alt: "Logomarca",
