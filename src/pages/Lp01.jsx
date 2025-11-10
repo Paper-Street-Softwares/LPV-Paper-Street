@@ -47,33 +47,13 @@ export default function Lp01() {
 
   return (
     <div className="bg-bgFixedLight">
-      {/* <div className="bg-green-300 text-black dark:bg-green-300 dark:text-black h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Teste Darkmode</h1>
-      </div> */}
       <HeroLP fullImg={true} />
-
       <VideoCarousel />
-
-      {/* 
-      <SolutionLPV />
-      <NwesPosts />
-      <Steppers />
-      <WhyUs /> */}
-      {/* <FeaturesLPCards /> */}
-      {/* <Faq />
-      <CtaLP />
-      <ContactLP />
-      <FooterLP /> */}
-      {/* <Testimonial /> */}
       <SocialProof />
       <Client />
-      {/* <Urgency /> */}
       <AboutParalaxeLP logo={true} />
       <FooterLP />
-      {/* <LPFloatingWhatsappButton /> */}
       <FloatingWhatsappButton />
-      {/* <WhatsChat /> */}
-      {/* <BackToTopButton /> */}
     </div>
   );
 }
