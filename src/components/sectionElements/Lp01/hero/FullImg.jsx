@@ -155,6 +155,8 @@ function FullImg({ obs }) {
                           <img
                             src={contentLp01.hero.mockupHeroImg}
                             alt="Site de Advogado"
+                            width="850"
+                            height="440"
                             className=""
                           />
                         </MotionDivDownToUp>
