@@ -50,7 +50,6 @@ export default {
       fontFamily: {
         mainFont: ["Merriweather", "serif"],
         secondFont: ["Roboto", "sans-serif"],
-        // secondFont: ["Poppins", "sans-serif"],
       },
 
       fontSize: {
