@@ -94,7 +94,7 @@ export default function VideoCarousel() {
                 className={`w-3 h-3 rounded-full transition-all ${
                   index === selectedIndex
                     ? "bg-[#075e54] w-5 h-5"
-                    : "bg-white w-3 h-3"
+                    : "bg-white w-5 h-5"
                 }`}
               ></button>
             ))}
