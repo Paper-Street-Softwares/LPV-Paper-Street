@@ -16,7 +16,8 @@ function FullImg({ obs }) {
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-lpvHeroGradientTop to-lpvHeroGradientBot"></div>
 
         <img
-          src={contentLp01.hero.bgImg}
+          // src={contentLp01.hero.bgImg}
+          src="public/bgHeroLp.webp"
           alt="Advogado especialista em direito"
           fetchPriority="high"
           decoding="async"
@@ -122,7 +123,8 @@ function FullImg({ obs }) {
       <div className="hidden desktop1:flex relative font-mainFont overflow-hidden">
         {/* Imagem LCP visível no HTML */}
         <img
-          src={contentLp01.hero.bgImg}
+          // src={contentLp01.hero.bgImg}
+          src="public/bgHeroLp.webp"
           alt="Advogado especialista em direito"
           fetchPriority="high"
           decoding="async"
