@@ -13,7 +13,7 @@ import Features from "./components/sections/Features.jsx";
 import About from "./components/sections/About.jsx";
 import Faq from "./components/sections/Faq.jsx";
 
-// import "./index.css";
+import "./index.css";
 // import "./styles/backgrounds.css";
 import BlogPosts from "./components/sections/BlogPosts.jsx";
 import Maps from "./components/sections/Maps.jsx";
