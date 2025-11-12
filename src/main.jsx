@@ -2,22 +2,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./i18n"; // ← importa a configuração do idioma
 
-import Index from "./pages/Index.jsx";
+// import Index from "./pages/Index.jsx";
 import Lp01 from "./pages/Lp01.jsx";
 
-import WhatsAppLinks from "./components/interactives/WhatsappLinks.jsx";
+// import WhatsAppLinks from "./components/interactives/WhatsappLinks.jsx";
 
 // Layout fixo para o modo "site"
-import SiteLayout from "./pages/SiteLayoult.jsx";
-import Features from "./components/sections/Features.jsx";
-import About from "./components/sections/About.jsx";
-import Faq from "./components/sections/Faq.jsx";
+// import SiteLayout from "./pages/SiteLayoult.jsx";
+// import Features from "./components/sections/Features.jsx";
+// import About from "./components/sections/About.jsx";
+// import Faq from "./components/sections/Faq.jsx";
 
 import "./index.css";
 // import "./styles/backgrounds.css";
-import BlogPosts from "./components/sections/BlogPosts.jsx";
-import Maps from "./components/sections/Maps.jsx";
-import AboutInstagram from "./components/sections/AboutInstagram.jsx";
+// import BlogPosts from "./components/sections/BlogPosts.jsx";
+// import Maps from "./components/sections/Maps.jsx";
+// import AboutInstagram from "./components/sections/AboutInstagram.jsx";
 import Politica from "./pages/Politica.jsx";
 
 // Altere aqui para "LP" ou "site"
@@ -36,9 +36,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Routes>
     ) : (
       <Routes>
-        <Route path="/" element={<SiteLayout mode={mode} />} />
-        <Route path="home" element={<SiteLayout mode={mode} />} />
-        <Route
+        {/* <Route path="/" element={<SiteLayout mode={mode} />} /> */}
+        {/* <Route path="home" element={<SiteLayout mode={mode} />} /> */}
+        {/* <Route
           path="/service"
           element={
             <SiteLayout
@@ -46,8 +46,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               section={<Features defaultFeature={true} />}
             />
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/about"
           element={
             <SiteLayout
@@ -60,22 +60,22 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               }
             />
           }
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path="/blog"
           element={<SiteLayout mode={mode} section={<BlogPosts />} />}
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path="/faq"
           element={<SiteLayout mode={mode} section={<Faq />} />}
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path="/maps"
           element={<SiteLayout mode={mode} section={<Maps />} />}
-        />
+        /> */}
       </Routes>
     )}
   </Router>
