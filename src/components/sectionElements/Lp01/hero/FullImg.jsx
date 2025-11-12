@@ -17,7 +17,7 @@ function FullImg({ obs }) {
 
         <img
           // src={contentLp01.hero.bgImg}
-          src="public/bgHeroLp.webp"
+          src="/bgHeroLp.webp"
           alt="Advogado especialista em direito"
           fetchPriority="high"
           decoding="async"
@@ -64,7 +64,7 @@ function FullImg({ obs }) {
                       <div className="flex flex-col items-center justify-center w-full gap-12 phone2:w-full tablet2:w-auto">
                         <MotionDivDownToUp>
                           <img
-                            src="public/mockupMobile.webp"
+                            src="/mockupMobile.webp"
                             alt="Site de Advogado"
                             width="850"
                             height="440"
@@ -124,7 +124,7 @@ function FullImg({ obs }) {
         {/* Imagem LCP visível no HTML */}
         <img
           // src={contentLp01.hero.bgImg}
-          src="public/bgHeroLp.webp"
+          src="/bgHeroLp.webp"
           alt="Advogado especialista em direito"
           fetchPriority="high"
           decoding="async"
@@ -171,7 +171,7 @@ function FullImg({ obs }) {
                       <div className="flex flex-col justify-center w-full gap-20 desktop1:justify-start">
                         <MotionDivDownToUp>
                           <img
-                            src="public/mockup.webp"
+                            src="/mockup.webp"
                             alt="Site de Advogado"
                             width="850"
                             height="440"
