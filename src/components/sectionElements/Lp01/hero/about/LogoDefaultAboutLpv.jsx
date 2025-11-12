@@ -1,25 +1,25 @@
 import React from "react";
-import content from "../../../../../content/content";
+// import content from "../../../../../content/content";
 import MotionDivDownToUp from "../../../../animation/MotionDivDownToUp";
 import contentLp01 from "../../../../../content/contentLp01";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+// import ImageGallery from "react-image-gallery";
+// import "react-image-gallery/styles/css/image-gallery.css";
 
 function LogoDefaultAboutLpv() {
-  const images = [
-    {
-      original: contentLp01.about.imagesGaleria.imagem1,
-      thumbnail: contentLp01.about.imagesGaleria.imagem1,
-    },
-    {
-      original: contentLp01.about.imagesGaleria.imagem2,
-      thumbnail: contentLp01.about.imagesGaleria.imagem2,
-    },
-    {
-      original: contentLp01.about.imagesGaleria.imagem3,
-      thumbnail: contentLp01.about.imagesGaleria.imagem3,
-    },
-  ];
+  // const images = [
+  //   {
+  //     original: contentLp01.about.imagesGaleria.imagem1,
+  //     thumbnail: contentLp01.about.imagesGaleria.imagem1,
+  //   },
+  //   {
+  //     original: contentLp01.about.imagesGaleria.imagem2,
+  //     thumbnail: contentLp01.about.imagesGaleria.imagem2,
+  //   },
+  //   {
+  //     original: contentLp01.about.imagesGaleria.imagem3,
+  //     thumbnail: contentLp01.about.imagesGaleria.imagem3,
+  //   },
+  // ];
 
   return (
     // <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
@@ -36,7 +36,7 @@ function LogoDefaultAboutLpv() {
         // }}
         className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-[740px] desktop1:h-[467px] rounded-xl"
       >
-        <ImageGallery
+        {/* <ImageGallery
           items={images}
           showNav={false} // Ativando a navegação
           showFullscreenButton={false} // Desativando botão de tela cheia
@@ -74,7 +74,7 @@ function LogoDefaultAboutLpv() {
                       object-fit: cover; 
                     }
                   `}
-        </style>
+        </style> */}
         {/* <img
               alt="Imagem de efeito pontilhado"
               src={imgPoints}

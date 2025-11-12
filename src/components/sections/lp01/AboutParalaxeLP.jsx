@@ -1,4 +1,3 @@
-import content from "../../../content/content";
 import contentLp01 from "../../../content/contentLp01";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import Button from "../../interactives/Button";

@@ -1,5 +1,4 @@
-import content from "../../../content/content";
-import contentLp01 from "../../../content/contentLp01";
+
 import SectionArea from "../../sectionElements/SectionArea";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
 
