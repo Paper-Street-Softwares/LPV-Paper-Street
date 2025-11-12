@@ -1,22 +1,9 @@
-import BackToTopButton from "../components/interactives/BackToTopButton";
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import AboutParalaxeLP from "../components/sections/lp01/AboutParalaxeLP";
-import ContactLP from "../components/sections/lp01/ContactLP";
-import CtaLP from "../components/sections/lp01/CtaLP";
 import FooterLP from "../components/sections/lp01/FooterLP";
 import HeroLP from "../components/sections/lp01/HeroLP";
-import WhyUs from "../components/sections/lp01/WhyUs";
-import FeaturesLP from "../components/sections/lp01/FeaturesLP";
 import contentLp01 from "../content/contentLp01";
-
 import { useEffect } from "react";
-import Urgency from "../components/sections/lp01/Urgency";
-import FeaturesLPCards from "../components/sections/lp01/FeaturesLPCards";
-import SolutionLPV from "../components/sections/lp01/Solution";
-import NwesPosts from "../components/sections/NewsPosts";
-import Steppers from "../components/sections/lp01/Steppers";
-import Testimonial from "../components/sections/lp01/Testimonials";
-import Faq from "../components/sections/Faq";
 import VideoCarousel from "../components/interactives/CarouselVideos";
 import SocialProof from "../components/sections/lp01/SocialProof";
 import Client from "../components/sections/lp01/Client";
