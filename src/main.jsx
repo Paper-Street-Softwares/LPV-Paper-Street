@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
-
 import ReactDOM from "react-dom/client";
-// import "./i18n";
+import "./i18n";
 
 // import Index from "./pages/Index.jsx";
+import Lp01 from "./pages/Lp01.jsx";
 
 // import WhatsAppLinks from "./components/interactives/WhatsappLinks.jsx";
 
@@ -19,11 +18,10 @@ import "./index.css";
 // import BlogPosts from "./components/sections/BlogPosts.jsx";
 // import Maps from "./components/sections/Maps.jsx";
 // import AboutInstagram from "./components/sections/AboutInstagram.jsx";
+import Politica from "./pages/Politica.jsx";
 
 // Altere aqui para "LP" ou "site"
-const mode = "LP";
-const Lp01 = lazy(() => import("./pages/Lp01.jsx"));
-const Politica = lazy(() => import("./pages/Politica.jsx"));
+const mode = "LP"; // só muda isso e o resto se adapta
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>

@@ -35,14 +35,13 @@ const FloatingWhatsappButton = ({ buttonType, animation = false }) => {
 
   return (
     <button
-      className={`${
-        isVisible ? "block animate-fade-in" : "hidden"
-      } fixed bottom-2 right-3 p-4 z-20 rounded-full focus:outline-none`}
-      onClick={handleClick}
+     className={`fixed bottom-2 right-3 p-4 z-20 rounded-full focus:outline-none transition-all duration-300
+    ${isVisible ? "opacity-100 translate-y-0 z-30" : "opacity-0 translate-y-4 pointer-events-none"}`}
+  onClick={handleClick}
     >
       {openModal ? null : (
         <img
-          className={`w-16 transition focus:outline-none hover:scale-125 ${
+          className={`w-16 transition focus:outline-none hover:scale-110 ${
             animation ? "animate-pulseScale" : ""
           }`}
           src={whatsappWebm}
