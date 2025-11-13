@@ -46,6 +46,8 @@ const FloatingWhatsappButton = ({ buttonType, animation = false }) => {
           }`}
           src={whatsappWebm}
           alt="Floating Button"
+          width="64"
+          height="64"
         />
       )}
       {buttonType === "form" && (

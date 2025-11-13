@@ -36,12 +36,29 @@
  Presença Online."
     />
 
+    <link rel="preload" href="./src/index.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="./src/index.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./src/index.css"
+    /></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
     <link rel="preload" as="image" href="/bgHeroLp.webp" fetchpriority="high" />
