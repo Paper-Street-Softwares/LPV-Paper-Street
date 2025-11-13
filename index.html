@@ -57,8 +57,6 @@
       crossorigin="anonymous"
     />
 
-
-
     <link rel="preload" as="image" href="/bgHeroLp.webp" fetchpriority="high" />
 
     <link rel="preload" as="image" href="/mockup.webp" />
@@ -205,8 +203,6 @@
       })(window, document, "script", "dataLayer", "GTM-PHPQ3PNX");
     </script>
     <!-- Fim Google Tag Manager -->
-
-   
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -221,5 +217,19 @@
     <!-- Fim Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // pega o CSS correto do manifest
+      fetch("/manifest.json")
+        .then((res) => res.json())
+        .then((manifest) => {
+          const cssFile = manifest["src/main.jsx"].css[0]; // ou o arquivo que você quer
+          const link = document.createElement("link");
+          link.rel = "preload";
+          link.as = "style";
+          link.href = "/" + cssFile;
+          link.onload = () => (link.rel = "stylesheet");
+          document.head.appendChild(link);
+        });
+    </script>
   </body>
 </html>

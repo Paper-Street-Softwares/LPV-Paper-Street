@@ -7,4 +7,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['primereact/dialog', 'primereact/button'],
   },
+  
 })
+
