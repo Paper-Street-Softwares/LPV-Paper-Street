@@ -36,26 +36,21 @@
  Presença Online."
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="/LPV-Paper-Street/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="/LPV-Paper-Street/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap"
+  />
+</noscript>
+
 
     <link rel="preload" as="image" href="/bgHeroLp.webp" fetchpriority="high" />
 
@@ -203,6 +198,29 @@
       })(window, document, "script", "dataLayer", "GTM-PHPQ3PNX");
     </script>
     <!-- Fim Google Tag Manager -->
+
+    <style>
+      /* CSS crítico: apenas o necessário para a primeira dobra */
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background: #fff;
+      }
+      header,
+      .hero {
+        /* estilos essenciais */
+      }
+    </style>
+
+    <link
+      rel="preload"
+      href="/assets/index-DplMgrIy.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="/assets/index-DplMgrIy.css"
+    /></noscript>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -217,19 +235,5 @@
     <!-- Fim Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="module">
-      // pega o CSS correto do manifest
-      fetch("/manifest.json")
-        .then((res) => res.json())
-        .then((manifest) => {
-          const cssFile = manifest["src/main.jsx"].css[0]; // ou o arquivo que você quer
-          const link = document.createElement("link");
-          link.rel = "preload";
-          link.as = "style";
-          link.href = "/" + cssFile;
-          link.onload = () => (link.rel = "stylesheet");
-          document.head.appendChild(link);
-        });
-    </script>
   </body>
 </html>
