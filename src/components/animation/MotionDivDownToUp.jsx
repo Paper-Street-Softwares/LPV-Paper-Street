@@ -15,7 +15,7 @@ export default function MotionDivDownToUp({ children, className }) {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 150 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 1 }}
       className={`${className}`}
     >

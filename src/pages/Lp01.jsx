@@ -31,24 +31,24 @@ export default function Lp01() {
   //     document.head.appendChild(meta);
   //   }
   // }, []);
-  useEffect(() => {
-    requestIdleCallback(() => {
-      document.title = contentLp01.infos.title;
+  // useEffect(() => {
+  //   requestIdleCallback(() => {
+  //     document.title = contentLp01.infos.title;
 
-      const setMeta = (name, content) => {
-        let tag = document.querySelector(`meta[name='${name}']`);
-        if (!tag) {
-          tag = document.createElement("meta");
-          tag.name = name;
-          document.head.appendChild(tag);
-        }
-        tag.content = content;
-      };
+  //     const setMeta = (name, content) => {
+  //       let tag = document.querySelector(`meta[name='${name}']`);
+  //       if (!tag) {
+  //         tag = document.createElement("meta");
+  //         tag.name = name;
+  //         document.head.appendChild(tag);
+  //       }
+  //       tag.content = content;
+  //     };
 
-      setMeta("description", contentLp01.infos.description);
-      setMeta("keywords", contentLp01.infos.keywords);
-    });
-  }, []);
+  //     setMeta("description", contentLp01.infos.description);
+  //     setMeta("keywords", contentLp01.infos.keywords);
+  //   });
+  // }, []);
 
   return (
     <div className="bg-bgFixedLight">
