@@ -99,12 +99,13 @@ export default function Button({
   const enviarParaPlanilha = async () => {
     try {
       await fetch(
-        "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwwjRCz3TZNHu-35mvCXougFNOtWQj61ccxyJuHm3abxTbQrYNybbpduaYNcy8LwN6Xig/exec",
+        "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec",
         {
           method: "POST",
           body: JSON.stringify({
             nome: nome,
             email: telefone,
+            origem: "LP Black Friday",
           }),
           headers: {
             "Content-Type": "application/json",
