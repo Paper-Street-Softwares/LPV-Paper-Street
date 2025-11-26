@@ -11,7 +11,7 @@ function FullImg({ obs }) {
   return (
     <div className="gradient-LP-Hero">
       {/* -------- Versão Mobile -------- */}
-      <div className="relative h-auto desktop1:hidden font-mainFont overflow-hidden">
+      <div className="relative h-auto overflow-hidden desktop1:hidden font-mainFont">
         {/* Fundo preto atrás de tudo */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-lpvHeroGradientTop to-lpvHeroGradientBot"></div>
 
@@ -23,7 +23,7 @@ function FullImg({ obs }) {
           decoding="async"
           width="1920"
           height="1080"
-          className="absolute inset-0 w-full h-auto min-h-full object-contain object-top z-10"
+          className="absolute inset-0 z-10 object-contain object-top w-full h-auto min-h-full"
         />
 
         {/* Gradiente por cima da imagem */}
@@ -120,7 +120,7 @@ function FullImg({ obs }) {
       </div>
 
       {/* -------- Versão Desktop -------- */}
-      <div className="hidden desktop1:flex relative font-mainFont overflow-hidden">
+      <div className="relative hidden overflow-hidden desktop1:flex font-mainFont">
         {/* Imagem LCP visível no HTML */}
         <img
           // src={contentLp01.hero.bgImg}
@@ -130,7 +130,7 @@ function FullImg({ obs }) {
           decoding="async"
           width="1920"
           height="1080"
-          className="absolute inset-0 w-full h-auto min-h-full object-cover object-top z-0"
+          className="absolute inset-0 z-0 object-cover object-top w-full h-auto min-h-full"
         />
 
         {/* Gradiente de sobreposição */}
@@ -178,7 +178,6 @@ function FullImg({ obs }) {
                             fetchPriority="high"
                           />
                         </MotionDivDownToUp>
-
                         <MotionDivDownToUp>
                           <Button
                             aria-label={
@@ -202,7 +201,7 @@ function FullImg({ obs }) {
                               </svg>
                             }
                           />
-                        </MotionDivDownToUp>
+                        </MotionDivDownToUp>{" "}
                       </div>
 
                       {obs && (

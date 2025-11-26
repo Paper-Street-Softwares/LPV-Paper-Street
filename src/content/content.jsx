@@ -8,11 +8,6 @@ import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
-// import imgAbout1 from "../assets/imgs/about/aboutImg1.webp";
-// import imgAbout2 from "../assets/imgs/about/aboutImg2.webp";
-// import imgAbout3 from "../assets/imgs/about/aboutImg3.webp";
-// import imgAbout4 from "../assets/imgs/about/aboutImg4.webp";
-// import imgAbout5 from "../assets/imgs/about/aboutImg5.webp";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 import aboutInstagram from "../assets/imgs/about/imgAboutInstagram.webp";
 
@@ -472,12 +467,12 @@ const content = {
         </h1>
       ),
       subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+        <p className="flex gap-3 mt-1 font-mainFont opacity-60">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
         </p>
       ),
       titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+        <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       ),
       ctaButtonText: "Falar agora",
     },

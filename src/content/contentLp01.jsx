@@ -45,10 +45,9 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, vai perder a sua{" "}
-          <strong className="text-[#8EDBD3]">única chance</strong> de ter um
-          site de <strong className="text-[#8EDBD3]">alto nível </strong> na
-          Black Friday?
+          <strong>Advogado</strong>, chegou a hora de você ter um site de{" "}
+          <strong className="text-[#8EDBD3]">alto padrão</strong> ainda com
+          preço de <strong className="text-[#8EDBD3]">Black Friday!</strong>
         </h1>
       ),
       subtitle: (
@@ -63,9 +62,18 @@ const contentLp01 = {
             {" "}
             mesmo que você não entenda nada de tecnologia.
           </span> */}{" "}
-          Vários advogados já garantiram. Criamos seu site profissional no
-          prazo, com suporte real — e a oferta da Black Friday termina em poucos
-          dias.
+          Descontos de verdade de{" "}
+          <strong className="text-[#8EDBD3]">até 20%</strong>, e parcelamento em
+          até
+          <strong className="text-[#8EDBD3]"> 12x no cartão</strong> na criação
+          do seu Site ou Landing Page! <br />
+          Vários advogados já aproveitaram pra melhorar sua imagem na internet
+          ou usar nossas páginas pra captar clientes.
+          <br />
+          <strong className="text-[#8EDBD3]">
+            {" "}
+            Corre que a promoção está nos últimos dias!
+          </strong>
         </p>
       ),
       buttonLabel: "Garantir Minha Oferta de Black Friday",
@@ -490,8 +498,7 @@ const contentLp01 = {
       title: (
         <p class="text-title3 phone3:text-title4 tablet1:text-title5 desktop1:text-title5">
           <span class="text-[#075e54] relative inline-block stroke-current">
-            Não deixe pra depois <br className="hidden desktop1:flex" /> — é
-            Black Friday
+            Não deixe pra depois <br className="hidden desktop1:flex" />
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -533,10 +540,7 @@ const contentLp01 = {
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check />{" "}
-          <span className="text-[#075e54]">
-            Oferta especial sem mensalidades
-          </span>
+          <Check /> <span className="text-[#075e54]">Sem mensalidades</span>
         </span>{" "}
       </p>
     ),
@@ -592,8 +596,9 @@ const contentLp01 = {
         Mesmo depois da entrega, seguimos ao seu lado sempre que precisar.
         <br />
         <br />
-        Temos depoimentos reais de quem já confiou no nosso trabalho, e
-        garantimos 100% de reembolso em caso de desistência, tudo em contrato.
+        Temos dezenas de depoimentos de quem já confiou no nosso trabalho, e
+        garantimos 100% de reembolso em caso de desistência, tudo pautado em
+        contrato.
       </p>
     ),
     buttonLabel: "Fale agora comigo",
@@ -648,7 +653,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Criamos páginas de alta performance usadas por vários advogados — e na Black Friday você aproveita condições exclusivas para impulsionar seus anúncios.",
+        "Últimos dias pra você ter a sua com um desconto de Black Friday de verdade!",
     },
   },
   cta: {
