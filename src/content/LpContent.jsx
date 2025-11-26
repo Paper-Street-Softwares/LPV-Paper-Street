@@ -82,8 +82,7 @@ export const infos = {
   instagramProfile: "adv.matthaus", // Sem o @
   facebookProfile: "adv.matthaus",
   linkeDinProfile: "A_Definir",
-  whatsappDefaultMessage:
-    "Olá! Sou advogado(a) e encontrei vocês no Google! Gostaria de saber mais. Pode me ajudar?",
+  whatsappDefaultMessage: "",
   slogan: "",
 };
 
