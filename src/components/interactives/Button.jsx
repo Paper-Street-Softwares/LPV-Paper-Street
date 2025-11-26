@@ -174,7 +174,7 @@ export default function Button({
           MODAL
       -------------------------- */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]">
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
           <div className="bg-white w-[90%] max-w-[420px] p-6 rounded-xl shadow-xl relative">
             {/* BOTÃO DE FECHAR */}
             <button
