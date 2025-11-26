@@ -105,7 +105,7 @@ export default function Button({
           body: JSON.stringify({
             nome: nome,
             email: telefone,
-            origem: "LP Padrão",
+            origem: "LP Black Friday",
           }),
           headers: {
             "Content-Type": "application/json",
@@ -141,17 +141,15 @@ export default function Button({
 
     setFormErro("");
 
-    // ATIVA LOADING
+    const novaAba = window.open(finalButtonLink, "_blank");
+
+    setIsModalOpen(false);
+
     setLoading(true);
 
     await enviarParaPlanilha();
 
-    setIsModalOpen(false);
-
-    // DESATIVA LOADING
     setLoading(false);
-
-    window.open(finalButtonLink, "_blank");
   };
 
   return (

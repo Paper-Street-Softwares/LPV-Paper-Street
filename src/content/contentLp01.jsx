@@ -28,11 +28,11 @@ const currentYear = new Date().getFullYear();
 const contentLp01 = {
   infos: {
     title:
-      "Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street",
+      "Sites e Landing Pages para Advogados e Escritórios de Advocacia | Paper Street",
     description:
-      "Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.",
+      "Aproveite as condições especiais de Black Friday da Paper Street. Conquiste novos clientes com um site profissional, rápido e pensado para advogados. ",
     keywords:
-      "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
+      "Sites Jurídicos, Desenvolvimento de Sites, Paper Street, Sites para Advogados, Criação de Sites Jurídicos, Web Design para Escritórios, Sites Responsivos, Sites de Alta Conversão, Marketing Jurídico, Marketing Jurídico Digital, Performance de Sites, UX para Advogados, Design Moderno, Otimização de Sites, Sites Rápidos, Sites Profissionais, Presença Digital para Advogados, Consultoria Web Jurídica, Estratégia Digital para Escritórios, Sites que Convertem.",
   },
   hero: {
     bgImg: bgImg,
@@ -45,15 +45,14 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, precisando{" "}
-          <strong className="text-[#8EDBD3]">conquistar novos clientes</strong>{" "}
-          ou <strong className="text-[#8EDBD3]">melhorar sua imagem</strong> na
-          internet?
+          <strong>Advogado</strong>, chegou a hora de você ter um site de{" "}
+          <strong className="text-[#8EDBD3]">alto padrão</strong> ainda com
+          preço de <strong className="text-[#8EDBD3]">Black Friday!</strong>
         </h1>
       ),
       subtitle: (
         <p>
-          <strong className="text-[#8EDBD3]">
+          {/* <strong className="text-[#8EDBD3]">
             Pare de depender de indicações
           </strong>{" "}
           tendo um <strong className="text-[#8EDBD3]">site</strong> ou{" "}
@@ -62,10 +61,22 @@ const contentLp01 = {
           <span className=" opacity-70">
             {" "}
             mesmo que você não entenda nada de tecnologia.
-          </span>
+          </span> */}{" "}
+          Descontos de verdade de{" "}
+          <strong className="text-[#8EDBD3]">até 20%</strong>, e parcelamento em
+          até
+          <strong className="text-[#8EDBD3]"> 12x no cartão</strong> na criação
+          do seu Site ou Landing Page! <br />
+          Vários advogados já aproveitaram pra melhorar sua imagem na internet
+          ou usar nossas páginas pra captar clientes.
+          <br />
+          <strong className="text-[#8EDBD3]">
+            {" "}
+            Corre que a promoção está nos últimos dias!
+          </strong>
         </p>
       ),
-      buttonLabel: "Fale com um especialista no WhatsApp",
+      buttonLabel: "Garantir Minha Oferta de Black Friday",
       buttonLabel2: "Quero um orçamento sem compromisso",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
@@ -485,9 +496,9 @@ const contentLp01 = {
     sectionHeader: {
       miniTag: "",
       title: (
-        <p class="">
+        <p class="text-title3 phone3:text-title4 tablet1:text-title5 desktop1:text-title5">
           <span class="text-[#075e54] relative inline-block stroke-current">
-            Não deixe pra depois
+            Não deixe pra depois <br className="hidden desktop1:flex" />
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -503,7 +514,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Faça com quem já ajudou centenas de advogados e tenha seu site/landing page com as melhores condições do mercado",
+        "Faça com quem já ajudou centenas de advogados e garanta seu site/landing page com as melhores condições do ano.",
     },
     paragraph: (
       <p>
@@ -555,9 +566,9 @@ const contentLp01 = {
       miniTag: "",
       title: (
         <p class="">
-          Ei,
+          Advogado(a),
           <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            Advogado(a)!
+            é Black Friday! ⚡
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -573,30 +584,24 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
+        "Aqui seu site sai no prazo, com suporte real e a melhor condição do ano.",
     },
     paragraph: (
       <p className="leading-[20px]">
-        Na Paper, levamos prazos a sério — nada de sumiço ou demora nas
-        respostas. Temos uma equipe de profissionais especializados, cada um
-        focado em uma parte do seu projeto — do design ao atendimento técnico.
-        <br />
-        Mesmo após a entrega, você pode contar com a gente sempre que precisar.
-        {/* <br />
-        <br />
-        Além disso, temos centenas de depoimentos reais em nossas redes sociais,
-        provando a satisfação de quem já confiou no nosso trabalho.
-        <br />E o melhor: se em qualquer momento do processo você desistir,
-        devolvemos 100% do valor investido, sem dor de cabeça — tudo garantido
-        em contrato. */}
+        Na Paper, levamos prazos a sério — sem sumiço e sem demora. Nossa equipe
+        especializada cuida de cada etapa do seu projeto, do design ao suporte
+        técnico.
         <br />
         <br />
-        Nosso processo é simples e sem complicação: cuidamos de tudo pra que
-        você tenha um site leve, direto ao ponto e pronto pra mostrar autoridade
-        na internet.
+        Mesmo depois da entrega, seguimos ao seu lado sempre que precisar.
+        <br />
+        <br />
+        Temos dezenas de depoimentos de quem já confiou no nosso trabalho, e
+        garantimos 100% de reembolso em caso de desistência, tudo pautado em
+        contrato.
       </p>
     ),
-    buttonLabel: "Fale comigo agora mesmo",
+    buttonLabel: "Fale agora comigo",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   socialProof: {
@@ -630,7 +635,7 @@ const contentLp01 = {
       miniTag: "A_Definir",
       title: (
         <p class="">
-          Entregamos
+          Suas páginas no mais
           <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
             alto padrão
             <svg
@@ -648,7 +653,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Nossa páginas encantam e também são perfeitas pra anúncios de tráfego pago",
+        "Últimos dias pra você ter a sua com um desconto de Black Friday de verdade!",
     },
   },
   cta: {
