@@ -77,13 +77,18 @@ export default function Button({
     const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
     setNome(valor);
 
-    if (valor.trim().length < 2) setNomeErro("Digite pelo menos 2 letras");
+    // Se estava "campo vazio", volta para validação normal
+    if (valor.trim() === "") {
+      setNomeErro("");
+      return;
+    }
+
+    if (valor.trim().length < 3) setNomeErro("Digite pelo menos 3 letras");
     else setNomeErro("");
   };
 
   const handleTelefoneChange = (e) => {
     let valor = e.target.value.replace(/\D/g, "");
-
     valor = valor.slice(0, 11);
 
     if (valor.length >= 1) valor = "(" + valor;
@@ -92,17 +97,40 @@ export default function Button({
 
     setTelefone(valor);
 
-    // Checa se tem exatamente 11 dígitos numéricos
     const somenteNumeros = valor.replace(/\D/g, "");
+
+    // Se estava vazio, limpa erro
+    if (somenteNumeros.length === 0) {
+      setTelefoneErro("");
+      return;
+    }
+
     if (somenteNumeros.length < 11) setTelefoneErro("Telefone incompleto");
     else setTelefoneErro("");
   };
+
   // --------------------------
   // ✨ Ao enviar o modal → redireciona + loga dados
   // --------------------------
   const handleSubmit = () => {
     const telefoneNumerico = telefone.replace(/\D/g, "");
 
+    let erro = false;
+
+    // Campo vazio → mensagem solicitada
+    if (nome.trim() === "") {
+      setNomeErro("Esse campo não pode ficar vazio");
+      erro = true;
+    }
+
+    if (telefoneNumerico === "") {
+      setTelefoneErro("Esse campo não pode ficar vazio");
+      erro = true;
+    }
+
+    if (erro) return;
+
+    // Mantém suas validações já existentes
     if (nome.trim().length < 2 || telefoneNumerico.length < 11) {
       setFormErro("Preencha os campos corretamente antes de prosseguir");
       return;
