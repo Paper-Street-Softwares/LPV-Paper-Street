@@ -63,16 +63,14 @@ const contentLp01 = {
             mesmo que você não entenda nada de tecnologia.
           </span> */}{" "}
           Descontos de verdade de{" "}
-          <strong className="text-[#8EDBD3]">até 20%</strong>, e parcelamento em
+          <strong className="text-[#8EDBD3]">até 20%</strong> e parcelamento em
           até
           <strong className="text-[#8EDBD3]"> 12x no cartão</strong> na criação
           do seu Site ou Landing Page! <br />
-          Vários advogados já aproveitaram pra melhorar sua imagem na internet
-          ou usar nossas páginas pra captar clientes.
           <br />
           <strong className="text-[#8EDBD3]">
             {" "}
-            Corre que a promoção está nos últimos dias!
+            ⚠️ Últimos dias de promoção!
           </strong>
         </p>
       ),
