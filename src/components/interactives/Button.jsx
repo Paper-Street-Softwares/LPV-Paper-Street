@@ -105,7 +105,7 @@ export default function Button({
           body: JSON.stringify({
             nome: nome,
             email: telefone,
-            origem: "LP Black Friday",
+            origem: "LP Padrão",
           }),
           headers: {
             "Content-Type": "application/json",

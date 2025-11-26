@@ -95,7 +95,7 @@ export const infos = {
   tiktokProfile: "A_Definir",
 
   whatsappDefaultMessage:
-    "Olá! Sou advogado(a) e vim do Google! Tenho interesse no preço promocional de Black Friday. Pode me ajudar?",
+    "Olá! Sou advogado(a) e vim do Google! Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
