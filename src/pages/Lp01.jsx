@@ -58,7 +58,7 @@ export default function Lp01() {
       <Client />
       <AboutParalaxeLP logo={true} />
       <FooterLP />
-      <FloatingWhatsappButton />
+      {/* <FloatingWhatsappButton /> */}
     </div>
   );
 }

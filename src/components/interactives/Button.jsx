@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomTag from "../util/CustomTag";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import { getWhatsappLink } from "../util/WhatsappLink"; // Importando a função
+import { getWhatsappLink } from "../util/WhatsappLink";
 
 export default function Button({
   icon,
@@ -21,7 +21,20 @@ export default function Button({
   animation = true,
   colorMode,
 }) {
-  // Define estilos com base no tamanho
+  // --------------------------
+  // ESTADO DO MODAL + FORM
+  // --------------------------
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [nome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
+
+  const [nomeErro, setNomeErro] = useState("");
+  const [telefoneErro, setTelefoneErro] = useState("");
+  const [formErro, setFormErro] = useState("");
+
+  // --------------------------
+  // LÓGICA EXISTENTE DO BOTÃO
+  // --------------------------
   let textSizeClass = "";
   if (size === "small") {
     sizeFeatures = "rounded-[4px] px-[18px] py-[10px]";
@@ -48,56 +61,175 @@ export default function Button({
     ? getWhatsappLink()
     : buttonLink;
 
+  // --------------------------
+  // ✨ Ao clicar no botão principal → abre o modal
+  // --------------------------
+  const handleOpenModal = (e) => {
+    e.preventDefault();
+    setIsModalOpen(true);
+  };
+
+  // --------------------------
+  // VALIDAÇÕES
+  // --------------------------
+
+  const handleNomeChange = (e) => {
+    const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
+    setNome(valor);
+
+    if (valor.trim().length < 2) setNomeErro("Digite pelo menos 2 letras");
+    else setNomeErro("");
+  };
+
+  const handleTelefoneChange = (e) => {
+    let valor = e.target.value.replace(/\D/g, "");
+
+    valor = valor.slice(0, 11);
+
+    if (valor.length >= 1) valor = "(" + valor;
+    if (valor.length >= 3) valor = valor.slice(0, 3) + ") " + valor.slice(3);
+    if (valor.length >= 10) valor = valor.slice(0, 10) + "-" + valor.slice(10);
+
+    setTelefone(valor);
+
+    // Checa se tem exatamente 11 dígitos numéricos
+    const somenteNumeros = valor.replace(/\D/g, "");
+    if (somenteNumeros.length < 11) setTelefoneErro("Telefone incompleto");
+    else setTelefoneErro("");
+  };
+  // --------------------------
+  // ✨ Ao enviar o modal → redireciona + loga dados
+  // --------------------------
+  const handleSubmit = () => {
+    const telefoneNumerico = telefone.replace(/\D/g, "");
+
+    if (nome.trim().length < 2 || telefoneNumerico.length < 11) {
+      setFormErro("Preencha os campos corretamente antes de prosseguir");
+      return;
+    }
+
+    setFormErro("");
+
+    console.log("Nome:", nome);
+    console.log("Telefone:", telefone);
+
+    setIsModalOpen(false);
+    window.open(finalButtonLink, "_blank");
+  };
+
   return (
-    <CustomTag
-      tagName={CustomTagName}
-      {...(removeTarget ? {} : { target: "_blank" })}
-      {...(removeAnchor ? {} : { href: finalButtonLink })}
-      className="inline-block max-w-full w-fit"
-    >
-      {animation ? (
-        <MotionDivDownToUp className="w-auto">
-          <button
-            onClick={onClick}
-            className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/0 ${
-              color || "bg-buttonColor"
-            } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
-          >
-            <div
-              className={`flex items-center text-center ${gap} min-h-[24px]`}
+    <>
+      {/* BOTÃO ORIGINAL */}
+      <CustomTag
+        tagName={CustomTagName}
+        {...(removeTarget ? {} : { target: "_blank" })}
+        {...(removeAnchor ? {} : { href: "#" })}
+        onClick={handleOpenModal}
+        className="inline-block max-w-full w-fit"
+      >
+        {animation ? (
+          <MotionDivDownToUp className="w-auto">
+            <button
+              className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/0 ${
+                color || "bg-buttonColor"
+              } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
             >
-              {icon && <div className={`${buttonColor}`}>{icon}</div>}
-              <p
-                className={`flex items-center  ${textSizeClass} ${
-                  labelColor || buttonColor
-                } ${textclassName}`}
+              <div
+                className={`flex items-center text-center ${gap} min-h-[24px]`}
               >
-                {label}
-              </p>
-            </div>
-          </button>
-        </MotionDivDownToUp>
-      ) : (
-        <div className="w-auto">
-          <button
-            onClick={onClick}
-            className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/20 bg-buttonColor flex-row items-center justify-around transition ${color} text-labelButtons desktop1:hover:scale-110`}
-          >
-            <div
-              className={`flex items-center text-center ${gap} min-h-[24px]`}
+                {icon && <div className={`${buttonColor}`}>{icon}</div>}
+                <p
+                  className={`flex items-center  ${textSizeClass} ${
+                    labelColor || buttonColor
+                  } ${textclassName}`}
+                >
+                  {label}
+                </p>
+              </div>
+            </button>
+          </MotionDivDownToUp>
+        ) : (
+          <div className="w-auto">
+            <button
+              className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/20 bg-buttonColor flex-row items-center justify-around transition ${color} text-labelButtons desktop1:hover:scale-110`}
             >
-              {icon && <div className={`${buttonColor}`}>{icon}</div>}
-              <p
-                className={`flex items-center ${textSizeClass} ${
-                  labelColor || buttonColor
-                } ${textclassName}`}
+              <div
+                className={`flex items-center text-center ${gap} min-h-[24px]`}
               >
-                {label}
-              </p>
+                {icon && <div className={`${buttonColor}`}>{icon}</div>}
+                <p
+                  className={`flex items-center ${textSizeClass} ${
+                    labelColor || buttonColor
+                  } ${textclassName}`}
+                >
+                  {label}
+                </p>
+              </div>
+            </button>
+          </div>
+        )}
+      </CustomTag>
+
+      {/* --------------------------
+          MODAL
+      -------------------------- */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999]">
+          <div className="bg-white w-[90%] max-w-[420px] p-6 rounded-xl shadow-xl relative">
+            {/* BOTÃO DE FECHAR */}
+            <button
+              className="absolute text-xl font-bold top-3 right-3"
+              onClick={() => setIsModalOpen(false)}
+            >
+              ✕
+            </button>
+
+            {/* TITULO */}
+            <h2 className="mb-4 text-lg font-bold font-secondFont">
+              Preencha para ser atendido agora mesmo:
+            </h2>
+
+            {/* FORM */}
+            <div className="flex flex-col gap-4 font-secondFont">
+              <div className="flex flex-col">
+                <label className="font-medium">Nome:</label>
+                <input
+                  type="text"
+                  value={nome}
+                  onChange={handleNomeChange}
+                  className="px-3 py-2 border rounded"
+                />
+                {nomeErro && (
+                  <p className="mt-1 text-sm text-red-600">{nomeErro}</p>
+                )}
+              </div>
+
+              <div className="flex flex-col">
+                <label className="font-medium">Telefone:</label>
+                <input
+                  type="text"
+                  value={telefone}
+                  onChange={handleTelefoneChange}
+                  className="px-3 py-2 border rounded"
+                />
+                {telefoneErro && (
+                  <p className="mt-1 text-sm text-red-600">{telefoneErro}</p>
+                )}
+              </div>
+
+              {formErro && <p className="text-sm text-red-600">{formErro}</p>}
+
+              {/* BOTÃO ENVIAR */}
+              <button
+                onClick={handleSubmit}
+                className="py-3 text-white bg-[#075e54] rounded-lg hover:scale-105 transition-all"
+              >
+                Ser atendido no WhatsApp
+              </button>
             </div>
-          </button>
+          </div>
         </div>
       )}
-    </CustomTag>
+    </>
   );
 }
