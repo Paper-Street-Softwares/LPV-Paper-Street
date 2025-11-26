@@ -21,20 +21,16 @@ export default function Button({
   animation = true,
   colorMode,
 }) {
-  // --------------------------
-  // ESTADO DO MODAL + FORM
-  // --------------------------
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [nome, setNome] = useState("");
   const [telefone, setTelefone] = useState("");
-
   const [nomeErro, setNomeErro] = useState("");
   const [telefoneErro, setTelefoneErro] = useState("");
   const [formErro, setFormErro] = useState("");
 
-  // --------------------------
-  // LÓGICA EXISTENTE DO BOTÃO
-  // --------------------------
+  // NOVO ESTADO PARA LOADING
+  const [loading, setLoading] = useState(false);
+
   let textSizeClass = "";
   if (size === "small") {
     sizeFeatures = "rounded-[4px] px-[18px] py-[10px]";
@@ -61,23 +57,15 @@ export default function Button({
     ? getWhatsappLink()
     : buttonLink;
 
-  // --------------------------
-  // ✨ Ao clicar no botão principal → abre o modal
-  // --------------------------
   const handleOpenModal = (e) => {
     e.preventDefault();
     setIsModalOpen(true);
   };
 
-  // --------------------------
-  // VALIDAÇÕES
-  // --------------------------
-
   const handleNomeChange = (e) => {
     const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
     setNome(valor);
 
-    // Se estava "campo vazio", volta para validação normal
     if (valor.trim() === "") {
       setNomeErro("");
       return;
@@ -99,7 +87,6 @@ export default function Button({
 
     const somenteNumeros = valor.replace(/\D/g, "");
 
-    // Se estava vazio, limpa erro
     if (somenteNumeros.length === 0) {
       setTelefoneErro("");
       return;
@@ -109,15 +96,31 @@ export default function Button({
     else setTelefoneErro("");
   };
 
-  // --------------------------
-  // ✨ Ao enviar o modal → redireciona + loga dados
-  // --------------------------
-  const handleSubmit = () => {
+  const enviarParaPlanilha = async () => {
+    try {
+      await fetch(
+        "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwwjRCz3TZNHu-35mvCXougFNOtWQj61ccxyJuHm3abxTbQrYNybbpduaYNcy8LwN6Xig/exec",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            nome: nome,
+            email: telefone,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+    } catch (error) {
+      console.log("Erro ao enviar para planilha:", error);
+    }
+  };
+
+  const handleSubmit = async () => {
     const telefoneNumerico = telefone.replace(/\D/g, "");
 
     let erro = false;
 
-    // Campo vazio → mensagem solicitada
     if (nome.trim() === "") {
       setNomeErro("Esse campo não pode ficar vazio");
       erro = true;
@@ -130,7 +133,6 @@ export default function Button({
 
     if (erro) return;
 
-    // Mantém suas validações já existentes
     if (nome.trim().length < 2 || telefoneNumerico.length < 11) {
       setFormErro("Preencha os campos corretamente antes de prosseguir");
       return;
@@ -138,16 +140,21 @@ export default function Button({
 
     setFormErro("");
 
-    console.log("Nome:", nome);
-    console.log("Telefone:", telefone);
+    // ATIVA LOADING
+    setLoading(true);
+
+    await enviarParaPlanilha();
 
     setIsModalOpen(false);
+
+    // DESATIVA LOADING
+    setLoading(false);
+
     window.open(finalButtonLink, "_blank");
   };
 
   return (
     <>
-      {/* BOTÃO ORIGINAL */}
       <CustomTag
         tagName={CustomTagName}
         {...(removeTarget ? {} : { target: "_blank" })}
@@ -198,13 +205,9 @@ export default function Button({
         )}
       </CustomTag>
 
-      {/* --------------------------
-          MODAL
-      -------------------------- */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
           <div className="bg-white w-[90%] max-w-[420px] p-6 rounded-xl shadow-xl relative">
-            {/* BOTÃO DE FECHAR */}
             <button
               className="absolute text-xl font-bold top-3 right-3"
               onClick={() => setIsModalOpen(false)}
@@ -212,12 +215,10 @@ export default function Button({
               ✕
             </button>
 
-            {/* TITULO */}
             <h2 className="mb-4 text-lg font-bold font-secondFont">
               Preencha para ser atendido agora mesmo:
             </h2>
 
-            {/* FORM */}
             <div className="flex flex-col gap-4 font-secondFont">
               <div className="flex flex-col">
                 <label className="font-medium">Nome:</label>
@@ -247,12 +248,12 @@ export default function Button({
 
               {formErro && <p className="text-sm text-red-600">{formErro}</p>}
 
-              {/* BOTÃO ENVIAR */}
               <button
                 onClick={handleSubmit}
+                disabled={loading}
                 className="py-3 text-white bg-[#075e54] rounded-lg hover:scale-105 transition-all"
               >
-                Ser atendido no WhatsApp
+                {loading ? "Aguarde..." : "Ser atendido no WhatsApp"}
               </button>
             </div>
           </div>
