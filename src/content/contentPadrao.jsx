@@ -34,6 +34,7 @@ const contentLp01 = {
     keywords:
       "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
+  origem: "LP Padrão",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,

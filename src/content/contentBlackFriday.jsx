@@ -34,6 +34,7 @@ const contentLp01 = {
     keywords:
       "Sites Jurídicos, Desenvolvimento de Sites, Paper Street, Sites para Advogados, Criação de Sites Jurídicos, Web Design para Escritórios, Sites Responsivos, Sites de Alta Conversão, Marketing Jurídico, Marketing Jurídico Digital, Performance de Sites, UX para Advogados, Design Moderno, Otimização de Sites, Sites Rápidos, Sites Profissionais, Presença Digital para Advogados, Consultoria Web Jurídica, Estratégia Digital para Escritórios, Sites que Convertem.",
   },
+  origem: "LP Black Friday",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
@@ -72,7 +73,7 @@ const contentLp01 = {
           <br />
           <strong className="text-[#8EDBD3]">
             {" "}
-            Corre que a promoção está nos últimos dias!
+            ⚠️ Últimos dias de promoção!
           </strong>
         </p>
       ),

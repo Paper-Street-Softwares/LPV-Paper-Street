@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CustomTag from "../util/CustomTag";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { getWhatsappLink } from "../util/WhatsappLink";
+import contentLp01 from "../../content/contentLp01";
 
 export default function Button({
   icon,
@@ -109,7 +110,7 @@ export default function Button({
           body: JSON.stringify({
             nome,
             email: telefone,
-            origem: "LP Black Friday",
+            origem: contentLp01.origem,
           }),
         }
       );

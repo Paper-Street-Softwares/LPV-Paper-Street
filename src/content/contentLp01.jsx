@@ -34,6 +34,7 @@ const contentLp01 = {
     keywords:
       "Sites Jurídicos, Desenvolvimento de Sites, Paper Street, Sites para Advogados, Criação de Sites Jurídicos, Web Design para Escritórios, Sites Responsivos, Sites de Alta Conversão, Marketing Jurídico, Marketing Jurídico Digital, Performance de Sites, UX para Advogados, Design Moderno, Otimização de Sites, Sites Rápidos, Sites Profissionais, Presença Digital para Advogados, Consultoria Web Jurídica, Estratégia Digital para Escritórios, Sites que Convertem.",
   },
+  origem: "LP Black Friday",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
@@ -63,10 +64,12 @@ const contentLp01 = {
             mesmo que você não entenda nada de tecnologia.
           </span> */}{" "}
           Descontos de verdade de{" "}
-          <strong className="text-[#8EDBD3]">até 20%</strong> e parcelamento em
+          <strong className="text-[#8EDBD3]">até 20%</strong>, e parcelamento em
           até
           <strong className="text-[#8EDBD3]"> 12x no cartão</strong> na criação
           do seu Site ou Landing Page! <br />
+          Vários advogados já aproveitaram pra melhorar sua imagem na internet
+          ou usar nossas páginas pra captar clientes.
           <br />
           <strong className="text-[#8EDBD3]">
             {" "}
