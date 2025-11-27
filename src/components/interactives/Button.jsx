@@ -99,17 +99,18 @@ export default function Button({
   const enviarParaPlanilha = async () => {
     try {
       await fetch(
-        "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec",
+        "https://cors-proxy-seven-beige.vercel.app/api/proxy?url=" +
+          encodeURIComponent(
+            "https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec"
+          ),
         {
           method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            nome: nome,
+            nome,
             email: telefone,
             origem: "LP Black Friday",
           }),
-          headers: {
-            "Content-Type": "application/json",
-          },
         }
       );
     } catch (error) {
