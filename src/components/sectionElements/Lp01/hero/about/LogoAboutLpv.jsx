@@ -15,7 +15,7 @@ function LogoAboutLpv() {
           alt={contentLp01.about.logo.alt}
           width="930"
           height="930"
-          className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+          className="w-[90%] m-auto desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
         />
       </picture>
     </MotionDivDownToUp>

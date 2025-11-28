@@ -69,7 +69,7 @@ export default function VideoCarousel() {
                 px-2
               "
                   >
-                    <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-[#075e54]/70 shadow-lg p-0.5 desktop1:border-2 border-[#075e54]/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
+                    <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-black/40  shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
                       <video
                         src={video}
                         autoPlay={true}
@@ -95,7 +95,7 @@ export default function VideoCarousel() {
                   className={`w-3 h-3 rounded-full transition-all ${
                     index === selectedIndex
                       ? "bg-[#075e54] w-5 h-5"
-                      : "bg-white w-5 h-5 border border-[#075e54]"
+                      : "bg-white w-5 h-5 border border-black/40"
                   }`}
                 ></button>
               ))}

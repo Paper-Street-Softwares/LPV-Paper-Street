@@ -34,6 +34,20 @@ import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
 
 const currentYear = new Date().getFullYear();
 
+export const infosLp = {
+  phone: {
+    ddd: "11",
+    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0977", // Apenas os 4 últimos números
+  },
+
+  whatsappDefaultMessageLP:
+    "Olá! Sou advogado(a) e vim do Google! Pode me ajudar?",
+  whatsChatDefaultMessage:
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
+
 const contentLp01 = {
   infos: {
     title:
@@ -639,7 +653,7 @@ const contentLp01 = {
         audio1: socialProof1,
         audio2: socialProof2,
         audio3: socialProof3,
-        audio4: socialProof4,
+        // audio4: socialProof4,
         audio5: socialProof5,
         audio6: socialProof6,
         audio7: socialProof7,
@@ -776,7 +790,7 @@ const contentLp01 = {
   },
   links: {
     instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-    ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
+    ctaWhatsapp: `https://wa.me/+55${infosLp.phone.ddd}${infosLp.phone.firstPart}${infosLp.phone.secondPart}?text=${infosLp.whatsappDefaultMessageLP}`,
   },
 };
 
