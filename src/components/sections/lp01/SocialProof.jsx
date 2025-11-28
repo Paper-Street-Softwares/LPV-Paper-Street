@@ -56,7 +56,7 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0 border p-4 rounded-md">
+          <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0">
             <picture>
               <source srcSet={imgMobile1} media="(max-width: 424px)" />
               <img
