@@ -34,7 +34,11 @@ function SocialProofVideo({ src }) {
       />
 
       <div className="absolute flex items-center gap-2 px-4 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-[#075e54]">
-        <button onClick={togglePlay} className="transition hover:scale-110">
+        <button
+          onClick={togglePlay}
+          className="transition hover:scale-110"
+          aria-label="Botão de Player e Pause dos vídeos"
+        >
           {isPlaying ? <Pause width={14} /> : <Play width={14} />}
         </button>
       </div>
