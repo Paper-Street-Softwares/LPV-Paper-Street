@@ -1,9 +1,6 @@
-import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import AboutParalaxeLP from "../components/sections/lp01/AboutParalaxeLP";
 import FooterLP from "../components/sections/lp01/FooterLP";
 import HeroLP from "../components/sections/lp01/HeroLP";
-import contentLp01 from "../content/contentLp01";
-import { useEffect } from "react";
 import VideoCarousel from "../components/interactives/CarouselVideos";
 import SocialProof from "../components/sections/lp01/SocialProof";
 import Client from "../components/sections/lp01/Client";

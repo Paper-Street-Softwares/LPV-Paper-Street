@@ -18,6 +18,15 @@ import { Gavel } from "lucide-react";
 import { Check } from "lucide-react";
 import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
 import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
+import socialProof1 from "../../public/socialProof/Depoimento1.mp4";
+import socialProof2 from "../../public/socialProof/Depoimento2.mp4";
+import socialProof3 from "../../public/socialProof/Depoimento3.mp4";
+import socialProof4 from "../../public/socialProof/Depoimento4.mp4";
+import socialProof5 from "../../public/socialProof/Depoimento5.mp4";
+import socialProof6 from "../../public/socialProof/Depoimento6.mp4";
+import socialProof7 from "../../public/socialProof/Depoimento7.mp4";
+import socialProof8 from "../../public/socialProof/Depoimento8.mp4";
+import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -624,6 +633,19 @@ const contentLp01 = {
       ),
       subtitle:
         "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
+    },
+    depoimentos: {
+      audios: {
+        audio1: socialProof1,
+        audio2: socialProof2,
+        audio3: socialProof3,
+        audio4: socialProof4,
+        audio5: socialProof5,
+        audio6: socialProof6,
+        audio7: socialProof7,
+        audio8: socialProof8,
+        audio9: socialProof9,
+      },
     },
   },
   videos: {

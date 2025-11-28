@@ -34,11 +34,11 @@ export default function VideoCarousel() {
   }, [emblaApi, onSelect]);
 
   const videos = [
-    "/Thais.mov",
     "/Jessica.mov",
+    "Thabata.mov",
+    "/Thais.mov",
     "/Edvaldo.mov",
     "Carla.mov",
-    "Thabata.mov",
   ];
 
   return (
@@ -53,52 +53,53 @@ export default function VideoCarousel() {
             titleColorSet="text-black"
             subtitleColorSet="text-black"
           />
-          {/* VIEWPORT */}
-          <div className="overflow-hidden w-[95%] m-auto " ref={emblaRef}>
-            {/* CONTAINER */}
-            <div className="flex">
-              {videos.map((video, index) => (
-                <div
-                  key={index}
-                  className="
+          <MotionDivDownToUp>
+            {/* VIEWPORT */}
+            <div className="overflow-hidden w-[95%] m-auto " ref={emblaRef}>
+              {/* CONTAINER */}
+              <div className="flex">
+                {videos.map((video, index) => (
+                  <div
+                    key={index}
+                    className="
                 flex justify-center
                 flex-[0_0_50%]     /* 👈 2 slides no mobile */
                 tablet1:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
                 desktop2:flex-[0_0_25%]     /* 👈 4 slides no desktop */
                 px-2
               "
-                >
-                  <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-white p-0.5 desktop1:border-8 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
-                    <video
-                      src={video}
-                      autoPlay={true}
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover object-top rounded-md desktop1:rounded-[20px] bg-black"
-                    />
+                  >
+                    <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-[#075e54]/70 shadow-lg p-0.5 desktop1:border-2 border-[#075e54]/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
+                      <video
+                        src={video}
+                        autoPlay={true}
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover object-top rounded-md desktop1:rounded-[20px] bg-black"
+                      />
+                    </div>
                   </div>
-                </div>
+                ))}
+              </div>
+            </div>
+            {/* BULLETS */}
+            <div className="flex justify-center gap-2 mt-6">
+              {scrollSnaps.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => emblaApi?.scrollTo(index)}
+                  aria-label={`Ir para o slide ${index + 1}`}
+                  aria-current={index === selectedIndex ? "true" : "false"}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === selectedIndex
+                      ? "bg-[#075e54] w-5 h-5"
+                      : "bg-white w-5 h-5 border border-[#075e54]"
+                  }`}
+                ></button>
               ))}
             </div>
-          </div>
-
-          {/* BULLETS */}
-          <div className="flex justify-center gap-2 mt-6">
-            {scrollSnaps.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => emblaApi?.scrollTo(index)}
-                aria-label={`Ir para o slide ${index + 1}`}
-                aria-current={index === selectedIndex ? "true" : "false"}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  index === selectedIndex
-                    ? "bg-[#075e54] w-5 h-5"
-                    : "bg-white w-5 h-5"
-                }`}
-              ></button>
-            ))}
-          </div>
+          </MotionDivDownToUp>
 
           <div className="flex justify-center w-full pt-[40px]">
             <MotionDivDownToUp>
