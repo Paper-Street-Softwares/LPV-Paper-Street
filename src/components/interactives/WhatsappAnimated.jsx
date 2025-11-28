@@ -121,6 +121,7 @@ export default function WhatsappAnimated() {
         href="#"
         onClick={handleOpenModal}
         className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25d366]"
+        aria-label="WhatsApp para contato"
       >
         <div className="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] animate-ping"></div>
         <div className="relative z-20">
@@ -187,6 +188,7 @@ export default function WhatsappAnimated() {
                 onClick={handleSubmit}
                 disabled={loading}
                 className="py-3 text-white bg-[#075e54] rounded-lg hover:scale-105 transition-all"
+                aria-label="Botão de contato"
               >
                 {loading ? "Aguarde..." : "Ser atendido no WhatsApp"}
               </button>
