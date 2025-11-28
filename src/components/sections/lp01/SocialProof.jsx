@@ -56,14 +56,14 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0">
+          <div className="flex flex-wrap items-start gap-5 justify-evenly desktop1:gap-0 border p-4 rounded-md">
             <picture>
               <source srcSet={imgMobile1} media="(max-width: 424px)" />
               <img
                 src={img1}
                 alt="Imagem de Feedback"
-                width="930"
-                height="930"
+                width="526"
+                height="471"
                 className="w-[90%] desktop1:w-[175px] rounded-xl m-auto"
               />
             </picture>
@@ -73,8 +73,8 @@ export default function SocialProof() {
               <img
                 src={img5}
                 alt="Imagem de Feedback"
-                width="930"
-                height="930"
+                width="526"
+                height="471"
                 className="w-[90%] desktop1:w-[175px] rounded-xl m-auto"
               />
             </picture>

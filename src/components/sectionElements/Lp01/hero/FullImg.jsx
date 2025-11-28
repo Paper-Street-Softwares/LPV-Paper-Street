@@ -130,8 +130,9 @@ function FullImg({ obs }) {
           decoding="async"
           width="1920"
           height="1080"
-          className="absolute inset-0 z-0 object-cover object-top w-full h-auto min-h-full"
+          className="absolute inset-0 z-10 object-contain object-top w-full h-auto min-h-full"
         />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-lpvHeroGradientTop to-lpvHeroGradientBot"></div>
 
         {/* Gradiente de sobreposição */}
         <div className="absolute inset-0 z-10 bg-black/70"></div>
