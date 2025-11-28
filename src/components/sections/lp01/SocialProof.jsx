@@ -27,6 +27,7 @@ function SocialProofVideo({ src }) {
     <div className="relative w-[90%] desktop1:w-[250px] desktop2:w-[300px] rounded-lg overflow-hidden shadow-md flex mx-auto border ">
       <video
         ref={videoRef}
+        preload="none"
         src={src}
         loop
         playsInline
