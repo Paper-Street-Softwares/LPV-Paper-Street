@@ -5,6 +5,7 @@ import SectionHeader from "../../sectionElements/SectionHeader";
 import contentLp01 from "../../../content/contentLp01";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 
 function Client() {
   return (
@@ -61,9 +62,11 @@ function Client() {
               />
             </div>
 
-            <div className="flex flex-col justify-center text-start font-secondFont text-paragraph2 phone2:text-paragraph3 phone3:text-paragraph4 tablet1:text-title2">
-              <p>{contentLp01.ctaClient.paragraph}</p>
-            </div>
+            <MotionDivDownToUp>
+              <div className="flex flex-col justify-center text-start font-secondFont text-paragraph2 phone2:text-paragraph3 phone3:text-paragraph4 tablet1:text-title2">
+                <p>{contentLp01.ctaClient.paragraph}</p>
+              </div>
+            </MotionDivDownToUp>
           </div>
         </SectionWrapper>
       </SectionArea>

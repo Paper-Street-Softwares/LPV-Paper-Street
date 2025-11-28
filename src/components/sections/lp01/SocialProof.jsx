@@ -4,6 +4,7 @@ import SectionWrapper from "../../sectionElements/SectionWrapper";
 import React, { useRef, useState } from "react";
 import contentLp01 from "../../../content/contentLp01";
 import { Pause, Play } from "lucide-react";
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 
 function SocialProofVideo({ src }) {
   const videoRef = useRef(null);
@@ -59,11 +60,13 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <div className="grid grid-cols-1 tablet1:grid-cols-2 gap-4 desktop1:grid-cols-3 ">
-            {audios.map((audio, index) => (
-              <SocialProofVideo key={index} src={audio} />
-            ))}
-          </div>
+          <MotionDivDownToUp>
+            <div className="grid grid-cols-1 tablet1:grid-cols-2 gap-4 desktop1:grid-cols-3 ">
+              {audios.map((audio, index) => (
+                <SocialProofVideo key={index} src={audio} />
+              ))}
+            </div>
+          </MotionDivDownToUp>
         </div>
       </SectionWrapper>
     </SectionArea>
