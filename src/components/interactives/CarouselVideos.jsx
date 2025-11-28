@@ -73,6 +73,7 @@ export default function VideoCarousel() {
                       <video
                         src={video}
                         autoPlay={true}
+                        preload="none"
                         loop
                         muted
                         playsInline
