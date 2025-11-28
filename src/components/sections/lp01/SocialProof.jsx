@@ -1,7 +1,7 @@
 import SectionArea from "../../sectionElements/SectionArea";
 import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import contentLp01 from "../../../content/contentLp01";
 import { Pause, Play } from "lucide-react";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
@@ -27,7 +27,7 @@ function SocialProofVideo({ src }) {
     <div className="relative w-[90%] desktop1:w-[250px] desktop2:w-[300px] rounded-lg overflow-hidden shadow-md flex mx-auto border ">
       <video
         ref={videoRef}
-        preload="none"
+        preload="lazy"
         src={src}
         loop
         playsInline
