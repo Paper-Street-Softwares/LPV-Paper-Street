@@ -83,6 +83,7 @@ export default function VideoCarousel() {
                 ))}
               </div>
             </div>
+            {/* BULLETS */}
             <div className="flex justify-center gap-2 mt-6">
               {scrollSnaps.map((_, index) => (
                 <button
@@ -93,13 +94,12 @@ export default function VideoCarousel() {
                   className={`w-3 h-3 rounded-full transition-all ${
                     index === selectedIndex
                       ? "bg-[#075e54] w-5 h-5"
-                      : "bg-white w-5 h-5"
+                      : "bg-white w-5 h-5 border border-[#075e54]"
                   }`}
                 ></button>
               ))}
             </div>
           </MotionDivDownToUp>
-          {/* BULLETS */}
 
           <div className="flex justify-center w-full pt-[40px]">
             <MotionDivDownToUp>
