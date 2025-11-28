@@ -142,8 +142,8 @@ function FullImg({ obs }) {
           <SectionWrapper>
             <div className="flex w-full">
               <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between w-full max-w-[1215px] items-center ">
-                <div className="flex flex-col w-full desktop1:w-[70%] desktop1:mr-[20px]">
-                  <MotionDivDownToUp className="flex justify-start tablet1:justify-center desktop1:justify-start">
+                <div className="flex flex-col w-full desktop1:w-full desktop1:mr-[20px]">
+                  <MotionDivDownToUp className="flex justify-start tablet1:justify-center desktop1:justify-center">
                     <img
                       src={contentLp01.hero.logo.logoImg}
                       alt={contentLp01.hero.logo.alt}
@@ -155,13 +155,13 @@ function FullImg({ obs }) {
 
                   <div className="mt-[30%] phone3:mt-[35%] tablet1:mt-[30px] desktop1:mt-0">
                     <MotionDivDownToUp>
-                      <div className="flex text-white justify-center desktop1:justify-start font-bold font-mainFont leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                      <div className="flex text-white justify-center desktop1:justify-start font-bold font-mainFont leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-center text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                         {contentLp01.hero.textArea.title}
                       </div>
                     </MotionDivDownToUp>
 
                     <MotionDivDownToUp>
-                      <div className="flex justify-center text-center text-white desktop1:text-left desktop1:justify-start phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5">
+                      <div className="flex justify-center text-center text-white desktop1:justify-center phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5 desktop1:text-[20px] desktop1:w-[60%] m-auto">
                         <p className="mb-[40px] opacity-100 [text-shadow:_2px_2px_1px_rgb(0_0_0_/_100%)]">
                           {contentLp01.hero.textArea.subtitle}
                         </p>
@@ -169,7 +169,7 @@ function FullImg({ obs }) {
                     </MotionDivDownToUp>
 
                     <div className="w-full phone2:w-full tablet2:w-auto">
-                      <div className="flex flex-col justify-center w-full gap-20 desktop1:justify-start">
+                      <div className="flex flex-col justify-center w-full gap-20 items-center">
                         <MotionDivDownToUp>
                           <img
                             src="/mockup.webp"

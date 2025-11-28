@@ -21,6 +21,7 @@ export default function Button({
   color,
   animation = true,
   colorMode,
+  reflexAnimation = true,
 }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [nome, setNome] = useState("");
@@ -34,11 +35,11 @@ export default function Button({
 
   let textSizeClass = "";
   if (size === "small") {
-    sizeFeatures = "rounded-[4px] px-[18px] py-[10px]";
+    sizeFeatures = "px-[18px] py-[10px]";
     textSizeClass = "text-paragraph3 font-secondFont";
     gap = "gap-[10px]";
   } else {
-    sizeFeatures = "rounded-[8px] px-[30px] py-[16px]";
+    sizeFeatures = "px-[30px] py-[16px]";
     textSizeClass = "text-paragraph2 tablet1:text-paragraph4 font-secondFont";
     gap = "gap-[20px]";
   }
@@ -154,6 +155,13 @@ export default function Button({
     setLoading(false);
   };
 
+  const shineThemes = {
+    light: "bg-white/20",
+    dark: "bg-white/10",
+  };
+
+  const shineColor = shineThemes.dark || shineThemes.light;
+
   return (
     <>
       <CustomTag
@@ -166,10 +174,21 @@ export default function Button({
         {animation ? (
           <MotionDivDownToUp className="w-auto">
             <button
-              className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/0 ${
+              className={`flex ${className} ${sizeFeatures} relative shadow-custom-opacityButton shadow-shadowHero/0 rounded-[100px] overflow-hidden  ${
                 color || "bg-buttonColor"
               } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
             >
+              {reflexAnimation && (
+                <span
+                  className={`
+              absolute top-0 left-0 w-full h-full 
+              ${shineColor}
+              animate-shine-loop 
+              z-0
+              pointer-events-none
+            `}
+                />
+              )}
               <div
                 className={`flex items-center text-center ${gap} min-h-[24px]`}
               >
@@ -208,7 +227,7 @@ export default function Button({
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
-          <div className="bg-white w-[90%] max-w-[420px] p-6 rounded-xl shadow-xl relative">
+          <div className="bg-white w-[90%] max-w-[420px] p-6 rounded-[20px] shadow-xl relative">
             <button
               className="absolute text-xl font-bold top-3 right-3"
               onClick={() => setIsModalOpen(false)}
@@ -217,7 +236,7 @@ export default function Button({
             </button>
 
             <h2 className="mb-4 text-lg font-bold font-secondFont">
-              Preencha para ser atendido agora mesmo:
+              Preencha para ser atendido agora:
             </h2>
 
             <div className="flex flex-col gap-4 font-secondFont">
@@ -252,9 +271,25 @@ export default function Button({
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className="py-3 text-white bg-[#075e54] rounded-lg hover:scale-105 transition-all"
+                className="py-4 text-white bg-[#075e54] rounded-[100px] hover:scale-105 transition-all"
               >
-                {loading ? "Aguarde..." : "Ser atendido no WhatsApp"}
+                {loading ? (
+                  "Aguarde..."
+                ) : (
+                  <p className="flex items-center gap-4 justify-center">
+                    {" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={24}
+                      height={24}
+                      fill="white"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
+                    </svg>
+                    Ser atendido no WhatsApp
+                  </p>
+                )}
               </button>
             </div>
           </div>

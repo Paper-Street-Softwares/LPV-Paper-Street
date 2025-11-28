@@ -24,7 +24,8 @@ function SocialProofVideo({ src }) {
   };
 
   return (
-    <div className="relative w-[90%] desktop1:w-[250px] desktop2:w-[300px] rounded-lg overflow-hidden shadow-md flex mx-auto border ">
+    <div className="relative w-[90%] tablet1:w-[250px] rounded-lg overflow-hidden shadow-md flex border ">
+      {isPlaying ? "" : <div className="bg-black/40 absolute inset-0" />}
       <video
         ref={videoRef}
         preload="lazy"
@@ -34,13 +35,23 @@ function SocialProofVideo({ src }) {
         className="object-cover border-2 border-[#075e54]/40 rounded-lg"
       />
 
-      <div className="absolute flex items-center gap-2 px-4 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-[#075e54]">
+      <div className="absolute flex items-center gap-2 px-4 w-[155px] py-3 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-white shadow-lg">
         <button
           onClick={togglePlay}
-          className="transition hover:scale-110"
+          className="transition hover:scale-110 w-full"
           aria-label="Botão de Player e Pause dos vídeos"
         >
-          {isPlaying ? <Pause width={14} /> : <Play width={14} />}
+          {isPlaying ? (
+            <p className="flex items-center justify-evenly text-black">
+              {" "}
+              Pausar áudio <Pause width={14} />
+            </p>
+          ) : (
+            <p className="flex items-center justify-evenly text-black">
+              {" "}
+              Toque para ouvir <Play width={14} />
+            </p>
+          )}
         </button>
       </div>
     </div>
@@ -66,7 +77,7 @@ export default function SocialProof() {
           />
 
           <MotionDivDownToUp>
-            <div className="grid grid-cols-1 tablet1:grid-cols-2 gap-4 desktop1:grid-cols-3 ">
+            <div className="flex flex-wrap justify-evenly gap-8 ">
               {audios.map((audio, index) => (
                 <SocialProofVideo key={index} src={audio} />
               ))}
