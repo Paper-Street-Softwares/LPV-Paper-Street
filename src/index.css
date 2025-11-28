@@ -1,4 +1,27 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("/font/Merriweather/Merriweather_36pt-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/font/Merriweather/Merriweather_36pt-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/font/Roboto/Roboto-36pt-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/font/Roboto/Roboto-36pt-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
