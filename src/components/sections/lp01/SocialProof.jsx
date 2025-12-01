@@ -28,7 +28,6 @@ function SocialProofVideo({ src }) {
       {isPlaying ? "" : <div className="bg-black/40 absolute inset-0" />}
       <video
         ref={videoRef}
-        preload="lazy"
         src={src}
         loop
         playsInline
