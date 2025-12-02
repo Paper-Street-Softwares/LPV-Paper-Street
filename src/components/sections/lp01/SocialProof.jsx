@@ -24,7 +24,7 @@ function SocialProofVideo({ src, poster }) {
   };
 
   return (
-    <div className="relative max-w-[311px] w-full tablet1:w-[270px] h-[180px] rounded-lg overflow-hidden shadow-md border">
+    <div className="relative w-[230px] bg-cover h-[105px] rounded-lg overflow-hidden shadow-md border m-auto">
       {/* Overlay escuro quando não está tocando */}
       {!isPlaying && (
         <div className="bg-black/40 absolute inset-0 pointer-events-none" />
@@ -38,11 +38,11 @@ function SocialProofVideo({ src, poster }) {
         preload="high"
         loop
         playsInline
-        className="w-full h-full object-cover border-2 border-[#075e54]/40 rounded-lg"
+        className="w-full h-full bg-cover border-2 border-[#075e54]/40 rounded-lg"
       />
 
       {/* Botão */}
-      <div className="absolute flex items-center gap-2 px-4 w-[155px] py-3 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-white shadow-lg">
+      <div className="absolute flex items-center gap-2 px-2 w-[140px] py-1 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-white shadow-lg">
         <button
           onClick={togglePlay}
           className="transition hover:scale-110 w-full"
@@ -82,8 +82,8 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <MotionDivDownToUp>
-            <div className="flex flex-wrap justify-evenly gap-8">
+          <MotionDivDownToUp className="flex justify-center">
+            <div className="grid gap-y-5 gap-x-5 tablet1:grid-cols-2 w-fit desktop1:grid-cols-3 justify-center">
               {audios.map((audio, index) => (
                 <SocialProofVideo
                   key={index}
