@@ -31,7 +31,7 @@ import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
 import poster1 from "../../public/socialProof/poster1.webp";
 import poster2 from "../../public/socialProof/poster2.webp";
 import poster3 from "../../public/socialProof/poster3.webp";
-import poster4 from "../../public/socialProof/poster4.webp";
+// import poster4 from "../../public/socialProof/poster4.webp";
 import poster5 from "../../public/socialProof/poster5.webp";
 import poster6 from "../../public/socialProof/poster6.webp";
 import poster7 from "../../public/socialProof/poster7.webp";
