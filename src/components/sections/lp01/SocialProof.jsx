@@ -24,7 +24,7 @@ function SocialProofVideo({ src, poster }) {
   };
 
   return (
-    <div className="relative w-[90%] tablet1:w-[250px] h-[180px] rounded-lg overflow-hidden shadow-md border">
+    <div className="relative max-w-[311px] w-full tablet1:w-[270px] h-[180px] rounded-lg overflow-hidden shadow-md border">
       {/* Overlay escuro quando não está tocando */}
       {!isPlaying && (
         <div className="bg-black/40 absolute inset-0 pointer-events-none" />
@@ -85,7 +85,11 @@ export default function SocialProof() {
           <MotionDivDownToUp>
             <div className="flex flex-wrap justify-evenly gap-8">
               {audios.map((audio, index) => (
-                <SocialProofVideo key={index} src={audio} poster={posters} />
+                <SocialProofVideo
+                  key={index}
+                  src={audio}
+                  poster={posters[index]}
+                />
               ))}
             </div>
           </MotionDivDownToUp>

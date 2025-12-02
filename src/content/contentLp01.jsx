@@ -28,7 +28,15 @@ import socialProof7 from "../../public/socialProof/Depoimento7.mp4";
 import socialProof8 from "../../public/socialProof/Depoimento8.mp4";
 import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
 
-import poster1 from "../../public/socialProof/poster1.png";
+import poster1 from "../../public/socialProof/poster1.webp";
+import poster2 from "../../public/socialProof/poster2.webp";
+import poster3 from "../../public/socialProof/poster3.webp";
+import poster4 from "../../public/socialProof/poster4.webp";
+import poster5 from "../../public/socialProof/poster5.webp";
+import poster6 from "../../public/socialProof/poster6.webp";
+import poster7 from "../../public/socialProof/poster7.webp";
+import poster8 from "../../public/socialProof/poster8.webp";
+import poster9 from "../../public/socialProof/poster9.webp";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -664,6 +672,14 @@ const contentLp01 = {
       },
       posters: {
         poster1: poster1,
+        poster2: poster2,
+        poster3: poster3,
+        // poster4: poster4,
+        poster5: poster5,
+        poster6: poster6,
+        poster7: poster7,
+        poster8: poster8,
+        poster9: poster9,
       },
     },
   },
