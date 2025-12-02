@@ -1,13 +1,14 @@
 import HeroLP from "../components/sections/lp01/HeroLP";
+import SocialProof from "../components/sections/lp01/SocialProof";
 import WhatsappAnimated from "../components/interactives/WhatsappAnimated";
 import React from "react";
 
 const VideoCarousel = React.lazy(() =>
   import("../components/interactives/CarouselVideos")
 );
-const SocialProof = React.lazy(() =>
-  import("../components/sections/lp01/SocialProof")
-);
+// const SocialProof = React.lazy(() =>
+//   import("../components/sections/lp01/SocialProof")
+// );
 const Client = React.lazy(() => import("../components/sections/lp01/Client"));
 const AboutParalaxeLP = React.lazy(() =>
   import("../components/sections/lp01/AboutParalaxeLP")

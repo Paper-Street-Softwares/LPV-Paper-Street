@@ -28,6 +28,8 @@ import socialProof7 from "../../public/socialProof/Depoimento7.mp4";
 import socialProof8 from "../../public/socialProof/Depoimento8.mp4";
 import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
 
+import poster1 from "../../public/socialProof/poster1.png";
+
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
 // import img3 from "../assets/imgs/about/image3.webp";
@@ -659,6 +661,9 @@ const contentLp01 = {
         audio7: socialProof7,
         audio8: socialProof8,
         audio9: socialProof9,
+      },
+      posters: {
+        poster1: poster1,
       },
     },
   },
