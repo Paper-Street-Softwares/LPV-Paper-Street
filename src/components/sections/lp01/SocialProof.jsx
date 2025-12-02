@@ -6,7 +6,7 @@ import contentLp01 from "../../../content/contentLp01";
 import { Pause, Play } from "lucide-react";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 
-function SocialProofVideo({ src }) {
+function SocialProofVideo({ src, poster }) {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -33,7 +33,9 @@ function SocialProofVideo({ src }) {
       <video
         ref={videoRef}
         src={src}
+        poster={poster}
         muted
+        preload="high"
         loop
         playsInline
         className="w-full h-full object-cover border-2 border-[#075e54]/40 rounded-lg"
@@ -63,6 +65,7 @@ function SocialProofVideo({ src }) {
 
 export default function SocialProof() {
   const audios = Object.values(contentLp01.socialProof.depoimentos.audios);
+  const posters = Object.values(contentLp01.socialProof.depoimentos.posters);
 
   return (
     <SectionArea className="bg-bgSectionOpacityLight">
@@ -82,7 +85,7 @@ export default function SocialProof() {
           <MotionDivDownToUp>
             <div className="flex flex-wrap justify-evenly gap-8">
               {audios.map((audio, index) => (
-                <SocialProofVideo key={index} src={audio} />
+                <SocialProofVideo key={index} src={audio} poster={posters} />
               ))}
             </div>
           </MotionDivDownToUp>
