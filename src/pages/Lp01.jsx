@@ -5,9 +5,9 @@ import React from "react";
 // const VideoCarousel = React.lazy(() =>
 //   import("../components/interactives/CarouselVideos")
 // );
-// const SocialProof = React.lazy(() =>
-//   import("../components/sections/lp01/SocialProof")
-// );
+const SocialProof = React.lazy(() =>
+  import("../components/sections/lp01/SocialProof")
+);
 const Client = React.lazy(() => import("../components/sections/lp01/Client"));
 const AboutParalaxeLP = React.lazy(() =>
   import("../components/sections/lp01/AboutParalaxeLP")
@@ -21,7 +21,7 @@ export default function Lp01() {
     <div className="bg-bgFixedLight">
       <HeroLP fullImg={true} />
       {/* <VideoCarousel /> */}
-      {/* <SocialProof /> */}
+      <SocialProof />
       <Client />
       <AboutParalaxeLP logo={true} />
       <FooterLP />
