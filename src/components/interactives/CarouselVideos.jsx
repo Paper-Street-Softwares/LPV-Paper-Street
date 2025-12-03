@@ -38,7 +38,7 @@ export default function VideoCarousel() {
     "Thabata.mov",
     "/Thais.mov",
     "/Edvaldo.mov",
-    "Carla.mov",
+    // "Carla.mov",
   ];
 
   return (

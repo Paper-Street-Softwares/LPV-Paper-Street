@@ -42,10 +42,10 @@ function SocialProofVideo({ src, poster }) {
       />
 
       {/* Botão */}
-      <div className="absolute flex items-center gap-2 px-2 w-[140px] py-1 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-white shadow-lg">
+      <div className="absolute flex items-center gap-2 px-2 w-[140px] py-1 text-xs text-white -translate-x-1/2 rounded-full bottom-2 left-1/2 bg-white shadow-lg transition hover:scale-110 ">
         <button
           onClick={togglePlay}
-          className="transition hover:scale-110 w-full"
+          className="w-full"
           aria-label="Botão de Player e Pause dos vídeos"
         >
           {isPlaying ? (

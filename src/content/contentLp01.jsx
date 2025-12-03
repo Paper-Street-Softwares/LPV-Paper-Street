@@ -80,18 +80,18 @@ const contentLp01 = {
       title: (
         <h1>
           <strong>Advogado</strong>, precisando{" "}
-          <strong className="text-[#8EDBD3]">conquistar novos clientes</strong>{" "}
-          ou <strong className="text-[#8EDBD3]">melhorar sua imagem</strong> na
+          <strong className="text-[#fce509]">conquistar novos clientes</strong>{" "}
+          ou <strong className="text-[#fce509]">melhorar sua imagem</strong> na
           internet?
         </h1>
       ),
       subtitle: (
         <p>
-          <strong className="text-[#8EDBD3]">
+          <strong className="text-[#fce509]">
             Pare de depender de indicações
           </strong>{" "}
-          tendo um <strong className="text-[#8EDBD3]">site</strong> ou{" "}
-          <strong className="text-[#8EDBD3]">landing page</strong> que leva
+          tendo um <strong className="text-[#fce509]">site</strong> ou{" "}
+          <strong className="text-[#fce509]">landing page</strong> que leva
           clientes pro seu WhatsApp -
           <span className=" opacity-70">
             {" "}
