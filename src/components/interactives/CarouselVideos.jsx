@@ -69,7 +69,7 @@ export default function VideoCarousel() {
                         px-2
                       "
                   >
-                    <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-black/40  shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
+                    <div className="rounded-[25px] overflow-hidden bg-black/40  shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
                       <video
                         src={video}
                         autoPlay={true}
@@ -77,7 +77,7 @@ export default function VideoCarousel() {
                         loop
                         muted
                         playsInline
-                        className="w-full h-full object-cover object-top rounded-md desktop1:rounded-[20px] bg-black"
+                        className="w-full max-h-[643px] h-full object-cover object-top rounded-[20px] bg-black"
                       />
                     </div>
                   </div>
