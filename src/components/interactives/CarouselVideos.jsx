@@ -62,12 +62,12 @@ export default function VideoCarousel() {
                   <div
                     key={index}
                     className="
-                flex justify-center
-                flex-[0_0_50%]     /* 👈 2 slides no mobile */
-                tablet1:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
-                desktop2:flex-[0_0_25%]     /* 👈 4 slides no desktop */
-                px-2
-              "
+                        flex justify-center
+                        flex-[0_0_50%]     /* 👈 2 slides no mobile */
+                        tablet1:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
+                        desktop2:flex-[0_0_25%]     /* 👈 4 slides no desktop */
+                        px-2
+                      "
                   >
                     <div className="rounded-md desktop1:rounded-[25px] overflow-hidden bg-black/40  shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
                       <video
