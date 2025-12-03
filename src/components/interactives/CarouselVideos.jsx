@@ -11,7 +11,7 @@ export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      align: "start", // 👈 centraliza sempre
+      align: "start",
       dragFree: false,
       skipSnaps: false,
     }
@@ -44,7 +44,7 @@ export default function VideoCarousel() {
   return (
     <SectionArea>
       <SectionWrapper>
-        <div className="flex flex-col items-center w-full max-w-[1215px] m-auto justify-evenly  bg-bgFixedLight ">
+        <div className="flex flex-col items-center w-full max-w-[1215px] m-auto justify-evenly bg-bgFixedLight ">
           <SectionHeader
             className="justify-center text-center desktop1:flex"
             sectionHeaderTitle={contentLp01.videos.sectionHeader.title}
@@ -84,16 +84,18 @@ export default function VideoCarousel() {
                 ))}
               </div>
             </div>
+
             {/* BULLETS */}
-            <div className="flex justify-center gap-2 mt-6">
-              {scrollSnaps.map((_, index) => (
+            <div className="flex justify-center gap-2 mt-6 desktop1:hidden">
+              {[0, 2].map((scrollIndex, index) => (
                 <button
                   key={index}
-                  onClick={() => emblaApi?.scrollTo(index)}
-                  aria-label={`Ir para o slide ${index + 1}`}
-                  aria-current={index === selectedIndex ? "true" : "false"}
+                  onClick={() => emblaApi?.scrollTo(scrollIndex)}
+                  aria-current={
+                    selectedIndex === scrollIndex ? "true" : "false"
+                  }
                   className={`w-3 h-3 rounded-full transition-all ${
-                    index === selectedIndex
+                    selectedIndex === scrollIndex
                       ? "bg-[#075e54] w-5 h-5"
                       : "bg-white w-5 h-5 border border-black/40"
                   }`}

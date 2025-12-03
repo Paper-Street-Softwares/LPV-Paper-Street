@@ -24,7 +24,7 @@ function SocialProofVideo({ src, poster }) {
   };
 
   return (
-    <div className="relative w-[230px] bg-cover h-[105px] rounded-lg overflow-hidden shadow-md border m-auto">
+    <div className="relative w-[230px] bg-cover h-[105px] tablet1:w-[260px] rounded-lg overflow-hidden shadow-md border mx-3">
       {/* Overlay escuro quando não está tocando */}
       {!isPlaying && (
         <div className="bg-black/40 absolute inset-0 pointer-events-none" />
@@ -38,7 +38,7 @@ function SocialProofVideo({ src, poster }) {
         preload="high"
         loop
         playsInline
-        className="w-full h-full bg-cover border-2 border-[#075e54]/40 rounded-lg"
+        className="w-full h-full object-cover border-2 border-[#075e54]/40 rounded-lg"
       />
 
       {/* Botão */}
@@ -82,8 +82,8 @@ export default function SocialProof() {
             subtitleColorSet="text-black"
           />
 
-          <MotionDivDownToUp className="flex justify-center">
-            <div className="grid gap-y-5 gap-x-5 tablet1:grid-cols-2 w-fit desktop1:grid-cols-3 justify-center">
+          <MotionDivDownToUp className="flex justify-center max-w-[580px] mx-auto desktop1:max-w-full">
+            <div className="flex flex-wrap gap-y-6 justify-center items-center">
               {audios.map((audio, index) => (
                 <SocialProofVideo
                   key={index}
