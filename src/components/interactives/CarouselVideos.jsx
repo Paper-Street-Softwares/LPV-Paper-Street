@@ -34,10 +34,10 @@ export default function VideoCarousel() {
   }, [emblaApi, onSelect]);
 
   const videos = [
-    "/Jessica.mov",
-    "Thabata.mov",
-    "/Thais.mov",
-    "/Edvaldo.mov",
+    "/Jessica.mp4",
+    "Thabata.mp4",
+    "/Thais.mp4",
+    "/Edvaldo.mp4",
     // "Carla.mov",
   ];
 
