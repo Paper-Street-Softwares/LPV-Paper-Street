@@ -37,7 +37,7 @@ function FullImg({ obs }) {
               alt={contentLp01.hero.logo.alt}
               width="250"
               height="54"
-              className="ml-[5%] max-w-[50%] mt-[15%] p-[5px] tablet1:py-[7px]"
+              className=" max-w-[50%] mt-[15%] p-[5px] tablet1:py-[7px]"
             />
           </MotionDivDownToUp>
 

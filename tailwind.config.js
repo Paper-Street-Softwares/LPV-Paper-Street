@@ -11,6 +11,7 @@ export default {
       colors: {
         // Principais
         primary: "#FACC15",
+        primaryDark: "#614E06",
         buttonColor: "#FACC15",
         minititleDark: "#FACC15", //bg minitag de seções claras
         minititle: "#FACC15", //bg minitag de seções escuras

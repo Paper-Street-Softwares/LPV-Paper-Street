@@ -38,7 +38,7 @@ function SocialProofVideo({ src, poster }) {
         preload="high"
         loop
         playsInline
-        className="w-full h-full object-cover border-2 border-[#075e54]/40 rounded-lg"
+        className="w-full h-full object-cover border-2 border-primaryDark rounded-lg"
       />
 
       {/* Botão */}

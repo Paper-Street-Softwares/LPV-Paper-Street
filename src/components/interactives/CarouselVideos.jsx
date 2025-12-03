@@ -86,8 +86,8 @@ export default function VideoCarousel() {
             </div>
 
             {/* BULLETS */}
-            <div className="flex justify-center gap-2 mt-6 desktop1:hidden">
-              {[0, 2].map((scrollIndex, index) => (
+            <div className="flex justify-center gap-2 mt-6 list-none desktop2:hidden">
+              {scrollSnaps.map((scrollIndex, index) => (
                 <button
                   key={index}
                   onClick={() => emblaApi?.scrollTo(scrollIndex)}
@@ -97,7 +97,7 @@ export default function VideoCarousel() {
                   }
                   className={`w-3 h-3 rounded-full transition-all ${
                     selectedIndex === scrollIndex
-                      ? "bg-[#075e54] w-5 h-5"
+                      ? "bg-primaryDark w-5 h-5"
                       : "bg-white w-5 h-5 border border-black/40"
                   }`}
                 ></button>
