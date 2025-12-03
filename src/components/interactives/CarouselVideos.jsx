@@ -91,6 +91,7 @@ export default function VideoCarousel() {
                 <button
                   key={index}
                   onClick={() => emblaApi?.scrollTo(scrollIndex)}
+                  aria-label="Botões de passar carrosel"
                   aria-current={
                     selectedIndex === scrollIndex ? "true" : "false"
                   }
