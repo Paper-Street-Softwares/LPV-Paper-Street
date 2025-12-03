@@ -31,7 +31,7 @@ function FullImg({ obs }) {
 
         {/* Conteúdo acima de tudo */}
         <div className="relative z-30">
-          <MotionDivDownToUp className="flex justify-start desktop1:justify-start">
+          <MotionDivDownToUp className="flex justify-center desktop1:justify-start">
             <img
               src={contentLp01.hero.logo.logoImg}
               alt={contentLp01.hero.logo.alt}
