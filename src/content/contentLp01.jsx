@@ -80,18 +80,18 @@ const contentLp01 = {
       title: (
         <h1>
           <strong>Advogado</strong>, precisando{" "}
-          <strong className="text-[#fce509]">conquistar novos clientes</strong>{" "}
-          ou <strong className="text-[#fce509]">melhorar sua imagem</strong> na
+          <strong className="text-primary">conquistar novos clientes</strong> ou{" "}
+          <strong className="text-primary">melhorar sua imagem</strong> na
           internet?
         </h1>
       ),
       subtitle: (
         <p>
-          <strong className="text-[#fce509]">
+          <strong className="text-primary">
             Pare de depender de indicações
           </strong>{" "}
-          tendo um <strong className="text-[#fce509]">site</strong> ou{" "}
-          <strong className="text-[#fce509]">landing page</strong> que leva
+          tendo um <strong className="text-primary">site</strong> ou{" "}
+          <strong className="text-primary">landing page</strong> que leva
           clientes pro seu WhatsApp -
           <span className=" opacity-70">
             {" "}
@@ -520,7 +520,7 @@ const contentLp01 = {
       miniTag: "",
       title: (
         <p class="">
-          <span class="text-[#075e54] relative inline-block stroke-current">
+          <span class="text-primaryDark relative inline-block stroke-current">
             Não deixe pra depois
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
@@ -544,26 +544,26 @@ const contentLp01 = {
         {" "}
         <span className="flex justify-start gap-2 text-start">
           <Check /> Domínio e hospedagem{" "}
-          <span className="text-[#075e54]">grátis por 1 ano</span>
+          <span className="text-primaryDark">grátis por 1 ano</span>
         </span>
         <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Pronto em apenas{" "}
-          <span className="text-[#075e54]">5 dias úteis</span>
+          <span className="text-primaryDark">5 dias úteis</span>
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
           <Check /> Caixas de{" "}
-          <span className="text-[#075e54]">e-mails profissionais</span>
+          <span className="text-primaryDark">e-mails profissionais</span>
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Reembolso total</span> em
+          <Check /> <span className="text-primaryDark">Reembolso total</span> em
           caso de arrependimento
         </span>{" "}
         <span className="flex justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Sem mensalidades</span>
+          <Check /> <span className="text-primaryDark">Sem mensalidades</span>
         </span>{" "}
       </p>
     ),
@@ -590,7 +590,7 @@ const contentLp01 = {
       title: (
         <p class="">
           Ei,
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             Advogado(a)!
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
@@ -639,7 +639,7 @@ const contentLp01 = {
       title: (
         <p class="">
           Você também vai se
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             encantar
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
@@ -689,7 +689,7 @@ const contentLp01 = {
       title: (
         <p class="">
           Entregamos
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             alto padrão
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
