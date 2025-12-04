@@ -1,16 +1,26 @@
+import SectionArea from "../../sectionElements/SectionArea";
+import SectionHeader from "../../sectionElements/SectionHeader";
+import SectionWrapper from "../../sectionElements/SectionWrapper";
+import React, { useRef, useState, useEffect } from "react";
+import contentLp01 from "../../../content/contentLp01";
+import { Pause, Play } from "lucide-react";
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+
 function SocialProofVideo({ src, poster }) {
   const videoRef = useRef(null);
+  const containerRef = useRef(null);
+
   const [isPlaying, setIsPlaying] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [canLoad, setCanLoad] = useState(false);
 
   useEffect(() => {
-    const element = videoRef.current;
+    const element = containerRef.current;
     if (!element) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setShouldLoad(true);
+          setCanLoad(true);
           observer.disconnect();
         }
       },
@@ -35,19 +45,22 @@ function SocialProofVideo({ src, poster }) {
   };
 
   return (
-    <div className="relative w-[230px] bg-cover h-[105px] tablet1:w-[260px] rounded-lg overflow-hidden shadow-md border mx-3">
+    <div
+      ref={containerRef}
+      className="relative w-[230px] bg-cover h-[105px] tablet1:w-[260px] rounded-lg overflow-hidden shadow-md border mx-3"
+    >
       {!isPlaying && (
         <div className="bg-black/40 absolute inset-0 pointer-events-none" />
       )}
 
       <video
         ref={videoRef}
-        src={shouldLoad ? src : undefined}
+        src={canLoad ? src : undefined}
         poster={poster}
         muted
+        preload="none"
         loop
         playsInline
-        preload="none"
         className="w-full h-full object-cover border-2 border-primaryDark rounded-lg"
       />
 
@@ -69,5 +82,41 @@ function SocialProofVideo({ src, poster }) {
         </button>
       </div>
     </div>
+  );
+}
+
+export default function SocialProof() {
+  const audios = Object.values(contentLp01.socialProof.depoimentos.audios);
+  const posters = Object.values(contentLp01.socialProof.depoimentos.posters);
+
+  return (
+    <SectionArea className="bg-bgSectionOpacityLight">
+      <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
+        <div className="w-full">
+          <SectionHeader
+            className="justify-center text-center desktop1:flex"
+            sectionHeaderTitle={contentLp01.socialProof.sectionHeader.title}
+            sectionHeaderSubtitle={
+              contentLp01.socialProof.sectionHeader.subtitle
+            }
+            miniTitleBgColor={false}
+            titleColorSet="text-black"
+            subtitleColorSet="text-black"
+          />
+
+          <MotionDivDownToUp className="flex justify-center max-w-[580px] mx-auto desktop1:max-w-full">
+            <div className="flex flex-wrap gap-y-6 justify-center items-center">
+              {audios.map((audio, index) => (
+                <SocialProofVideo
+                  key={index}
+                  src={audio}
+                  poster={posters[index]}
+                />
+              ))}
+            </div>
+          </MotionDivDownToUp>
+        </div>
+      </SectionWrapper>
+    </SectionArea>
   );
 }
