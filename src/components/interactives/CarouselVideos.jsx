@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
@@ -7,16 +7,50 @@ import contentLp01 from "../../content/contentLp01";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "./Button";
 
-export default function VideoCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      align: "start",
-      dragFree: false,
-      skipSnaps: false,
-    }
-    // [Autoplay({ delay: 5000 })]
+function LazyVideo({ src, className }) {
+  const videoRef = useRef(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      src={shouldLoad ? src : undefined}
+      preload="none"
+      autoPlay={shouldLoad}
+      muted
+      loop
+      playsInline
+      className={className}
+    />
   );
+}
+
+
+export default function VideoCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
+    dragFree: false,
+    skipSnaps: false,
+  });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
@@ -33,13 +67,7 @@ export default function VideoCarousel() {
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
 
-  const videos = [
-    "/Jessica.mp4",
-    "Thabata.mp4",
-    "/Thais.mp4",
-    "/Edvaldo.mp4",
-    // "Carla.mov",
-  ];
+  const videos = ["/Jessica.mp4", "/Thabata.mp4", "/Thais.mp4", "/Edvaldo.mp4"];
 
   return (
     <SectionArea>
@@ -62,21 +90,16 @@ export default function VideoCarousel() {
                   <div
                     key={index}
                     className="
-                        flex justify-center
-                        flex-[0_0_50%]     /* 👈 2 slides no mobile */
-                        tablet1:flex-[0_0_33.333%] /* 👈 3 slides em telas médias */
-                        desktop2:flex-[0_0_25%]     /* 👈 4 slides no desktop */
-                        px-2
-                      "
+                      flex justify-center
+                      flex-[0_0_50%]
+                      tablet1:flex-[0_0_33.333%]
+                      desktop2:flex-[0_0_25%]
+                      px-2
+                    "
                   >
-                    <div className="rounded-[25px] overflow-hidden bg-black/40  shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
-                      <video
+                    <div className="rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
+                      <LazyVideo
                         src={video}
-                        autoPlay={true}
-                        preload="lazy"
-                        loop
-                        muted
-                        playsInline
                         className="w-full max-h-[643px] h-full object-cover object-top rounded-[20px] bg-black"
                       />
                     </div>
