@@ -99,13 +99,21 @@ export default function VideoCarousel() {
                     key={index}
                     className="
                       flex justify-center
-                      flex-[0_0_50%]
-                      tablet1:flex-[0_0_33.333%]
-                      desktop2:flex-[0_0_25%]
+                      flex-[0_0_70%]
+                      phone3:flex-[0_0_50%]
+                      tablet2:flex-[0_0_33.33%]
+                      desktop1:flex-[0_0_25%]
                       px-2
                     "
                   >
-                    <div className="rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px]">
+                    <div
+                      className="
+                      rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 
+                      desktop1:border-2 border-black/40 
+                      w-full h-auto 
+                      max-w-[309.32px] tablet2:max-w-[226px] phone3:max-w-[267px] desktop2:max-w-[277.5px]
+                    "
+                    >
                       <LazyVideo
                         src={video}
                         className="w-full max-h-[643px] h-full object-cover object-top rounded-[20px] bg-black"
