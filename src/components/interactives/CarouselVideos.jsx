@@ -43,7 +43,6 @@ function LazyVideo({ src, className }) {
   );
 }
 
-
 export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -55,15 +54,23 @@ export default function VideoCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 
+  // 🔥 FIX: evita reflow forçado usando rAF
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
+    requestAnimationFrame(() => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    });
   }, [emblaApi]);
 
+  // 🔥 FIX: adia leituras geométricas
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
+
+    requestAnimationFrame(() => {
+      onSelect();
+      setScrollSnaps(emblaApi.scrollSnapList());
+    });
+
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
 
@@ -81,9 +88,10 @@ export default function VideoCarousel() {
             titleColorSet="text-black"
             subtitleColorSet="text-black"
           />
+
           <MotionDivDownToUp>
             {/* VIEWPORT */}
-            <div className="overflow-hidden w-[95%] m-auto " ref={emblaRef}>
+            <div className="overflow-hidden w-[95%] m-auto" ref={emblaRef}>
               {/* CONTAINER */}
               <div className="flex">
                 {videos.map((video, index) => (
@@ -97,7 +105,7 @@ export default function VideoCarousel() {
                       px-2
                     "
                   >
-                    <div className="rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px] ">
+                    <div className="rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 desktop1:border-2 border-black/40 w-full max-w-[178px] h-auto phone3:max-w-[267px] tablet2:max-w-[226px] desktop1:max-w-[309.32px] desktop2:max-w-[277.5px]">
                       <LazyVideo
                         src={video}
                         className="w-full max-h-[643px] h-full object-cover object-top rounded-[20px] bg-black"
