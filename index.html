@@ -26,12 +26,12 @@
     </style>
 
     <!-- CSS não bloqueante -->
-    <link rel="preload" href="./src/index.css" as="style" />
+    <link rel="preload" href="/src/index.css" as="style" />
     <link
-      rel="stylesheet"
-      href="./src/index.css"
-      media="print"
-      onload="this.media='all'"
+      rel="preload"
+      href="/src/index.css"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
 
     <!-- PRELOAD fonts -->
