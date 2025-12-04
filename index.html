@@ -8,76 +8,19 @@
       Sites e Landing Pages para Advogados e Escritórios de Advocacia | Paper
       Street
     </title>
+
     <meta
       name="description"
-      content="Aproveite as condições especiais de Black Friday da Paper Street.
-Conquiste novos clientes com um site profissional, rápido e pensado para advogados. 
-"
+      content="Aproveite as condições especiais de Black Friday da Paper Street. Conquiste novos clientes com um site profissional, rápido e pensado para advogados."
     />
+
     <meta
       name="keywords"
-      content="Sites Jurídicos
-
-
-Desenvolvimento de Sites
-
-
-Paper Street
-
-
-Sites para Advogados
-
-
-Criação de Sites Jurídicos
-
-
-Web Design para Escritórios
-
-
-Sites Responsivos
-
-
-Sites de Alta Conversão
-
-
-Marketing Jurídico
-
-
-Marketing Jurídico Digital
-
-
-Performance de Sites
-
-
-UX para Advogados
-
-
-Design Moderno
-
-
-Otimização de Sites
-
-
-Sites Rápidos
-
-
-Sites Profissionais
-
-
-Presença Digital para Advogados
-
-
-Consultoria Web Jurídica
-
-
-Estratégia Digital para Escritórios
-
-
-Sites que Convertem
-"
+      content="Sites Jurídicos, Desenvolvimento de Sites, Paper Street, Sites para Advogados, Criação de Sites Jurídicos, Web Design para Escritórios, Sites Responsivos, Sites de Alta Conversão, Marketing Jurídico, Marketing Jurídico Digital, Performance de Sites, UX para Advogados, Design Moderno, Otimização de Sites, Sites Rápidos, Sites Profissionais, Presença Digital para Advogados, Consultoria Web Jurídica, Estratégia Digital para Escritórios, Sites que Convertem"
     />
 
-    <link rel="stylesheet" href="./src/index.css" />
+    <!-- CSS não bloqueante -->
+    <link rel="preload" href="./src/index.css" as="style" />
     <link
       rel="stylesheet"
       href="./src/index.css"
@@ -85,25 +28,24 @@ Sites que Convertem
       onload="this.media='all'"
     />
 
+    <!-- PRELOAD fonts -->
     <link
-  rel="preload"
-  href="/fonts/EBGaramond/EBGaramond-Medium.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
+      rel="preload"
+      href="/fonts/EBGaramond/EBGaramond-Medium.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Roboto/Roboto-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
 
-<link
-  rel="preload"
-  href="/fonts/Roboto/Roboto-Regular.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-
-
+    <!-- Imagens LCP -->
     <link rel="preload" as="image" href="/bgHeroLp.webp" fetchpriority="high" />
-
     <link rel="preload" as="image" href="/mockup.webp" fetchpriority="high" />
     <link
       rel="preload"
@@ -112,6 +54,7 @@ Sites que Convertem
       fetchpriority="high"
     />
 
+    <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -182,24 +125,18 @@ Sites que Convertem
       href="./src/assets/favico/favicon-16x16.png"
     />
     <link rel="manifest" href="./src/assets/favico/manifest.json" />
-    <meta
-      name="msapplication-TileImage"
-      content="./src/assets/favico/ms-icon-144x144.png"
-    />
+
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <!-- Meta tags -->
-    <!-- Meta tags Open Graph (OG) para WhatsApp e Facebook -->
+
+    <!-- OG META -->
     <meta
       property="og:title"
       content="Sites e Landing Pages para Advogados e Escritórios de Advocacia | Paper Street"
     />
     <meta
       property="og:description"
-      content="Aproveite as condições especiais de Black Friday da Paper Street.
-Conquiste novos clientes com um site profissional, rápido e pensado para advogados. 
-"
+      content="Aproveite as condições especiais de Black Friday da Paper Street. Conquiste novos clientes com um site profissional, rápido e pensado para advogados."
     />
     <meta
       property="og:image"
@@ -208,7 +145,7 @@ Conquiste novos clientes com um site profissional, rápido e pensado para advoga
     <meta property="og:url" content="https://www.paperstreet.com.br/" />
     <meta property="og:type" content="website" />
 
-    <!-- Meta tags do Twitter (opcional, mas recomendável) -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -216,19 +153,19 @@ Conquiste novos clientes com um site profissional, rápido e pensado para advoga
     />
     <meta
       name="twitter:description"
-      content="Aproveite as condições especiais de Black Friday da Paper Street.
-Conquiste novos clientes com um site profissional, rápido e pensado para advogados. 
-"
+      content="Aproveite as condições especiais de Black Friday da Paper Street. Conquiste novos clientes com um site profissional, rápido e pensado para advogados."
     />
     <meta
       name="twitter:image"
       content="https://www.paperstreet.com.br/previewIcon.png"
     />
     <meta name="twitter:url" content="https://www.paperstreet.com.br/" />
-    <!-- Fim Meta tags -->
-    
-    <!-- Fim Google Tag Manager (noscript) -->
+  </head>
+
+  <body>
     <div id="root"></div>
-    <script type="module" defer src="/src/main.jsx"></script>
+
+    <!-- JS defer = não bloqueia render -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
