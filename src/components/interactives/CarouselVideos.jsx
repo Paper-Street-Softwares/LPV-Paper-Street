@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
@@ -6,42 +6,6 @@ import SectionHeader from "../sectionElements/SectionHeader";
 import contentLp01 from "../../content/contentLp01";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "./Button";
-
-function LazyVideo({ src, className }) {
-  const videoRef = useRef(null);
-  const [shouldLoad, setShouldLoad] = useState(false);
-
-  useEffect(() => {
-    const el = videoRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldLoad(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <video
-      ref={videoRef}
-      src={shouldLoad ? src : undefined}
-      preload="none"
-      autoPlay={shouldLoad}
-      muted
-      loop
-      playsInline
-      className={className}
-    />
-  );
-}
 
 export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -54,23 +18,15 @@ export default function VideoCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 
-  // 🔥 FIX: evita reflow forçado usando rAF
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
-    requestAnimationFrame(() => {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    });
+    setSelectedIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
 
-  // 🔥 FIX: adia leituras geométricas
   useEffect(() => {
     if (!emblaApi) return;
-
-    requestAnimationFrame(() => {
-      onSelect();
-      setScrollSnaps(emblaApi.scrollSnapList());
-    });
-
+    onSelect();
+    setScrollSnaps(emblaApi.scrollSnapList());
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
 
@@ -90,33 +46,44 @@ export default function VideoCarousel() {
           />
 
           <MotionDivDownToUp>
-            {/* VIEWPORT */}
             <div className="overflow-hidden w-[95%] m-auto" ref={emblaRef}>
-              {/* CONTAINER */}
               <div className="flex">
                 {videos.map((video, index) => (
                   <div
                     key={index}
                     className="
                       flex justify-center
-                      flex-[0_0_70%]
-                      phone3:flex-[0_0_50%]
-                      tablet2:flex-[0_0_33.33%]
-                      desktop1:flex-[0_0_25%]
+                      flex-[0_0_50%]
+                      tablet1:flex-[0_0_33.333%]
+                      desktop2:flex-[0_0_25%]
                       px-2
                     "
                   >
+                    {/* 
+                      FIX 1: altura travada = zero reflow
+                      FIX 2: sem max-w que causa shift 
+                    */}
                     <div
                       className="
-                      rounded-[25px] overflow-hidden bg-black/40 shadow-lg p-0.5 
-                      desktop1:border-2 border-black/40 
-                      w-full h-auto 
-                      max-w-[309.32px] tablet2:max-w-[226px] phone3:max-w-[267px] desktop2:max-w-[277.5px]
+                      rounded-[25px]
+                      overflow-hidden
+                      bg-black/40
+                      shadow-lg
+                      p-0.5
+                      desktop1:border-2
+                      border-black/40
+                      w-full
+                      aspect-[9/16]   /* <— AQUI o segredo: trava o layout */
                     "
                     >
-                      <LazyVideo
+                      <video
                         src={video}
-                        className="w-full max-h-[643px] h-full object-cover object-top rounded-[20px] bg-black"
+                        autoPlay
+                        preload="metadata"
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover object-top rounded-[20px] bg-black"
                       />
                     </div>
                   </div>
@@ -126,7 +93,7 @@ export default function VideoCarousel() {
 
             {/* BULLETS */}
             <div className="flex justify-center gap-2 mt-6 list-none desktop2:hidden">
-              {scrollSnaps.map((scrollIndex, index) => (
+              {[0, 2].map((scrollIndex, index) => (
                 <button
                   key={index}
                   onClick={() => emblaApi?.scrollTo(scrollIndex)}
