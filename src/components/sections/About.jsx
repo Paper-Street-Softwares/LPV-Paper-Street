@@ -46,6 +46,7 @@ export default function About({
             src={content.texts.about.imagem.img}
             alt={aboutText.imagem.alt}
             className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+            loading="lazy"
           />
         </MotionDivDownToUp>
 

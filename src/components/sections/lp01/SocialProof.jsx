@@ -58,7 +58,7 @@ function SocialProofVideo({ src, poster }) {
         src={canLoad ? src : undefined}
         poster={poster}
         muted
-        preload="none"
+        preload="lazy"
         loop
         playsInline
         className="w-full h-full object-cover border-2 border-primaryDark rounded-lg"
