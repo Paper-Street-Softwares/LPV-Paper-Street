@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 // import Index from "./pages/Index.jsx";
 import Lp01 from "./pages/Lp01.jsx";
