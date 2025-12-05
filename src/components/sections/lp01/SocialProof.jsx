@@ -47,7 +47,7 @@ function SocialProofVideo({ src, poster }) {
   return (
     <div
       ref={containerRef}
-      className="relative w-[230px] bg-cover h-[105px] tablet1:w-[260px] rounded-lg overflow-hidden shadow-md border mx-3"
+      className="relative w-[230px] bg-cover h-[105px] phone3:w-[300px] phone3:h-[130px] tablet1:w-[260px] rounded-lg overflow-hidden shadow-md border mx-3"
     >
       {!isPlaying && (
         <div className="bg-black/40 absolute inset-0 pointer-events-none" />
