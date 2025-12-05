@@ -27,11 +27,25 @@
       }
     </style>
 
+    <!-- CSS não bloqueante -->
+    <link
+      rel="preload"
+      href="/src/index.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
 
     <!-- PRELOAD fonts -->
     <link
       rel="preload"
       href="/fonts/EBGaramond/EBGaramond-Medium.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/EBGaramond/EBGaramond-Light.ttf"
       as="font"
       type="font/ttf"
       crossorigin
