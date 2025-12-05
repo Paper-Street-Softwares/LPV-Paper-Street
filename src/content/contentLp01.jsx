@@ -18,15 +18,15 @@ import { Gavel } from "lucide-react";
 import { Check } from "lucide-react";
 import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
 import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
-import socialProof1 from "../../public/socialProof/Depoimento1.mp4";
-import socialProof2 from "../../public/socialProof/Depoimento2.mp4";
-import socialProof3 from "../../public/socialProof/Depoimento3.mp4";
-import socialProof4 from "../../public/socialProof/Depoimento4.mp4";
-import socialProof5 from "../../public/socialProof/Depoimento5.mp4";
-import socialProof6 from "../../public/socialProof/Depoimento6.mp4";
-import socialProof7 from "../../public/socialProof/Depoimento7.mp4";
-import socialProof8 from "../../public/socialProof/Depoimento8.mp4";
-import socialProof9 from "../../public/socialProof/Depoimento9.mp4";
+import socialProof1 from "../../public/socialProof/Depoimento1.webm";
+import socialProof2 from "../../public/socialProof/Depoimento2.webm";
+import socialProof3 from "../../public/socialProof/Depoimento3.webm";
+import socialProof4 from "../../public/socialProof/Depoimento4.webm";
+import socialProof5 from "../../public/socialProof/Depoimento5.webm";
+import socialProof6 from "../../public/socialProof/Depoimento6.webm";
+import socialProof7 from "../../public/socialProof/Depoimento7.webm";
+import socialProof8 from "../../public/socialProof/Depoimento8.webm";
+import socialProof9 from "../../public/socialProof/Depoimento9.webm";
 
 import poster1 from "../../public/socialProof/poster1.webp";
 import poster2 from "../../public/socialProof/poster2.webp";
@@ -80,18 +80,18 @@ const contentLp01 = {
       title: (
         <h1>
           <strong>Advogado</strong>, precisando{" "}
-          <strong className="text-primary">conquistar novos clientes</strong> ou{" "}
-          <strong className="text-primary">melhorar sua imagem</strong> na
+          <strong className="font-extrabold">conquistar novos clientes</strong> ou{" "}
+          <strong className="font-extrabold">melhorar sua imagem</strong> na
           internet?
         </h1>
       ),
       subtitle: (
         <p>
-          <strong className="text-primary">
+          <strong className="font-extrabold">
             Pare de depender de indicações
           </strong>{" "}
-          tendo um <strong className="text-primary">site</strong> ou{" "}
-          <strong className="text-primary">landing page</strong> que leva
+          tendo um <strong className="font-extrabold">site</strong> ou{" "}
+          <strong className="font-extrabold">landing page</strong> que leva
           clientes pro seu WhatsApp -
           <span className=" opacity-70">
             {" "}
