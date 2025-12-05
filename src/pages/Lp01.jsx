@@ -1,5 +1,4 @@
 import HeroLP from "../components/sections/lp01/HeroLP";
-import WhatsappAnimated from "../components/interactives/WhatsappAnimated";
 import React from "react";
 
 const VideoCarousel = React.lazy(() =>
@@ -14,6 +13,10 @@ const AboutParalaxeLP = React.lazy(() =>
 );
 const FooterLP = React.lazy(() =>
   import("../components/sections/lp01/FooterLP")
+);
+
+const WhatsappAnimated = React.lazy(() =>
+  import("../components/interactives/WhatsappAnimated")
 );
 
 export default function Lp01() {
