@@ -1,4 +1,7 @@
 import HeroLP from "../components/sections/lp01/HeroLP";
+import AboutParalaxeLP from "../components/sections/lp01/AboutParalaxeLP";
+import Client from "../components/sections/lp01/Client";
+import FooterLP from "../components/sections/lp01/FooterLP";
 import React from "react";
 
 const VideoCarousel = React.lazy(() =>
@@ -6,13 +9,6 @@ const VideoCarousel = React.lazy(() =>
 );
 const SocialProof = React.lazy(() =>
   import("../components/sections/lp01/SocialProof")
-);
-const Client = React.lazy(() => import("../components/sections/lp01/Client"));
-const AboutParalaxeLP = React.lazy(() =>
-  import("../components/sections/lp01/AboutParalaxeLP")
-);
-const FooterLP = React.lazy(() =>
-  import("../components/sections/lp01/FooterLP")
 );
 
 const WhatsappAnimated = React.lazy(() =>
