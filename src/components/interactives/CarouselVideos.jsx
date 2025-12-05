@@ -85,6 +85,7 @@ export default function VideoCarousel() {
                         src={video}
                         autoPlay
                         preload="lazy"
+                        so
                         loop
                         muted
                         playsInline
