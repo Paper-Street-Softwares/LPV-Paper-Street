@@ -30,7 +30,12 @@ export default function VideoCarousel() {
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
 
-  const videos = ["/Jessica.mp4", "/Thabata.mp4", "/Thais.mp4", "/Edvaldo.mp4"];
+  const videos = [
+    "/Jessica.webm",
+    "/Thabata.webm",
+    "/Thais.webm",
+    "/Edvaldo.webm",
+  ];
 
   return (
     <SectionArea>
