@@ -2,6 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="vite:css-preload" content="true" />
+
     <link rel="icon" type="image/svg+xml" href="" />
 
     <title>
@@ -25,14 +27,6 @@
       }
     </style>
 
-    <!-- CSS não bloqueante -->
-    <link rel="preload" href="/src/index.css" as="style" />
-    <link
-      rel="preload"
-      href="/src/index.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
 
     <!-- PRELOAD fonts -->
     <link
