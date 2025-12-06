@@ -84,7 +84,7 @@ export default function VideoCarousel() {
                       <video
                         src={video}
                         autoPlay
-                        preload="lazy"
+                        preload="none"
                         so
                         loop
                         muted
