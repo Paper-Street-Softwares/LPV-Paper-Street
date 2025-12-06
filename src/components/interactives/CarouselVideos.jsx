@@ -9,7 +9,7 @@ import Button from "./Button";
 
 export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
+    // loop: true,
     align: "start",
     dragFree: false,
     skipSnaps: false,
