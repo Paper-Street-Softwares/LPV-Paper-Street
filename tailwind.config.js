@@ -55,6 +55,8 @@ export default {
       fontFamily: {
         mainFont: ["EB Garamond", "serif"],
         secondFont: ["Roboto", "sans-serif"],
+        sans: ['"EB Garamond"', "serif"],
+        serif: ['"EB Garamond"', "serif"],
       },
       fontSize: {
         paragraph1: "0.625rem",
