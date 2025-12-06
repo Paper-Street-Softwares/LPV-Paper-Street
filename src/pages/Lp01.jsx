@@ -23,7 +23,7 @@ export default function Lp01() {
   return (
     <div className="bg-bgFixedLight">
       <HeroLP fullImg={true} />
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
       <SocialProof />
       <Client />
       <AboutParalaxeLP logo={true} />
