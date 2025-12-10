@@ -1,41 +1,36 @@
-import React, { useCallback, useEffect, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import SectionHeader from "../sectionElements/SectionHeader";
-import contentLp01 from "../../content/contentLp01";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import Button from "./Button";
+import React, { useCallback, useEffect, useState } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import SectionHeader from '../sectionElements/SectionHeader'
+import contentLp01 from '../../content/contentLp01'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import Button from './Button'
 
 export default function VideoCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     // loop: true,
-    align: "start",
+    align: 'start',
     dragFree: false,
     skipSnaps: false,
-  });
+  })
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  const [scrollSnaps, setScrollSnaps] = useState([])
 
   const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+    if (!emblaApi) return
+    setSelectedIndex(emblaApi.selectedScrollSnap())
+  }, [emblaApi])
 
   useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
-    emblaApi.on("select", onSelect);
-  }, [emblaApi, onSelect]);
+    if (!emblaApi) return
+    onSelect()
+    setScrollSnaps(emblaApi.scrollSnapList())
+    emblaApi.on('select', onSelect)
+  }, [emblaApi, onSelect])
 
-  const videos = [
-    "/Jessica.webm",
-    "/Thabata.webm",
-    "/Thais.webm",
-    "/Edvaldo.webm",
-  ];
+  const videos = Object.values(contentLp01.videos.sites)
 
   return (
     <SectionArea>
@@ -105,12 +100,12 @@ export default function VideoCarousel() {
                   onClick={() => emblaApi?.scrollTo(scrollIndex)}
                   aria-label="Botões de passar carrosel"
                   aria-current={
-                    selectedIndex === scrollIndex ? "true" : "false"
+                    selectedIndex === scrollIndex ? 'true' : 'false'
                   }
                   className={`w-3 h-3 rounded-full transition-all ${
                     selectedIndex === scrollIndex
-                      ? "bg-primaryDark w-5 h-5"
-                      : "bg-white w-5 h-5 border border-black/40"
+                      ? 'bg-primaryDark w-5 h-5'
+                      : 'bg-white w-5 h-5 border border-black/40'
                   }`}
                 ></button>
               ))}
@@ -144,5 +139,5 @@ export default function VideoCarousel() {
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }
