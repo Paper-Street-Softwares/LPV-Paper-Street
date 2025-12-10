@@ -1,48 +1,48 @@
-import SectionArea from "../../sectionElements/SectionArea";
-import SectionHeader from "../../sectionElements/SectionHeader";
-import SectionWrapper from "../../sectionElements/SectionWrapper";
-import React, { useRef, useState, useEffect } from "react";
-import contentLp01 from "../../../content/contentLp01";
-import { Pause, Play } from "lucide-react";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+import SectionArea from '../../sectionElements/SectionArea'
+import SectionHeader from '../../sectionElements/SectionHeader'
+import SectionWrapper from '../../sectionElements/SectionWrapper'
+import React, { useRef, useState, useEffect } from 'react'
+import contentLp01 from '../../../content/contentLp01'
+import { Pause, Play } from 'lucide-react'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
 
 function SocialProofVideo({ src, poster }) {
-  const videoRef = useRef(null);
-  const containerRef = useRef(null);
+  const videoRef = useRef(null)
+  const containerRef = useRef(null)
 
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [canLoad, setCanLoad] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [canLoad, setCanLoad] = useState(false)
 
   useEffect(() => {
-    const element = containerRef.current;
-    if (!element) return;
+    const element = containerRef.current
+    if (!element) return
 
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setCanLoad(true);
-          observer.disconnect();
+          setCanLoad(true)
+          observer.disconnect()
         }
       },
       { threshold: 0.2 }
-    );
+    )
 
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [])
 
   const togglePlay = () => {
-    if (!videoRef.current) return;
+    if (!videoRef.current) return
 
     if (videoRef.current.paused) {
-      videoRef.current.muted = false;
-      videoRef.current.play();
-      setIsPlaying(true);
+      videoRef.current.muted = false
+      videoRef.current.play()
+      setIsPlaying(true)
     } else {
-      videoRef.current.pause();
-      setIsPlaying(false);
+      videoRef.current.pause()
+      setIsPlaying(false)
     }
-  };
+  }
 
   return (
     <div
@@ -71,23 +71,23 @@ function SocialProofVideo({ src, poster }) {
           aria-label="Botão de Player e Pause dos vídeos"
         >
           {isPlaying ? (
-            <p className="flex items-center justify-evenly text-black">
+            <p className="flex items-center justify-evenly text-black font-secondFont">
               Pausar áudio <Pause width={14} />
             </p>
           ) : (
-            <p className="flex items-center justify-evenly text-black">
+            <p className="flex items-center justify-evenly text-black font-secondFont">
               Toque para ouvir <Play width={14} />
             </p>
           )}
         </button>
       </div>
     </div>
-  );
+  )
 }
 
 export default function SocialProof() {
-  const audios = Object.values(contentLp01.socialProof.depoimentos.audios);
-  const posters = Object.values(contentLp01.socialProof.depoimentos.posters);
+  const audios = Object.values(contentLp01.socialProof.depoimentos.audios)
+  const posters = Object.values(contentLp01.socialProof.depoimentos.posters)
 
   return (
     <SectionArea className="bg-bgSectionOpacityLight">
@@ -118,5 +118,5 @@ export default function SocialProof() {
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }
