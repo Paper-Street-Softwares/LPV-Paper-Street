@@ -3,27 +3,52 @@ import logo from "../assets/imgs/logo/logoLp.webp";
 import imagemAbout from "../assets/imgs/about/aboutImg.webp";
 import imagemAboutMobile from "../assets/imgs/about/aboutImgMobile.webp";
 import { infos } from "./content";
-import { Shield } from "lucide-react";
-import { File } from "lucide-react";
-import { Banknote } from "lucide-react";
-import { FileKey2 } from "lucide-react";
-import { Scale } from "lucide-react";
-import { Handshake } from "lucide-react";
-import { BadgeDollarSign } from "lucide-react";
-import { Accessibility } from "lucide-react";
-import { ChartNoAxesCombined } from "lucide-react";
-import { Ban } from "lucide-react";
-import { IdCard } from "lucide-react";
-import { Gavel } from "lucide-react";
 import { Check } from "lucide-react";
 import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
 import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
+import socialProof1 from "../assets/imgs/socialProof/Depoimento1.webm";
+import socialProof2 from "../assets/imgs/socialProof/Depoimento2.webm";
+import socialProof3 from "../assets/imgs/socialProof/Depoimento3.webm";
+import socialProof4 from "../assets/imgs/socialProof/Depoimento4.webm";
+import socialProof5 from "../assets/imgs/socialProof/Depoimento5.webm";
+import socialProof6 from "../assets/imgs/socialProof/Depoimento6.webm";
+import socialProof7 from "../assets/imgs/socialProof/Depoimento7.webm";
+import socialProof8 from "../assets/imgs/socialProof/Depoimento8.webm";
+import socialProof9 from "../assets/imgs/socialProof/Depoimento9.webm";
+
+import poster1 from "../assets/imgs/socialProof/poster1.webp";
+import poster2 from "../assets/imgs/socialProof/poster2.webp";
+import poster3 from "../assets/imgs/socialProof/poster3.webp";
+// import poster4 from "../assets/imgs/socialProof/poster4.webp";
+import poster5 from "../assets/imgs/socialProof/poster5.webp";
+import poster6 from "../assets/imgs/socialProof/poster6.webp";
+import poster7 from "../assets/imgs/socialProof/poster7.webp";
+import poster8 from "../assets/imgs/socialProof/poster8.webp";
+import poster9 from "../assets/imgs/socialProof/poster9.webp";
+import video1 from "../assets/imgs/videosSite/Jessica.webm";
+import video2 from "../assets/imgs/videosSite/Thabata.webm";
+import video3 from "../assets/imgs/videosSite/Thais.webm";
+import video4 from "../assets/imgs/videosSite/Edvaldo.webm";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
 // import img3 from "../assets/imgs/about/image3.webp";
 
 const currentYear = new Date().getFullYear();
+
+export const infosLp = {
+  phone: {
+    ddd: "11",
+    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0977", // Apenas os 4 últimos números
+  },
+
+  whatsappDefaultMessageLP:
+    "Olá! Sou advogado(a) e vim do Google! Tenho interesse na landing page por 12 x 49!",
+  whatsChatDefaultMessage:
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const contentLp01 = {
   infos: {
@@ -34,7 +59,7 @@ const contentLp01 = {
     keywords:
       "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
-  origem: "LP Padrão",
+  origem: "LP Oferta",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
@@ -46,28 +71,22 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, precisando{" "}
-          <strong className="text-[#8EDBD3]">conquistar novos clientes</strong>{" "}
-          ou <strong className="text-[#8EDBD3]">melhorar sua imagem</strong> na
-          internet?
+          <strong>Advogado</strong>, tenha uma landing page testada e validada
+          para anúncios por apenas 12x de R$49
         </h1>
       ),
       subtitle: (
         <p>
-          <strong className="text-[#8EDBD3]">
-            Pare de depender de indicações
-          </strong>{" "}
-          tendo um <strong className="text-[#8EDBD3]">site</strong> ou{" "}
-          <strong className="text-[#8EDBD3]">landing page</strong> que leva
-          clientes pro seu WhatsApp -
+          Criamos páginas pensadas para anúncios no Google que levam clientes
+          direto para o seu WhatsApp,
           <span className=" opacity-70">
             {" "}
-            mesmo que você não entenda nada de tecnologia.
+            mesmo que você não entenda nada de marketing.
           </span>
         </p>
       ),
-      buttonLabel: "Fale com um especialista no WhatsApp",
-      buttonLabel2: "Quero um orçamento sem compromisso",
+      buttonLabel: "Quero aproveitar essa oportunidade",
+      buttonLabel2: "Quero uma Landing Page validada",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -340,39 +359,6 @@ const contentLp01 = {
       },
     },
   },
-
-  steppers: {
-    sectionHeader: {
-      miniTag: "PASSO A PASSO",
-      title:
-        "Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construído.",
-    },
-    cards: {
-      card1: {
-        icon: 1,
-        title: "Informações",
-        description:
-          "Após contratar, pedimos os dados do seu negócio. Sem material? Temos textos e imagens prontos.",
-      },
-      card2: {
-        icon: 2,
-        title: "Criação",
-        description: "Desenvolvemos seu site e tiramos dúvidas no caminho.",
-      },
-      card3: {
-        icon: 3,
-        title: "Aprovação",
-        description:
-          "Você aprova, escolhemos o nome, criamos e-mails e colocamos no ar.",
-      },
-      card4: {
-        icon: 4,
-        title: "Suporte",
-        description:
-          "Ganha uma arte exclusiva para divulgar e dicas de como usar melhor o site.",
-      },
-    },
-  },
   whyUs: {
     sectionHeader: {
       miniTag: "TRANSFORME E CONQUISTE",
@@ -487,7 +473,7 @@ const contentLp01 = {
       miniTag: "",
       title: (
         <p class="">
-          <span class="text-[#075e54] relative inline-block stroke-current">
+          <span class="text-primaryDark relative inline-block stroke-current">
             Não deixe pra depois
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
@@ -504,38 +490,36 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Faça com quem já ajudou centenas de advogados e tenha seu site/landing page com as melhores condições do mercado",
+        "Temos a solução perfeita para advogados que querem atrair clientes pela internet sem investir alto logo no início.",
     },
     paragraph: (
       <p>
         {" "}
-        <span className="flex justify-start gap-2 text-start">
-          <Check /> Domínio e hospedagem{" "}
-          <span className="text-[#075e54]">grátis por 1 ano</span>
+        <span className="flex items-center justify-start gap-2 font-bold text-primaryDark text-start">
+          <Check /> Domínio e Hospedagem grátis por 1 ano <br />
+          (Últimos dias de promoção - Economia de R$ 180,00)
         </span>
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> Pronto em apenas{" "}
-          <span className="text-[#075e54]">5 dias úteis</span>
+          <Check /> Páginas pensadas para anúncios
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> Caixas de{" "}
-          <span className="text-[#075e54]">e-mails profissionais</span>
+          <Check /> Linguagem simples, que o cliente entende
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Reembolso total</span> em
-          caso de arrependimento
+          <Check />
+          Reembolso total em caso de arrependimento
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Sem mensalidades</span>
+          <Check /> Sem mensalidades
         </span>{" "}
       </p>
     ),
     ariaLabel: "Botão de whatsApp",
-    buttonLabel: "Fale com a gente agora mesmo",
+    buttonLabel: "Quero aproveitar a condição especial",
   },
   about: {
     bgImg: bgImg,
@@ -557,7 +541,7 @@ const contentLp01 = {
       title: (
         <p class="">
           Ei,
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             Advogado(a)!
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
@@ -574,7 +558,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Aqui, seu site sai no prazo e com suporte de verdade, sem enrolação.",
+        "Aqui, sua página sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
       <p className="leading-[20px]">
@@ -593,11 +577,11 @@ const contentLp01 = {
         <br />
         <br />
         Nosso processo é simples e sem complicação: cuidamos de tudo pra que
-        você tenha um site leve, direto ao ponto e pronto pra mostrar autoridade
-        na internet.
+        você tenha uma página direta ao ponto e pronto seus anúncios no Google
+        Ads.
       </p>
     ),
-    buttonLabel: "Fale comigo agora mesmo",
+    buttonLabel: "Quero uma página pronta para anúncios",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   socialProof: {
@@ -605,9 +589,9 @@ const contentLp01 = {
       miniTag: "A_Definir",
       title: (
         <p class="">
-          Você também vai se
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            encantar
+          Resultado que
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
+            encanta!
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -623,7 +607,31 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
+        "Nossas páginas focadas exclusivamente em conversão encantam nossos clientes",
+    },
+    depoimentos: {
+      audios: {
+        audio1: socialProof1,
+        audio2: socialProof2,
+        audio3: socialProof3,
+        // audio4: socialProof4,
+        audio5: socialProof5,
+        audio6: socialProof6,
+        audio7: socialProof7,
+        audio8: socialProof8,
+        audio9: socialProof9,
+      },
+      posters: {
+        poster1: poster1,
+        poster2: poster2,
+        poster3: poster3,
+        // poster4: poster4,
+        poster5: poster5,
+        poster6: poster6,
+        poster7: poster7,
+        poster8: poster8,
+        poster9: poster9,
+      },
     },
   },
   videos: {
@@ -631,9 +639,9 @@ const contentLp01 = {
       miniTag: "A_Definir",
       title: (
         <p class="">
-          Entregamos
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            alto padrão
+          Não é só uma landing page. É uma máquina de
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
+            captação de clientes.
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -649,7 +657,13 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Nossa páginas encantam e também são perfeitas pra anúncios de tráfego pago",
+        "Cada página é construída com foco em conversão, velocidade e clareza, seguindo exatamente o que o Google Ads precisa para gerar contatos qualificados.",
+    },
+    sites: {
+      video1: video1,
+      video2: video2,
+      video3: video3,
+      video4: video4,
     },
   },
   cta: {
@@ -754,7 +768,7 @@ const contentLp01 = {
   },
   links: {
     instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-    ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
+    ctaWhatsapp: `https://wa.me/+55${infosLp.phone.ddd}${infosLp.phone.firstPart}${infosLp.phone.secondPart}?text=${infosLp.whatsappDefaultMessageLP}`,
   },
 };
 

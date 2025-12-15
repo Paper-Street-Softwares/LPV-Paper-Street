@@ -2,22 +2,33 @@ import bgImg from "../assets/imgs/hero/bgHeroLp.webp";
 import logo from "../assets/imgs/logo/logoLp.webp";
 import imagemAbout from "../assets/imgs/about/aboutImg.webp";
 import imagemAboutMobile from "../assets/imgs/about/aboutImgMobile.webp";
-import { infos } from "./content";
-import { Shield } from "lucide-react";
-import { File } from "lucide-react";
-import { Banknote } from "lucide-react";
-import { FileKey2 } from "lucide-react";
-import { Scale } from "lucide-react";
-import { Handshake } from "lucide-react";
-import { BadgeDollarSign } from "lucide-react";
-import { Accessibility } from "lucide-react";
-import { ChartNoAxesCombined } from "lucide-react";
-import { Ban } from "lucide-react";
-import { IdCard } from "lucide-react";
-import { Gavel } from "lucide-react";
+import { infos } from "../content";
 import { Check } from "lucide-react";
 import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
 import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
+import socialProof1 from "../assets/imgs/socialProof/Depoimento1.webm";
+import socialProof2 from "../assets/imgs/socialProof/Depoimento2.webm";
+import socialProof3 from "../assets/imgs/socialProof/Depoimento3.webm";
+import socialProof4 from "../assets/imgs/socialProof/Depoimento4.webm";
+import socialProof5 from "../assets/imgs/socialProof/Depoimento5.webm";
+import socialProof6 from "../assets/imgs/socialProof/Depoimento6.webm";
+import socialProof7 from "../assets/imgs/socialProof/Depoimento7.webm";
+import socialProof8 from "../assets/imgs/socialProof/Depoimento8.webm";
+import socialProof9 from "../assets/imgs/socialProof/Depoimento9.webm";
+
+import poster1 from "../assets/imgs/socialProof/poster1.webp";
+import poster2 from "../assets/imgs/socialProof/poster2.webp";
+import poster3 from "../assets/imgs/socialProof/poster3.webp";
+// import poster4 from "../assets/imgs/socialProof/poster4.webp";
+import poster5 from "../assets/imgs/socialProof/poster5.webp";
+import poster6 from "../assets/imgs/socialProof/poster6.webp";
+import poster7 from "../assets/imgs/socialProof/poster7.webp";
+import poster8 from "../assets/imgs/socialProof/poster8.webp";
+import poster9 from "../assets/imgs/socialProof/poster9.webp";
+import video1 from "../assets/imgs/videosSite/Jessica.webm";
+import video2 from "../assets/imgs/videosSite/Thabata.webm";
+import video3 from "../assets/imgs/videosSite/Thais.webm";
+import video4 from "../assets/imgs/videosSite/Edvaldo.webm";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -25,16 +36,30 @@ import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
 
 const currentYear = new Date().getFullYear();
 
+export const infosLp = {
+  phone: {
+    ddd: "11",
+    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0977", // Apenas os 4 últimos números
+  },
+
+  whatsappDefaultMessageLP:
+    "Olá! Sou advogado(a) e vim do Google! Pode me ajudar?",
+  whatsChatDefaultMessage:
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
+
 const contentLp01 = {
   infos: {
     title:
-      "Sites e Landing Pages para Advogados e Escritórios de Advocacia | Paper Street",
+      "Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street",
     description:
-      "Aproveite as condições especiais de Black Friday da Paper Street. Conquiste novos clientes com um site profissional, rápido e pensado para advogados. ",
+      "Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.",
     keywords:
-      "Sites Jurídicos, Desenvolvimento de Sites, Paper Street, Sites para Advogados, Criação de Sites Jurídicos, Web Design para Escritórios, Sites Responsivos, Sites de Alta Conversão, Marketing Jurídico, Marketing Jurídico Digital, Performance de Sites, UX para Advogados, Design Moderno, Otimização de Sites, Sites Rápidos, Sites Profissionais, Presença Digital para Advogados, Consultoria Web Jurídica, Estratégia Digital para Escritórios, Sites que Convertem.",
+      "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
-  origem: "LP Black Friday",
+  origem: "LP Padrão",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
@@ -46,38 +71,21 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, chegou a hora de você ter um site de{" "}
-          <strong className="text-[#8EDBD3]">alto padrão</strong> ainda com
-          preço de <strong className="text-[#8EDBD3]">Black Friday!</strong>
+          <strong>Advogado</strong>, pare de depender de indicações para
+          conseguir clientes
         </h1>
       ),
       subtitle: (
         <p>
-          {/* <strong className="text-[#8EDBD3]">
-            Pare de depender de indicações
-          </strong>{" "}
-          tendo um <strong className="text-[#8EDBD3]">site</strong> ou{" "}
-          <strong className="text-[#8EDBD3]">landing page</strong> que leva
-          clientes pro seu WhatsApp -
+          Criamos páginas pensadas para anúncios no Google que levam clientes
+          direto para o seu WhatsApp,
           <span className=" opacity-70">
             {" "}
-            mesmo que você não entenda nada de tecnologia.
-          </span> */}{" "}
-          Descontos de verdade de{" "}
-          <strong className="text-[#8EDBD3]">até 20%</strong>, e parcelamento em
-          até
-          <strong className="text-[#8EDBD3]"> 12x no cartão</strong> na criação
-          do seu Site ou Landing Page! <br />
-          Vários advogados já aproveitaram pra melhorar sua imagem na internet
-          ou usar nossas páginas pra captar clientes.
-          <br />
-          <strong className="text-[#8EDBD3]">
-            {" "}
-            ⚠️ Últimos dias de promoção!
-          </strong>
+            mesmo que você não entenda nada de marketing.
+          </span>
         </p>
       ),
-      buttonLabel: "Garantir Minha Oferta de Black Friday",
+      buttonLabel: "Quero atrair clientes pela internet",
       buttonLabel2: "Quero um orçamento sem compromisso",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
@@ -352,38 +360,6 @@ const contentLp01 = {
     },
   },
 
-  steppers: {
-    sectionHeader: {
-      miniTag: "PASSO A PASSO",
-      title:
-        "Nossos processos foram pensados para você não ter nenhuma preocupação enquanto seu site é construído.",
-    },
-    cards: {
-      card1: {
-        icon: 1,
-        title: "Informações",
-        description:
-          "Após contratar, pedimos os dados do seu negócio. Sem material? Temos textos e imagens prontos.",
-      },
-      card2: {
-        icon: 2,
-        title: "Criação",
-        description: "Desenvolvemos seu site e tiramos dúvidas no caminho.",
-      },
-      card3: {
-        icon: 3,
-        title: "Aprovação",
-        description:
-          "Você aprova, escolhemos o nome, criamos e-mails e colocamos no ar.",
-      },
-      card4: {
-        icon: 4,
-        title: "Suporte",
-        description:
-          "Ganha uma arte exclusiva para divulgar e dicas de como usar melhor o site.",
-      },
-    },
-  },
   whyUs: {
     sectionHeader: {
       miniTag: "TRANSFORME E CONQUISTE",
@@ -497,9 +473,9 @@ const contentLp01 = {
     sectionHeader: {
       miniTag: "",
       title: (
-        <p class="text-title3 phone3:text-title4 tablet1:text-title5 desktop1:text-title5">
-          <span class="text-[#075e54] relative inline-block stroke-current">
-            Não deixe pra depois <br className="hidden desktop1:flex" />
+        <p class="">
+          <span class="text-primaryDark relative inline-block stroke-current">
+            Não deixe pra depois
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -515,38 +491,36 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Faça com quem já ajudou centenas de advogados e garanta seu site/landing page com as melhores condições do ano.",
+        "Faça com quem já ajudou centenas de advogados e tenha sua landing page com as melhores condições do mercado!",
     },
     paragraph: (
       <p>
         {" "}
-        <span className="flex justify-start gap-2 text-start">
-          <Check /> Domínio e hospedagem{" "}
-          <span className="text-[#075e54]">grátis por 1 ano</span>
+        <span className="flex items-center justify-start gap-2 font-bold text-primaryDark text-start">
+          <Check /> Domínio e Hospedagem grátis por 1 ano <br />
+          (Últimos dias de promoção - Economia de R$ 180,00)
         </span>
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> Pronto em apenas{" "}
-          <span className="text-[#075e54]">5 dias úteis</span>
+          <Check /> Páginas pensadas para anúncios
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> Caixas de{" "}
-          <span className="text-[#075e54]">e-mails profissionais</span>
+          <Check /> Linguagem simples, que o cliente entende
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Reembolso total</span> em
-          caso de arrependimento
+          <Check />
+          Reembolso total em caso de arrependimento
         </span>{" "}
-        <span className="flex justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start">
           {" "}
-          <Check /> <span className="text-[#075e54]">Sem mensalidades</span>
+          <Check /> Sem mensalidades
         </span>{" "}
       </p>
     ),
     ariaLabel: "Botão de whatsApp",
-    buttonLabel: "Fale com a gente agora mesmo",
+    buttonLabel: "Quero parar de depender de indicações",
   },
   about: {
     bgImg: bgImg,
@@ -567,9 +541,9 @@ const contentLp01 = {
       miniTag: "",
       title: (
         <p class="">
-          Advogado(a),
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            é Black Friday! ⚡
+          Ei,
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
+            Advogado(a)!
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -585,24 +559,30 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Aqui seu site sai no prazo, com suporte real e a melhor condição do ano.",
+        "Aqui, sua página sai no prazo e com suporte de verdade, sem enrolação.",
     },
     paragraph: (
       <p className="leading-[20px]">
-        Na Paper, levamos prazos a sério — sem sumiço e sem demora. Nossa equipe
-        especializada cuida de cada etapa do seu projeto, do design ao suporte
-        técnico.
+        Na Paper, levamos prazos a sério — nada de sumiço ou demora nas
+        respostas. Temos uma equipe de profissionais especializados, cada um
+        focado em uma parte do seu projeto — do design ao atendimento técnico.
+        <br />
+        Mesmo após a entrega, você pode contar com a gente sempre que precisar.
+        {/* <br />
+        <br />
+        Além disso, temos centenas de depoimentos reais em nossas redes sociais,
+        provando a satisfação de quem já confiou no nosso trabalho.
+        <br />E o melhor: se em qualquer momento do processo você desistir,
+        devolvemos 100% do valor investido, sem dor de cabeça — tudo garantido
+        em contrato. */}
         <br />
         <br />
-        Mesmo depois da entrega, seguimos ao seu lado sempre que precisar.
-        <br />
-        <br />
-        Temos dezenas de depoimentos de quem já confiou no nosso trabalho, e
-        garantimos 100% de reembolso em caso de desistência, tudo pautado em
-        contrato.
+        Nosso processo é simples e sem complicação: cuidamos de tudo pra que
+        você tenha uma página direta ao ponto e pronto seus anúncios no Google
+        Ads.
       </p>
     ),
-    buttonLabel: "Fale agora comigo",
+    buttonLabel: "Quero uma página pronta para anúncios",
     ctaButtonAriaLabel: "Botão de Contato",
   },
   socialProof: {
@@ -610,9 +590,9 @@ const contentLp01 = {
       miniTag: "A_Definir",
       title: (
         <p class="">
-          Você também vai se
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            encantar
+          Resultado que
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
+            encanta!
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -628,7 +608,31 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Nossos clientes ficam surpresos com o nível de cuidado e atenção que recebem",
+        "Nossas páginas focadas exclusivamente em conversão encantam nossos clientes",
+    },
+    depoimentos: {
+      audios: {
+        audio1: socialProof1,
+        audio2: socialProof2,
+        audio3: socialProof3,
+        // audio4: socialProof4,
+        audio5: socialProof5,
+        audio6: socialProof6,
+        audio7: socialProof7,
+        audio8: socialProof8,
+        audio9: socialProof9,
+      },
+      posters: {
+        poster1: poster1,
+        poster2: poster2,
+        poster3: poster3,
+        // poster4: poster4,
+        poster5: poster5,
+        poster6: poster6,
+        poster7: poster7,
+        poster8: poster8,
+        poster9: poster9,
+      },
     },
   },
   videos: {
@@ -636,9 +640,9 @@ const contentLp01 = {
       miniTag: "A_Definir",
       title: (
         <p class="">
-          Suas páginas no mais
-          <span class="text-[#075e54] mx-2 relative inline-block stroke-current">
-            alto padrão
+          Não é só uma landing page. É uma máquina de
+          <span class="text-primaryDark mx-2 relative inline-block stroke-current">
+            captação de clientes.
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -654,7 +658,13 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Últimos dias pra você ter a sua com um desconto de Black Friday de verdade!",
+        "Cada página é construída com foco em conversão, velocidade e clareza, seguindo exatamente o que o Google Ads precisa para gerar contatos qualificados.",
+    },
+    sites: {
+      video1: video1,
+      video2: video2,
+      video3: video3,
+      video4: video4,
     },
   },
   cta: {
@@ -759,7 +769,7 @@ const contentLp01 = {
   },
   links: {
     instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-    ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
+    ctaWhatsapp: `https://wa.me/+55${infosLp.phone.ddd}${infosLp.phone.firstPart}${infosLp.phone.secondPart}?text=${infosLp.whatsappDefaultMessageLP}`,
   },
 };
 

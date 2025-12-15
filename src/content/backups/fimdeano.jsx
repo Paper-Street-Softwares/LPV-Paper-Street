@@ -44,7 +44,7 @@ export const infosLp = {
   },
 
   whatsappDefaultMessageLP:
-    "Olá! Sou advogado(a) e vim do Google! Tenho interesse na promoção de Black Friday estendida!",
+    "Olá! Sou advogado(a) e vim do Google! Tenho interesse na promoção de fim de ano!",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -59,7 +59,7 @@ const contentLp01 = {
     keywords:
       "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
   },
-  origem: "LP Black Estendida",
+  origem: "LP Fim de Ano",
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
@@ -71,21 +71,21 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, a condição de Black Friday foi estendida
-          por poucos dias
+          <strong>Advogado</strong>, essa é a sua última chance do ano de atrair
+          clientes pela internet
         </h1>
       ),
       subtitle: (
         <p>
-          Tenha uma página preparada para anúncios no Google e comece a receber
-          contatos no WhatsApp,
+          Criamos páginas pensadas para anúncios no Google que levam clientes
+          direto para o seu WhatsApp,
           <span className=" opacity-70">
             {" "}
-            aproveitando a condição especial.
+            com condições especiais de fim de ano por tempo limitado.
           </span>
         </p>
       ),
-      buttonLabel: "Quero aproveitar a condição da Black",
+      buttonLabel: "Quero aproveitar a condição de fim de ano",
       buttonLabel2: "Quero uma Landing Page validada",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
@@ -474,7 +474,7 @@ const contentLp01 = {
       title: (
         <p class="">
           <span class="text-primaryDark relative inline-block stroke-current">
-            Últimos dias de Black Estendida!
+            Não deixe pra 2026
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -490,7 +490,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "A oferta de Black Friday será encerrada nos próximos dias e não deve voltar nesse formato.",
+        "Garanta agora sua landing page com condições especiais de fim de ano antes que a oferta seja encerrada.",
     },
     paragraph: (
       <p>
@@ -519,7 +519,7 @@ const contentLp01 = {
       </p>
     ),
     ariaLabel: "Botão de whatsApp",
-    buttonLabel: "Quero aproveitar antes que acabe",
+    buttonLabel: "Quero garantir minha condição especial",
   },
   about: {
     bgImg: bgImg,
