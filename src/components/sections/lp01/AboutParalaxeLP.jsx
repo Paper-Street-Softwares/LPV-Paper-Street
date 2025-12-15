@@ -13,14 +13,14 @@ export default function AboutParalaxeLP({ logo }) {
 
   return (
     <div
-      className="bg-scroll relative bg-center bg-cover desktop1:bg-fixed bg-bgSectionOpacityLight"
+      className="relative bg-scroll bg-center bg-cover desktop1:bg-fixed bg-bgSectionOpacityLight"
       // style={{
       //   backgroundImage: `url(${contentLp01.about.bgImg})`,
       //   backgroundRepeat: "no-repeat",
       // }}
       id="contact"
     >
-      {/* <div className="absolute inset-0 bg-black/80 z-0 pointer-events-none" /> */}
+      {/* <div className="absolute inset-0 z-0 pointer-events-none bg-black/80" /> */}
       <div className="relative z-10 flex justify-center w-full text-colorWhite bg-opacity-10">
         <div className="flex justify-center w-full bg-colorBlack bg-opacity-80">
           <SectionArea>
