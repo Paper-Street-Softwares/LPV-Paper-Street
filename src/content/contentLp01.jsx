@@ -620,7 +620,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Trabalhamos com páginas focadas exclusivamente em conversão, seguindo boas práticas de tráfego pago e experiência do usuário.",
+        "Nossas páginas focadas exclusivamente em conversão encantam nossos clientes",
     },
     depoimentos: {
       audios: {
