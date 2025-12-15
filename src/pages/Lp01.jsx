@@ -11,7 +11,6 @@ const Client = React.lazy(() => import("../components/sections/lp01/Client"));
 const AboutParalaxeLP = React.lazy(() =>
   import("../components/sections/lp01/AboutParalaxeLP")
 );
-const StepsLP = React.lazy(() => import("../components/sections/lp01/StepsLP"));
 const FooterLP = React.lazy(() =>
   import("../components/sections/lp01/FooterLP")
 );
