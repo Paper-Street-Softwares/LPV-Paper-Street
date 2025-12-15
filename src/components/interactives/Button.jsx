@@ -291,7 +291,9 @@ export default function Button({
                   </p>
                 )}
               </button>
-              <p>Você será atendido(a) por um especialista no WhatsApp</p>
+              <p className="text-center text-paragraph2">
+                Você será atendido(a) por um especialista no WhatsApp
+              </p>
             </div>
           </div>
         </div>

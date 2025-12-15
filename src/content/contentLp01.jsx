@@ -590,7 +590,7 @@ const contentLp01 = {
         <br />
         <br />
         Nosso processo é simples e sem complicação: cuidamos de tudo pra que
-        você tenha uma página, direta ao ponto e pronto seus anúncios no Google
+        você tenha uma página direta ao ponto e pronto seus anúncios no Google
         Ads.
       </p>
     ),
