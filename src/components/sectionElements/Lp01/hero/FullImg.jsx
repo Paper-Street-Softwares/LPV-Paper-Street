@@ -64,7 +64,7 @@ function FullImg({ obs }) {
                       <div className="flex flex-col items-center justify-center w-full gap-12 phone2:w-full tablet2:w-auto">
                         <MotionDivDownToUp>
                           <img
-                            src="/mockupMobile.webp"
+                            src="/mockup.webp"
                             alt="Site de Advogado"
                             width="500"
                             height="256"
