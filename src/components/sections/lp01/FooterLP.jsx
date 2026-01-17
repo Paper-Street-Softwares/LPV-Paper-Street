@@ -16,10 +16,10 @@ export default function FooterLP() {
         <SectionWrapper>
           <div className="mb-6">
             <div
-              className={`mt-12 text-md desktop1:text-paragraph5 flex flex-col tablet2:flex-row gap-2 tablet2:gap-3 opacity-75 items-center text-center`}
+              className={`mt-12 text-md desktop1:text-paragraph5 flex flex-col desktop1:flex-row gap-2 tablet2:gap-3 opacity-75 items-center text-center font-secondFont`}
             >
               <p>Todos os direitos reservados</p>
-              <span className="hidden tablet2:flex">•</span>
+              <span className="hidden desktop1:flex">•</span>
               <p>
                 Desenvolvido com excelência por{' '}
                 <a
@@ -30,7 +30,7 @@ export default function FooterLP() {
                   Paper Street
                 </a>
               </p>
-              <span className="hidden tablet2:flex">•</span>
+              <span className="hidden desktop1:flex">•</span>
               <button
                 onClick={abrirModal}
                 aria-label="Abre um Modal com os termos da Política de privacidade"
@@ -39,6 +39,11 @@ export default function FooterLP() {
                 Políticas de privacidade
               </button>{' '}
             </div>
+
+            <p className="font-secondFont desktop1:text-sm text-center mt-4 opacity-75">
+              Esse site não faz parte do Google LLC nem do Facebook Inc. e não
+              oferecemos nenhum tipo de serviço oficial do governo.
+            </p>
             <Dialog
               className="font-secondFont"
               headerClassName="p-6"
