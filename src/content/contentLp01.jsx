@@ -76,15 +76,14 @@ const contentLp01 = {
       ),
       subtitle: (
         <p>
-          Tenha uma página preparada para anúncios no Google e comece a receber
-          contatos no WhatsApp,
           <span className=" opacity-70">
-            {' '}
-            aproveitando a condição especial.
+            Vários advogados já captam clientes com nossas páginas pensadas para
+            anúncios e que levam os visitantes direto para o seu WhatsApp, mesmo
+            que você não entenda nada de marketing.
           </span>
         </p>
       ),
-      buttonLabel: 'Quero aproveitar a condição da Black',
+      buttonLabel: 'Quero atrair clientes pela internet',
       buttonLabel2: 'Quero uma Landing Page validada',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
@@ -473,7 +472,7 @@ const contentLp01 = {
       title: (
         <p class="">
           <span class="text-primaryDark relative inline-block stroke-current">
-            Últimos dias de Black Estendida!
+            Não deixe pra depois
             <svg
               class="absolute -bottom-0.5 w-full max-h-1.5"
               viewBox="0 0 55 5"
@@ -489,7 +488,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        'A oferta de Black Friday será encerrada nos próximos dias e não deve voltar nesse formato.',
+        'Faça com quem já ajudou centenas de advogados e tenha sua landing page com as melhores condições do mercado!',
     },
     paragraph: (
       <p>
@@ -498,27 +497,27 @@ const contentLp01 = {
           <Check /> Domínio e Hospedagem grátis por 1 ano <br />
           (Últimos dias de promoção - Economia de R$ 180,00)
         </span>
-        <span className="flex items-center justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start opacity-70">
           {' '}
           <Check /> Páginas pensadas para anúncios
         </span>{' '}
-        <span className="flex items-center justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start opacity-70">
           {' '}
           <Check /> Linguagem simples, que o cliente entende
         </span>{' '}
-        <span className="flex items-center justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start opacity-70">
           {' '}
           <Check />
           Reembolso total em caso de arrependimento
         </span>{' '}
-        <span className="flex items-center justify-start gap-2 text-start">
+        <span className="flex items-center justify-start gap-2 text-start opacity-70">
           {' '}
           <Check /> Sem mensalidades
         </span>{' '}
       </p>
     ),
     ariaLabel: 'Botão de whatsApp',
-    buttonLabel: 'Quero aproveitar antes que acabe',
+    buttonLabel: 'Quero parar de depender de indicações',
   },
   about: {
     bgImg: bgImg,
@@ -638,7 +637,7 @@ const contentLp01 = {
       miniTag: 'A_Definir',
       title: (
         <p class="">
-          Não é só uma página. É uma máquina de
+          Testadas e validadas para
           <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             captação de clientes.
             <svg

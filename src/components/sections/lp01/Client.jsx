@@ -1,11 +1,11 @@
-import React from "react";
-import SectionArea from "../../sectionElements/SectionArea";
-import SectionWrapper from "../../sectionElements/SectionWrapper";
-import SectionHeader from "../../sectionElements/SectionHeader";
-import contentLp01 from "../../../content/contentLp01";
-import Button from "../../interactives/Button";
-import content from "../../../content/content";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+import React from 'react'
+import SectionArea from '../../sectionElements/SectionArea'
+import SectionWrapper from '../../sectionElements/SectionWrapper'
+import SectionHeader from '../../sectionElements/SectionHeader'
+import contentLp01 from '../../../content/contentLp01'
+import Button from '../../interactives/Button'
+import content from '../../../content/content'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
 
 function Client() {
   return (
@@ -71,7 +71,7 @@ function Client() {
         </SectionWrapper>
       </SectionArea>
     </div>
-  );
+  )
 }
 
-export default Client;
+export default Client

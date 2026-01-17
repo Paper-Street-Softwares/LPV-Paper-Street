@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import CustomTag from "../util/CustomTag";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import { getWhatsappLink } from "../util/WhatsappLink";
-import contentLp01 from "../../content/contentLp01";
+import React, { useState } from 'react'
+import CustomTag from '../util/CustomTag'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import { getWhatsappLink } from '../util/WhatsappLink'
+import contentLp01 from '../../content/contentLp01'
 
 export default function Button({
   icon,
@@ -15,6 +15,7 @@ export default function Button({
   size,
   sizeFeatures,
   gap,
+  id,
   removeTarget,
   removeAnchor,
   tagName,
@@ -22,190 +23,229 @@ export default function Button({
   animation = true,
   colorMode,
   reflexAnimation = true,
+  conversao = false,
 }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [nome, setNome] = useState("");
-  const [telefone, setTelefone] = useState("");
-  const [nomeErro, setNomeErro] = useState("");
-  const [telefoneErro, setTelefoneErro] = useState("");
-  const [formErro, setFormErro] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [nome, setNome] = useState('')
+  const [telefone, setTelefone] = useState('')
+  const [nomeErro, setNomeErro] = useState('')
+  const [telefoneErro, setTelefoneErro] = useState('')
+  const [formErro, setFormErro] = useState('')
 
   // NOVO ESTADO PARA LOADING
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
 
-  let textSizeClass = "";
-  if (size === "small") {
-    sizeFeatures = "px-[18px] py-[10px]";
-    textSizeClass = "text-paragraph3 font-secondFont";
-    gap = "gap-[10px]";
+  let textSizeClass = ''
+  if (size === 'small') {
+    sizeFeatures = 'px-[18px] py-[10px]'
+    textSizeClass = 'text-paragraph3 font-secondFont'
+    gap = 'gap-[10px]'
   } else {
-    sizeFeatures = "px-[30px] py-[16px]";
-    textSizeClass = "text-paragraph2 tablet1:text-paragraph4 font-secondFont";
-    gap = "gap-[20px]";
+    sizeFeatures = 'px-[30px] py-[16px]'
+    textSizeClass = 'text-paragraph2 tablet1:text-paragraph4 font-secondFont'
+    gap = 'gap-[20px]'
   }
 
-  const Animation = animation ? MotionDivDownToUp : "div";
-  const CustomTagName = removeAnchor ? "div" : tagName || "a";
+  const Animation = animation ? MotionDivDownToUp : 'div'
+  const CustomTagName = removeAnchor ? 'div' : tagName || 'a'
 
   const buttonColors = {
-    dark: "text-labelButtons",
-    light: "text-labelButtons",
-    default: "text-labelButtons",
-  };
-  const buttonColor = buttonColors[colorMode] || buttonColors.default;
+    dark: 'text-labelButtons',
+    light: 'text-labelButtons',
+    default: 'text-labelButtons',
+  }
+  const buttonColor = buttonColors[colorMode] || buttonColors.default
 
-  const shouldRedirectToWhatsapp = !buttonLink && !onClick;
+  const shouldRedirectToWhatsapp = !buttonLink && !onClick
   const finalButtonLink = shouldRedirectToWhatsapp
     ? getWhatsappLink()
-    : buttonLink;
+    : buttonLink
 
   const handleOpenModal = (e) => {
-    e.preventDefault();
-    setIsModalOpen(true);
-  };
+    e.preventDefault()
+    setIsModalOpen(true)
+  }
 
   const handleNomeChange = (e) => {
-    const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
-    setNome(valor);
+    const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, '')
+    setNome(valor)
 
-    if (valor.trim() === "") {
-      setNomeErro("");
-      return;
+    if (valor.trim() === '') {
+      setNomeErro('')
+      return
     }
 
-    if (valor.trim().length < 3) setNomeErro("Digite pelo menos 3 letras");
-    else setNomeErro("");
-  };
+    if (valor.trim().length < 3) setNomeErro('Digite pelo menos 3 letras')
+    else setNomeErro('')
+  }
 
   const handleTelefoneChange = (e) => {
-    let valor = e.target.value.replace(/\D/g, "");
-    valor = valor.slice(0, 11);
+    let valor = e.target.value.replace(/\D/g, '')
+    valor = valor.slice(0, 11)
 
-    if (valor.length >= 1) valor = "(" + valor;
-    if (valor.length >= 3) valor = valor.slice(0, 3) + ") " + valor.slice(3);
-    if (valor.length >= 10) valor = valor.slice(0, 10) + "-" + valor.slice(10);
+    if (valor.length >= 1) valor = '(' + valor
+    if (valor.length >= 3) valor = valor.slice(0, 3) + ') ' + valor.slice(3)
+    if (valor.length >= 10) valor = valor.slice(0, 10) + '-' + valor.slice(10)
 
-    setTelefone(valor);
+    setTelefone(valor)
 
-    const somenteNumeros = valor.replace(/\D/g, "");
+    const somenteNumeros = valor.replace(/\D/g, '')
 
     if (somenteNumeros.length === 0) {
-      setTelefoneErro("");
-      return;
+      setTelefoneErro('')
+      return
     }
 
-    if (somenteNumeros.length < 11) setTelefoneErro("Telefone incompleto");
-    else setTelefoneErro("");
-  };
+    if (somenteNumeros.length < 11) setTelefoneErro('Telefone incompleto')
+    else setTelefoneErro('')
+  }
 
   const enviarParaPlanilha = async () => {
     try {
       await fetch(
-        "https://cors-proxy-seven-beige.vercel.app/api/proxy?url=" +
+        'https://cors-proxy-seven-beige.vercel.app/api/proxy?url=' +
           encodeURIComponent(
-            "https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec"
+            'https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec',
           ),
         {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             nome,
             email: telefone,
             origem: contentLp01.origem,
           }),
-        }
-      );
+        },
+      )
     } catch (error) {
-      console.log("Erro ao enviar para planilha:", error);
+      console.log('Erro ao enviar para planilha:', error)
     }
-  };
+  }
 
   const handleSubmit = async () => {
-    const telefoneNumerico = telefone.replace(/\D/g, "");
+    const telefoneNumerico = telefone.replace(/\D/g, '')
 
-    let erro = false;
+    let erro = false
 
-    if (nome.trim() === "") {
-      setNomeErro("Esse campo não pode ficar vazio");
-      erro = true;
+    if (nome.trim() === '') {
+      setNomeErro('Esse campo não pode ficar vazio')
+      erro = true
     }
 
-    if (telefoneNumerico === "") {
-      setTelefoneErro("Esse campo não pode ficar vazio");
-      erro = true;
+    if (telefoneNumerico === '') {
+      setTelefoneErro('Esse campo não pode ficar vazio')
+      erro = true
     }
 
-    if (erro) return;
+    if (erro) return
 
     if (nome.trim().length < 2 || telefoneNumerico.length < 11) {
-      setFormErro("Preencha os campos corretamente antes de prosseguir");
-      return;
+      setFormErro('Preencha os campos corretamente antes de prosseguir')
+      return
     }
 
-    setFormErro("");
+    setFormErro('')
 
-    const novaAba = window.open(finalButtonLink, "_blank");
+    const novaAba = window.open(finalButtonLink, '_blank')
 
-    setIsModalOpen(false);
+    setIsModalOpen(false)
 
-    setLoading(true);
+    setLoading(true)
 
-    await enviarParaPlanilha();
+    await enviarParaPlanilha()
 
-    setLoading(false);
-  };
+    setLoading(false)
+  }
 
   const shineThemes = {
-    light: "bg-white/20",
-    dark: "bg-white/10",
-  };
+    light: 'bg-white/20',
+    dark: 'bg-white/10',
+  }
 
-  const shineColor = shineThemes.dark || shineThemes.light;
+  const shineColor = shineThemes.dark || shineThemes.light
 
   return (
     <>
       <CustomTag
         tagName={CustomTagName}
-        {...(removeTarget ? {} : { target: "_blank" })}
-        {...(removeAnchor ? {} : { href: "#" })}
+        {...(removeTarget ? {} : { target: '_blank' })}
+        {...(removeAnchor ? {} : { href: '#' })}
         onClick={handleOpenModal}
         className="inline-block max-w-full w-fit"
       >
         {animation ? (
-          <MotionDivDownToUp className="w-auto">
-            <button
-              className={`flex ${className} ${sizeFeatures} relative shadow-custom-opacityButton shadow-shadowHero/0 rounded-[100px] overflow-hidden  ${
-                color || "bg-buttonColor"
-              } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
-            >
-              {reflexAnimation && (
-                <span
-                  className={`
+          conversao ? (
+            <MotionDivDownToUp className="w-auto">
+              <button
+                id={id}
+                onClick={dispararConversao}
+                className={`flex ${className} ${sizeFeatures} relative shadow-custom-opacityButton shadow-shadowHero/0 rounded-[100px] overflow-hidden  ${
+                  color || 'bg-buttonColor'
+                } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
+              >
+                {reflexAnimation && (
+                  <span
+                    className={`
               absolute top-0 left-0 w-full h-full 
               ${shineColor}
               animate-shine-loop 
               z-0
               pointer-events-none
             `}
-                />
-              )}
-              <div
-                className={`flex items-center text-center ${gap} min-h-[24px]`}
-              >
-                {icon && <div className={`${buttonColor}`}>{icon}</div>}
-                <p
-                  className={`flex items-center  ${textSizeClass} ${
-                    labelColor || buttonColor
-                  } ${textclassName}`}
+                  />
+                )}
+                <div
+                  className={`flex items-center text-center ${gap} min-h-[24px]`}
                 >
-                  {label}
-                </p>
-              </div>
-            </button>
-          </MotionDivDownToUp>
+                  {icon && <div className={`${buttonColor}`}>{icon}</div>}
+                  <p
+                    className={`flex items-center  ${textSizeClass} ${
+                      labelColor || buttonColor
+                    } ${textclassName}`}
+                  >
+                    {label}
+                  </p>
+                </div>
+              </button>
+            </MotionDivDownToUp>
+          ) : (
+            <MotionDivDownToUp className="w-auto">
+              <button
+                id={id}
+                className={`flex ${className} ${sizeFeatures} relative shadow-custom-opacityButton shadow-shadowHero/0 rounded-[100px] overflow-hidden  ${
+                  color || 'bg-buttonColor'
+                } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
+              >
+                {reflexAnimation && (
+                  <span
+                    className={`
+              absolute top-0 left-0 w-full h-full 
+              ${shineColor}
+              animate-shine-loop 
+              z-0
+              pointer-events-none
+            `}
+                  />
+                )}
+                <div
+                  className={`flex items-center text-center ${gap} min-h-[24px]`}
+                >
+                  {icon && <div className={`${buttonColor}`}>{icon}</div>}
+                  <p
+                    className={`flex items-center  ${textSizeClass} ${
+                      labelColor || buttonColor
+                    } ${textclassName}`}
+                  >
+                    {label}
+                  </p>
+                </div>
+              </button>
+            </MotionDivDownToUp>
+          )
         ) : (
           <div className="w-auto">
             <button
+              id={id}
               className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/20 bg-buttonColor flex-row items-center justify-around transition ${color} text-labelButtons desktop1:hover:scale-110`}
             >
               <div
@@ -274,10 +314,10 @@ export default function Button({
                 className="py-4 text-white bg-[#075e54] rounded-[100px] hover:scale-105 transition-all"
               >
                 {loading ? (
-                  "Aguarde..."
+                  'Aguarde...'
                 ) : (
                   <p className="flex items-center justify-center gap-4">
-                    {" "}
+                    {' '}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -299,5 +339,5 @@ export default function Button({
         </div>
       )}
     </>
-  );
+  )
 }

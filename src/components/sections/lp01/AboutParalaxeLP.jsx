@@ -1,15 +1,15 @@
-import contentLp01 from "../../../content/contentLp01";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import Button from "../../interactives/Button";
-import LogoHeroLpv from "../../sectionElements/Lp01/hero/about/LogoAboutLpv";
-import LogoDefaultAboutLpv from "../../sectionElements/Lp01/hero/about/LogoDefaultAboutLpv";
-import SectionArea from "../../sectionElements/SectionArea";
-import SectionHeader from "../../sectionElements/SectionHeader";
-import SectionWrapper from "../../sectionElements/SectionWrapper";
-import { useNavigate } from "react-router-dom";
+import contentLp01 from '../../../content/contentLp01'
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import Button from '../../interactives/Button'
+import LogoHeroLpv from '../../sectionElements/Lp01/hero/about/LogoAboutLpv'
+import LogoDefaultAboutLpv from '../../sectionElements/Lp01/hero/about/LogoDefaultAboutLpv'
+import SectionArea from '../../sectionElements/SectionArea'
+import SectionHeader from '../../sectionElements/SectionHeader'
+import SectionWrapper from '../../sectionElements/SectionWrapper'
+import { useNavigate } from 'react-router-dom'
 
 export default function AboutParalaxeLP({ logo }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <div
@@ -32,7 +32,7 @@ export default function AboutParalaxeLP({ logo }) {
                 </MotionDivDownToUp>
 
                 {/* Texto ao lado da logo */}
-                <div className={logo ? "desktop1:w-[60%]" : "desktop1:w-[60%]"}>
+                <div className={logo ? 'desktop1:w-[60%]' : 'desktop1:w-[60%]'}>
                   <SectionHeader
                     className="text-center"
                     miniTitle={contentLp01.about.sectionHeader.miniTag}
@@ -47,7 +47,7 @@ export default function AboutParalaxeLP({ logo }) {
                     miniTitleBgColor={false}
                   />
                   <MotionDivDownToUp>
-                    <p className="font-secondFont mb-[36px] font-light text-black">
+                    <p className="font-secondFont opacity-70 mb-[36px] font-light text-black">
                       {contentLp01.about.paragraph}
                     </p>
                   </MotionDivDownToUp>
@@ -84,5 +84,5 @@ export default function AboutParalaxeLP({ logo }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

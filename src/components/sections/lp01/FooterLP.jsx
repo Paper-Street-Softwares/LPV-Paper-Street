@@ -1,26 +1,27 @@
-import SectionArea from "../../sectionElements/SectionArea";
-import SectionWrapper from "../../sectionElements/SectionWrapper";
-import React, { useState } from "react";
-import { Dialog } from "primereact/dialog";
-import { X, MoveRight } from "lucide-react";
-import "primereact/resources/themes/lara-light-cyan/theme.css";
+import SectionArea from '../../sectionElements/SectionArea'
+import SectionWrapper from '../../sectionElements/SectionWrapper'
+import React, { useState } from 'react'
+import { Dialog } from 'primereact/dialog'
+import { X, MoveRight } from 'lucide-react'
+import 'primereact/resources/themes/lara-light-cyan/theme.css'
 
 export default function FooterLP() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false)
   const abrirModal = () => {
-    setVisible(true);
-  };
+    setVisible(true)
+  }
   return (
     <div className="bg-bgFixedLight">
       <SectionArea paddingTopAndBottom={false}>
         <SectionWrapper>
           <div className="mb-6">
             <div
-              className={`mt-12 text-sm flex flex-col gap-2 opacity-75 items-center text-center`}
+              className={`mt-12 text-md desktop1:text-paragraph5 flex flex-col tablet2:flex-row gap-2 tablet2:gap-3 opacity-75 items-center text-center`}
             >
               <p>Todos os direitos reservados</p>
+              <span className="hidden tablet2:flex">•</span>
               <p>
-                Desenvolvido com excelência por{" "}
+                Desenvolvido com excelência por{' '}
                 <a
                   target="_blank"
                   href="https://paperstreet.com.br"
@@ -29,13 +30,14 @@ export default function FooterLP() {
                   Paper Street
                 </a>
               </p>
+              <span className="hidden tablet2:flex">•</span>
               <button
                 onClick={abrirModal}
                 aria-label="Abre um Modal com os termos da Política de privacidade"
                 className="underline cursor-pointer outline-none w-fit mx-auto"
               >
                 Políticas de privacidade
-              </button>{" "}
+              </button>{' '}
             </div>
             <Dialog
               className="font-secondFont"
@@ -46,11 +48,11 @@ export default function FooterLP() {
               closeIcon={<X size={20} />}
               visible={visible}
               onHide={() => setVisible(false)}
-              style={{ width: "50vw" }}
+              style={{ width: '50vw' }}
               breakpoints={{
-                "4000px": "641px",
-                "1024px": "641px",
-                "641px": "85vw",
+                '4000px': '641px',
+                '1024px': '641px',
+                '641px': '85vw',
               }}
             >
               <div className="mx-auto leading-relaxed text-gray-900 phone3:max-w-3xl tablet1:px-6 font-secondFont">
@@ -79,7 +81,7 @@ export default function FooterLP() {
                   <li>
                     <strong>
                       Autoridade Nacional de Proteção de Dados (ANPD):
-                    </strong>{" "}
+                    </strong>{' '}
                     órgão responsável pela fiscalização e aplicação da LGPD.
                   </li>
 
@@ -305,5 +307,5 @@ export default function FooterLP() {
         </SectionWrapper>
       </SectionArea>
     </div>
-  );
+  )
 }

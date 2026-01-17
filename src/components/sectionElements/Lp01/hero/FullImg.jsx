@@ -74,6 +74,7 @@ function FullImg({ obs }) {
 
                         <MotionDivDownToUp>
                           <Button
+                            conversao
                             aria-label={
                               contentLp01.hero.textArea.ctaButtonAriaLabel
                             }
@@ -181,6 +182,7 @@ function FullImg({ obs }) {
                         </MotionDivDownToUp>
                         <MotionDivDownToUp>
                           <Button
+                            conversao
                             aria-label={
                               contentLp01.hero.textArea.ctaButtonAriaLabel
                             }

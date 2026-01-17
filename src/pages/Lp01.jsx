@@ -24,7 +24,7 @@ export default function Lp01() {
     <div className="bg-bgFixedLight">
       <div className="bg-primary flex justify-center p-2">
         <h1 className="text-title1 font-secondFont text-center">
-          Para Advogados(a) que precisam captar clientes na internet
+          Para Advogados(a) que desejam captar clientes na internet
         </h1>
       </div>
       <HeroLP fullImg={true} />

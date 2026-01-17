@@ -115,7 +115,7 @@ export default function VideoCarousel() {
           <div className="flex justify-center w-full pt-[40px]">
             <MotionDivDownToUp>
               <Button
-                aria-label={contentLp01.hero.textArea.ctaButtonAriaLabel}
+                aria-label="Quero um orçamento sem compromisso"
                 label={contentLp01.hero.textArea.buttonLabel2}
                 color="bg-[#075e54]"
                 textclassName="text-white"

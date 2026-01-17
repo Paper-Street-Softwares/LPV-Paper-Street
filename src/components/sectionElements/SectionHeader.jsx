@@ -1,4 +1,4 @@
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 export default function SectionHeader({
   sectionHeaderTitle,
@@ -23,34 +23,34 @@ export default function SectionHeader({
 }) {
   // Configurações baseadas no colorMode
   switch (colorMode) {
-    case "dark":
-      miniTitleTextColor = miniTitleTextColor ?? "text-minititleLightLabel";
-      titleColor = titleColorSet ?? "text-white";
-      subtitleColor = subtitleColorSet ?? "text-white";
-      if (miniTitleBgColor === true) miniTitleBgColor = "bg-minititleDark";
-      break;
-    case "light":
+    case 'dark':
+      miniTitleTextColor = miniTitleTextColor ?? 'text-minititleLightLabel'
+      titleColor = titleColorSet ?? 'text-white'
+      subtitleColor = subtitleColorSet ?? 'text-white'
+      if (miniTitleBgColor === true) miniTitleBgColor = 'bg-minititleDark'
+      break
+    case 'light':
     default:
-      miniTitleTextColor = miniTitleTextColor ?? "text-minititleDarkLabel";
-      titleColor = titleColorSet ?? "text-white";
-      subtitleColor = subtitleColorSet ?? "text-white";
-      if (miniTitleBgColor === true) miniTitleBgColor = "bg-minititle";
-      break;
+      miniTitleTextColor = miniTitleTextColor ?? 'text-minititleDarkLabel'
+      titleColor = titleColorSet ?? 'text-white'
+      subtitleColor = subtitleColorSet ?? 'text-white'
+      if (miniTitleBgColor === true) miniTitleBgColor = 'bg-minititle'
+      break
   }
 
   // Caso false, zera a classe
-  if (miniTitleBgColor === false) miniTitleBgColor = "";
+  if (miniTitleBgColor === false) miniTitleBgColor = ''
 
   // Configurações baseadas no tipo
-  if (type === "article") {
-    usage = "w-full flex flex-col";
-    miniTitleSpace = "w-full flex-start text-left";
-    titleOrientation = "text-left";
-    subtitleOrientation = "text-left";
-    marginBottomOption = "mb-[26px] tablet1:mb-[40px] desktop1:mb-[32px]";
+  if (type === 'article') {
+    usage = 'w-full flex flex-col'
+    miniTitleSpace = 'w-full flex-start text-left'
+    titleOrientation = 'text-left'
+    subtitleOrientation = 'text-left'
+    marginBottomOption = 'mb-[26px] tablet1:mb-[40px] desktop1:mb-[32px]'
   } else {
-    usage = "w-[90%] tablet1:w-[80%] desktop1:w-[60%] max-w-[920px]";
-    marginBottomOption = "mb-[48px] tablet1:mb-[40px] desktop1:mb-[72px]";
+    usage = 'w-[90%] tablet1:w-[80%] desktop1:w-[60%] max-w-[920px]'
+    marginBottomOption = 'mb-[48px] tablet1:mb-[40px] desktop1:mb-[72px]'
   }
 
   const Content = (
@@ -74,13 +74,13 @@ export default function SectionHeader({
         </h1>
 
         <p
-          className={`text-title1 font-secondFont leading-[24px] bg-transparent opacity-70 ${marginBottomOption} ${subtitleOrientation} ${subtitleColor}`}
+          className={`text-title1 font-secondFont leading-[24px] bg-transparent opacity-65 ${marginBottomOption} ${subtitleOrientation} ${subtitleColor}`}
         >
           {sectionHeaderSubtitle}
         </p>
       </div>
     </div>
-  );
+  )
 
   return animation ? (
     <MotionDivDownToUp className="flex justify-center w-full">
@@ -88,5 +88,5 @@ export default function SectionHeader({
     </MotionDivDownToUp>
   ) : (
     Content
-  );
+  )
 }
