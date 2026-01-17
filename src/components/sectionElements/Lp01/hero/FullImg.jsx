@@ -66,8 +66,8 @@ function FullImg({ obs }) {
                           <img
                             src="/mockupMobile.webp"
                             alt="Site de Advogado"
-                            width="550"
-                            height="260"
+                            width="500"
+                            height="256"
                             fetchPriority="high"
                           />
                         </MotionDivDownToUp>
@@ -175,8 +175,8 @@ function FullImg({ obs }) {
                           <img
                             src="/mockup.webp"
                             alt="Site de Advogado"
-                            width="550"
-                            height="260"
+                            width="500"
+                            height="256"
                             fetchPriority="high"
                           />
                         </MotionDivDownToUp>
