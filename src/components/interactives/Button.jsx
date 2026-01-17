@@ -24,6 +24,7 @@ export default function Button({
   colorMode,
   reflexAnimation = true,
   conversao = false,
+  conversaoContato2 = false,
 }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [nome, setNome] = useState('')
@@ -146,6 +147,12 @@ export default function Button({
 
     setFormErro('')
 
+    gtag('event', 'conversion', {
+      send_to: 'AW-17668069100/wlMgCM_7kecbEOyt5ehB',
+      value: 1.0,
+      currency: 'BRL',
+    })
+
     const novaAba = window.open(finalButtonLink, '_blank')
 
     setIsModalOpen(false)
@@ -178,7 +185,7 @@ export default function Button({
             <MotionDivDownToUp className="w-auto">
               <button
                 id={id}
-                onClick={dispararConversao}
+                onClick={clickBotãoCTA}
                 className={`flex ${className} ${sizeFeatures} relative shadow-custom-opacityButton shadow-shadowHero/0 rounded-[100px] overflow-hidden  ${
                   color || 'bg-buttonColor'
                 } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
@@ -306,8 +313,6 @@ export default function Button({
                 )}
               </div>
 
-              {formErro && <p className="text-sm text-red-600">{formErro}</p>}
-
               <button
                 onClick={handleSubmit}
                 disabled={loading}
@@ -331,6 +336,9 @@ export default function Button({
                   </p>
                 )}
               </button>
+
+              {formErro && <p className="text-sm text-red-600">{formErro}</p>}
+
               <p className="text-center text-paragraph2">
                 Você será atendido(a) por um especialista no WhatsApp
               </p>
