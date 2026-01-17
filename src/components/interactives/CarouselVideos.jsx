@@ -73,7 +73,7 @@ export default function VideoCarousel() {
                       desktop1:border-2
                       border-black/40
                       w-full
-                      aspect-[9/16]   /* <— AQUI o segredo: trava o layout */
+                      aspect-[9/16]
                     "
                     >
                       <video

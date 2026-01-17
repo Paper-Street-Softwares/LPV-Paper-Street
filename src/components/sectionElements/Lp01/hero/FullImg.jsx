@@ -1,12 +1,12 @@
-import SectionArea from "../../SectionArea";
-import SectionWrapper from "../../SectionWrapper";
-import MotionDivDownToUp from "../../../animation/MotionDivDownToUp";
-import Button from "../../../interactives/Button";
-import contentLp01 from "../../../../content/contentLp01";
-import { useNavigate } from "react-router-dom";
+import SectionArea from '../../SectionArea'
+import SectionWrapper from '../../SectionWrapper'
+import MotionDivDownToUp from '../../../animation/MotionDivDownToUp'
+import Button from '../../../interactives/Button'
+import contentLp01 from '../../../../content/contentLp01'
+import { useNavigate } from 'react-router-dom'
 
 function FullImg({ obs }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <div className="gradient-LP-Hero">
@@ -48,7 +48,7 @@ function FullImg({ obs }) {
                   <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                     <div className="desktop1:mt-0">
                       <MotionDivDownToUp>
-                        <div className="flex text-white justify-center desktop1:justify-start font-extralight font-mainFont leading-[26px] phone2:leading-[32px] phone3:leading-[36px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title2 phone2:text-title3 phone3:text-title4 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                        <div className="flex text-white justify-center font-extralight font-mainFont leading-[26px] phone2:leading-[32px] phone3:leading-[36px] tablet1:leading-[65px] desktop1:leading-[70px] text-center text-title2 phone2:text-title3 phone3:text-title4 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                           {contentLp01.hero.textArea.title}
                         </div>
                       </MotionDivDownToUp>
@@ -155,7 +155,7 @@ function FullImg({ obs }) {
 
                   <div className="mt-[30%] phone3:mt-[35%] tablet1:mt-[30px] desktop1:mt-0">
                     <MotionDivDownToUp>
-                      <div className="flex text-white justify-center desktop1:justify-start font-extralight font-mainFont leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-center text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                      <div className="flex text-white justify-center font-extralight font-mainFont leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-center text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                         {contentLp01.hero.textArea.title}
                       </div>
                     </MotionDivDownToUp>
@@ -202,7 +202,7 @@ function FullImg({ obs }) {
                               </svg>
                             }
                           />
-                        </MotionDivDownToUp>{" "}
+                        </MotionDivDownToUp>{' '}
                       </div>
 
                       {obs && (
@@ -226,7 +226,7 @@ function FullImg({ obs }) {
         </SectionArea>
       </div>
     </div>
-  );
+  )
 }
 
-export default FullImg;
+export default FullImg

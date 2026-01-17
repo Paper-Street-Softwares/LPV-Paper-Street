@@ -1,78 +1,77 @@
-import bgImg from "../assets/imgs/hero/bgHeroLp.webp";
-import logo from "../assets/imgs/logo/logoLp.webp";
-import imagemAbout from "../assets/imgs/about/aboutImg.webp";
-import imagemAboutMobile from "../assets/imgs/about/aboutImgMobile.webp";
-import { infos } from "./content";
-import { Check } from "lucide-react";
-import mockupHeroImg from "../assets/imgs/hero/mockup.webp";
-import mockupHeroImgMobile from "../assets/imgs/hero/mockupMobile.webp";
-import socialProof1 from "../assets/imgs/socialProof/Depoimento1.webm";
-import socialProof2 from "../assets/imgs/socialProof/Depoimento2.webm";
-import socialProof3 from "../assets/imgs/socialProof/Depoimento3.webm";
-import socialProof4 from "../assets/imgs/socialProof/Depoimento4.webm";
-import socialProof5 from "../assets/imgs/socialProof/Depoimento5.webm";
-import socialProof6 from "../assets/imgs/socialProof/Depoimento6.webm";
-import socialProof7 from "../assets/imgs/socialProof/Depoimento7.webm";
-import socialProof8 from "../assets/imgs/socialProof/Depoimento8.webm";
-import socialProof9 from "../assets/imgs/socialProof/Depoimento9.webm";
+import bgImg from '../assets/imgs/hero/bgHeroLp.webp'
+import logo from '../assets/imgs/logo/logoLp.webp'
+import imagemAbout from '../assets/imgs/about/aboutImg.webp'
+import imagemAboutMobile from '../assets/imgs/about/aboutImgMobile.webp'
+import { infos } from './content'
+import { Check } from 'lucide-react'
+import mockupHeroImg from '../assets/imgs/hero/mockup.webp'
+import mockupHeroImgMobile from '../assets/imgs/hero/mockupMobile.webp'
+import socialProof1 from '../assets/imgs/socialProof/Depoimento1.webm'
+import socialProof2 from '../assets/imgs/socialProof/Depoimento2.webm'
+import socialProof3 from '../assets/imgs/socialProof/Depoimento3.webm'
+import socialProof4 from '../assets/imgs/socialProof/Depoimento4.webm'
+import socialProof5 from '../assets/imgs/socialProof/Depoimento5.webm'
+import socialProof6 from '../assets/imgs/socialProof/Depoimento6.webm'
+import socialProof7 from '../assets/imgs/socialProof/Depoimento7.webm'
+import socialProof8 from '../assets/imgs/socialProof/Depoimento8.webm'
+import socialProof9 from '../assets/imgs/socialProof/Depoimento9.webm'
 
-import poster1 from "../assets/imgs/socialProof/poster1.webp";
-import poster2 from "../assets/imgs/socialProof/poster2.webp";
-import poster3 from "../assets/imgs/socialProof/poster3.webp";
+import poster1 from '../assets/imgs/socialProof/poster1.webp'
+import poster2 from '../assets/imgs/socialProof/poster2.webp'
+import poster3 from '../assets/imgs/socialProof/poster3.webp'
 // import poster4 from "../assets/imgs/socialProof/poster4.webp";
-import poster5 from "../assets/imgs/socialProof/poster5.webp";
-import poster6 from "../assets/imgs/socialProof/poster6.webp";
-import poster7 from "../assets/imgs/socialProof/poster7.webp";
-import poster8 from "../assets/imgs/socialProof/poster8.webp";
-import poster9 from "../assets/imgs/socialProof/poster9.webp";
-import video1 from "../assets/imgs/videosSite/Jessica.webm";
-import video2 from "../assets/imgs/videosSite/Thabata.webm";
-import video3 from "../assets/imgs/videosSite/Thais.webm";
-import video4 from "../assets/imgs/videosSite/Edvaldo.webm";
+import poster5 from '../assets/imgs/socialProof/poster5.webp'
+import poster6 from '../assets/imgs/socialProof/poster6.webp'
+import poster7 from '../assets/imgs/socialProof/poster7.webp'
+import poster8 from '../assets/imgs/socialProof/poster8.webp'
+import poster9 from '../assets/imgs/socialProof/poster9.webp'
+import video1 from '../assets/imgs/videosSite/Jessica.webm'
+import video2 from '../assets/imgs/videosSite/Thabata.webm'
+import video3 from '../assets/imgs/videosSite/Thais.webm'
+import video4 from '../assets/imgs/videosSite/Edvaldo.webm'
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
 // import img3 from "../assets/imgs/about/image3.webp";
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 export const infosLp = {
   phone: {
-    ddd: "11",
-    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0977", // Apenas os 4 últimos números
+    ddd: '11',
+    firstPart: '99026', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0977', // Apenas os 4 últimos números
   },
 
   whatsappDefaultMessageLP:
-    "Olá! Sou advogado(a) e vim do Google! Tenho interesse na promoção de Black Friday estendida!",
+    'Olá! Sou advogado(a) e vim do Google! Tenho interesse na promoção de Black Friday estendida!',
   whatsChatDefaultMessage:
-    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
-  slogan: "",
-};
+    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
+  slogan: '',
+}
 
 const contentLp01 = {
   infos: {
     title:
-      "Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street",
+      'Sites e Landing Pages para Advogados e Escritórios de Advocacia - Paper Street',
     description:
-      "Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.",
+      'Capte clientes online e divulgue seus serviços numa página exclusiva e profissional.',
     keywords:
-      "Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.",
+      'Paper Street, Desenvolvimento Web, Sites Profissionais, Criação de Sites, Sites Responsivos, Design para Web, Agência de Sites, Web Design Brasil, Sites para Empresas, Marketing Digital, Otimização para Celular, Sites Modernos, Desenvolvimento de Landing Pages, SEO para Sites, Sites Personalizados, Paper Street Brasil, Desenvolvimento de Sites Comerciais, Sites Profissionais Brasil, Agência de Desenvolvimento Web, Presença Online.',
   },
-  origem: "LP Black Estendida",
+  origem: 'LP Black Estendida',
   hero: {
     bgImg: bgImg,
     mockupHeroImg,
     mockupHeroImgMobile,
     logo: {
       logoImg: logo,
-      alt: "Logomarca",
+      alt: 'Logomarca',
     },
     textArea: {
       title: (
         <h1>
-          <strong>Advogado</strong>, a condição de Black Friday foi estendida
-          por poucos dias
+          <strong>Sites</strong> e Landing Pages para Advogados
         </h1>
       ),
       subtitle: (
@@ -80,23 +79,23 @@ const contentLp01 = {
           Tenha uma página preparada para anúncios no Google e comece a receber
           contatos no WhatsApp,
           <span className=" opacity-70">
-            {" "}
+            {' '}
             aproveitando a condição especial.
           </span>
         </p>
       ),
-      buttonLabel: "Quero aproveitar a condição da Black",
-      buttonLabel2: "Quero uma Landing Page validada",
+      buttonLabel: 'Quero aproveitar a condição da Black',
+      buttonLabel2: 'Quero uma Landing Page validada',
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
   },
   urgency: {
-    miniTag: "SEU ESCRITÓRIO AINDA SEM SITE?",
-    title: "Clientes estão indo para a concorrência todos os dias.",
+    miniTag: 'SEU ESCRITÓRIO AINDA SEM SITE?',
+    title: 'Clientes estão indo para a concorrência todos os dias.',
     subtitle:
-      "Enquanto você espera, eles escolhem outro advogado e você perde dinheiro e oportunidades que não voltam. Entenda:",
-    alt: "A_Definir",
+      'Enquanto você espera, eles escolhem outro advogado e você perde dinheiro e oportunidades que não voltam. Entenda:',
+    alt: 'A_Definir',
     cards: {
       card1: {
         stepNumber: (
@@ -118,8 +117,8 @@ const contentLp01 = {
             <path d="m21 21-4.3-4.3" />
           </svg>
         ),
-        cardTitle: "Clientes não te encontram.",
-        cardDescription: "A_Definir",
+        cardTitle: 'Clientes não te encontram.',
+        cardDescription: 'A_Definir',
       },
       card2: {
         stepNumber: (
@@ -142,8 +141,8 @@ const contentLp01 = {
             <circle cx="6" cy="5" r="3" />
           </svg>
         ),
-        cardTitle: "Concorrentes levam seus casos.",
-        cardDescription: "A_Definir",
+        cardTitle: 'Concorrentes levam seus casos.',
+        cardDescription: 'A_Definir',
       },
       card3: {
         stepNumber: (
@@ -164,17 +163,17 @@ const contentLp01 = {
             <path d="M12 16h.01" />
           </svg>
         ),
-        cardTitle: "Seu escritório passa desconfiança.",
-        cardDescription: "A_Definir",
+        cardTitle: 'Seu escritório passa desconfiança.',
+        cardDescription: 'A_Definir',
       },
-      buttonLabel: "Garanta seu site profissional agora",
-      ariaLabel: "Botão de contato",
+      buttonLabel: 'Garanta seu site profissional agora',
+      ariaLabel: 'Botão de contato',
     },
   },
   features: {
     sectionHeader: {
-      miniTag: "PLANOS DE SITES",
-      title: "Escolha a forma ideal de ter seu site profissional",
+      miniTag: 'PLANOS DE SITES',
+      title: 'Escolha a forma ideal de ter seu site profissional',
     },
     cards: {
       card1: {
@@ -196,9 +195,9 @@ const contentLp01 = {
             <path d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" />
           </svg>
         ),
-        title: "Plano Assinatura",
+        title: 'Plano Assinatura',
         paragraph:
-          "Tenha seu site profissional sempre atualizado, seguro e pronto para atrair clientes, sem preocupações extras.",
+          'Tenha seu site profissional sempre atualizado, seguro e pronto para atrair clientes, sem preocupações extras.',
         description: (
           <p>
             ✔️ Domínio e hospedagem vitalícios
@@ -222,7 +221,7 @@ const contentLp01 = {
             ✔️ Design responsivo e otimizado para celulares
           </p>
         ),
-        buttonLabel: "A partir de R$69,00",
+        buttonLabel: 'A partir de R$69,00',
       },
       card2: {
         icon: (
@@ -242,9 +241,9 @@ const contentLp01 = {
             <path d="m4.9 4.9 14.2 14.2" />
           </svg>
         ),
-        title: "Plano Aquisição",
+        title: 'Plano Aquisição',
         paragraph:
-          "Invista em um site profissional e tenha sua presença digital definitiva. O site será 100% seu, sem mensalidades de assinatura, pronto para representar sua marca com credibilidade.",
+          'Invista em um site profissional e tenha sua presença digital definitiva. O site será 100% seu, sem mensalidades de assinatura, pronto para representar sua marca com credibilidade.',
         description: (
           <p>
             ✔️ 1 ano de Domínio e hospedagem gratuitos
@@ -262,7 +261,7 @@ const contentLp01 = {
             ✔️ Entrega completa, com acesso total ao painel
           </p>
         ),
-        buttonLabel: "A partir de 10x de R$59,00",
+        buttonLabel: 'A partir de 10x de R$59,00',
       },
       card3: {
         icon: (
@@ -284,9 +283,9 @@ const contentLp01 = {
             <circle cx="17" cy="17" r="2" />
           </svg>
         ),
-        title: "Plano Personalizado",
+        title: 'Plano Personalizado',
         paragraph:
-          "Um site sob medida para sua necessidade, com recursos exclusivos e estrutura feita especialmente para destacar sua marca no digital.",
+          'Um site sob medida para sua necessidade, com recursos exclusivos e estrutura feita especialmente para destacar sua marca no digital.',
         description: (
           <p>
             ✔️ Projeto desenvolvido 100% sob demanda
@@ -307,7 +306,7 @@ const contentLp01 = {
             ✔️ Suporte técnico dedicado
           </p>
         ),
-        buttonLabel: "Solicite um orçamento",
+        buttonLabel: 'Solicite um orçamento',
       },
       card4: {
         icon: (
@@ -330,9 +329,9 @@ const contentLp01 = {
             <path d="m21 11-8-8" />
           </svg>
         ),
-        title: "A_Definir",
-        paragraph: "A_Definir",
-        description: "A_Definir",
+        title: 'A_Definir',
+        paragraph: 'A_Definir',
+        description: 'A_Definir',
       },
       card5: {
         icon: (
@@ -353,19 +352,19 @@ const contentLp01 = {
             <path d="M12 17h.01" />
           </svg>
         ),
-        title: "A_Definir",
-        paragraph: "A_Definir",
-        description: "A_Definir",
+        title: 'A_Definir',
+        paragraph: 'A_Definir',
+        description: 'A_Definir',
       },
     },
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "TRANSFORME E CONQUISTE",
+      miniTag: 'TRANSFORME E CONQUISTE',
       title:
-        "Tenha um site que trabalha por você e viva a vida que sempre quis",
+        'Tenha um site que trabalha por você e viva a vida que sempre quis',
       subtitle:
-        "Com um site moderno e funcional, você atrai clientes e fecha contratos sem precisar se preocupar o tempo todo. Mais tempo para viver, viajar e realizar seus sonhos.",
+        'Com um site moderno e funcional, você atrai clientes e fecha contratos sem precisar se preocupar o tempo todo. Mais tempo para viver, viajar e realizar seus sonhos.',
     },
     cards: {
       card1: {
@@ -385,9 +384,9 @@ const contentLp01 = {
             <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
           </svg>
         ),
-        title: "Viaje sem preocupações",
+        title: 'Viaje sem preocupações',
         description:
-          "Explore novos destinos com quem você ama. Enquanto você descansa, seu site capta clientes e mantém seu negócio funcionando.",
+          'Explore novos destinos com quem você ama. Enquanto você descansa, seu site capta clientes e mantém seu negócio funcionando.',
       },
       card2: {
         icon: (
@@ -409,9 +408,9 @@ const contentLp01 = {
             <circle cx="17" cy="17" r="2" />
           </svg>
         ),
-        title: "Conquiste o carro que sempre quis",
+        title: 'Conquiste o carro que sempre quis',
         description:
-          "Ter um fluxo constante de clientes significa poder investir no que deseja. Seu site trabalha por você, enquanto você aproveita a vida.",
+          'Ter um fluxo constante de clientes significa poder investir no que deseja. Seu site trabalha por você, enquanto você aproveita a vida.',
       },
       card3: {
         icon: (
@@ -431,9 +430,9 @@ const contentLp01 = {
             <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           </svg>
         ),
-        title: "Realize o sonho da casa própria",
+        title: 'Realize o sonho da casa própria',
         description:
-          "Com estabilidade financeira gerada por clientes conquistados online, você pode investir no conforto e segurança do lar ideal para sua família.",
+          'Com estabilidade financeira gerada por clientes conquistados online, você pode investir no conforto e segurança do lar ideal para sua família.',
       },
       card4: {
         icon: (
@@ -462,15 +461,15 @@ const contentLp01 = {
             <rect x="4" y="2" width="16" height="20" rx="2" />
           </svg>
         ),
-        title: "Cresça seu escritório sem sobrecarga",
+        title: 'Cresça seu escritório sem sobrecarga',
         description:
-          "Deixe seu site atrair clientes e fechar contratos enquanto você foca em estratégias, na sua equipe ou simplesmente na sua vida pessoal.",
+          'Deixe seu site atrair clientes e fechar contratos enquanto você foca em estratégias, na sua equipe ou simplesmente na sua vida pessoal.',
       },
     },
   },
   ctaClient: {
     sectionHeader: {
-      miniTag: "",
+      miniTag: '',
       title: (
         <p class="">
           <span class="text-primaryDark relative inline-block stroke-current">
@@ -490,36 +489,36 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "A oferta de Black Friday será encerrada nos próximos dias e não deve voltar nesse formato.",
+        'A oferta de Black Friday será encerrada nos próximos dias e não deve voltar nesse formato.',
     },
     paragraph: (
       <p>
-        {" "}
+        {' '}
         <span className="flex items-center justify-start gap-2 font-bold text-primaryDark text-start">
           <Check /> Domínio e Hospedagem grátis por 1 ano <br />
           (Últimos dias de promoção - Economia de R$ 180,00)
         </span>
         <span className="flex items-center justify-start gap-2 text-start">
-          {" "}
+          {' '}
           <Check /> Páginas pensadas para anúncios
-        </span>{" "}
+        </span>{' '}
         <span className="flex items-center justify-start gap-2 text-start">
-          {" "}
+          {' '}
           <Check /> Linguagem simples, que o cliente entende
-        </span>{" "}
+        </span>{' '}
         <span className="flex items-center justify-start gap-2 text-start">
-          {" "}
+          {' '}
           <Check />
           Reembolso total em caso de arrependimento
-        </span>{" "}
+        </span>{' '}
         <span className="flex items-center justify-start gap-2 text-start">
-          {" "}
+          {' '}
           <Check /> Sem mensalidades
-        </span>{" "}
+        </span>{' '}
       </p>
     ),
-    ariaLabel: "Botão de whatsApp",
-    buttonLabel: "Quero aproveitar antes que acabe",
+    ariaLabel: 'Botão de whatsApp',
+    buttonLabel: 'Quero aproveitar antes que acabe',
   },
   about: {
     bgImg: bgImg,
@@ -534,10 +533,10 @@ const contentLp01 = {
     },
     logo: {
       logoImg: logo,
-      alt: "logomarca",
+      alt: 'logomarca',
     },
     sectionHeader: {
-      miniTag: "",
+      miniTag: '',
       title: (
         <p class="">
           Ei,
@@ -558,7 +557,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Aqui, sua página sai no prazo e com suporte de verdade, sem enrolação.",
+        'Aqui, sua página sai no prazo e com suporte de verdade, sem enrolação.',
     },
     paragraph: (
       <p className="leading-[20px]">
@@ -581,12 +580,12 @@ const contentLp01 = {
         Ads.
       </p>
     ),
-    buttonLabel: "Quero uma página pronta para anúncios",
-    ctaButtonAriaLabel: "Botão de Contato",
+    buttonLabel: 'Quero uma página pronta para anúncios',
+    ctaButtonAriaLabel: 'Botão de Contato',
   },
   socialProof: {
     sectionHeader: {
-      miniTag: "A_Definir",
+      miniTag: 'A_Definir',
       title: (
         <p class="">
           Resultado que
@@ -607,7 +606,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Nossas páginas focadas exclusivamente em conversão encantam nossos clientes",
+        'Nossas páginas focadas exclusivamente em conversão encantam nossos clientes',
     },
     depoimentos: {
       audios: {
@@ -636,10 +635,10 @@ const contentLp01 = {
   },
   videos: {
     sectionHeader: {
-      miniTag: "A_Definir",
+      miniTag: 'A_Definir',
       title: (
         <p class="">
-          Não é só uma landing page. É uma máquina de
+          Não é só uma página. É uma máquina de
           <span class="text-primaryDark mx-2 relative inline-block stroke-current">
             captação de clientes.
             <svg
@@ -657,7 +656,7 @@ const contentLp01 = {
         </p>
       ),
       subtitle:
-        "Cada página é construída com foco em conversão, velocidade e clareza, seguindo exatamente o que o Google Ads precisa para gerar contatos qualificados.",
+        'Cada página é construída com foco em conversão, velocidade e clareza, seguindo exatamente o que o Google Ads precisa para gerar contatos qualificados.',
     },
     sites: {
       video1: video1,
@@ -669,8 +668,8 @@ const contentLp01 = {
   cta: {
     bgImg: bgImg,
     sectionHeader: {
-      miniTag: "A_Definir",
-      title: "Deixa a gente cuidar da vida digital do seu negócio",
+      miniTag: 'A_Definir',
+      title: 'Deixa a gente cuidar da vida digital do seu negócio',
       subtitle: (
         <p className="opacity-80">
           Seu site captando clientes enquanto você foca na vida e no crescimento
@@ -678,8 +677,8 @@ const contentLp01 = {
         </p>
       ),
     },
-    buttonLabel: "Quero meu site agora",
-    ctaButtonAriaLabel: "Botão de Contato",
+    buttonLabel: 'Quero meu site agora',
+    ctaButtonAriaLabel: 'Botão de Contato',
   },
   contact: {
     card1: {
@@ -701,7 +700,7 @@ const contentLp01 = {
           <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
         </svg>
       ),
-      title: "Instagram",
+      title: 'Instagram',
       description: `@${infos.instagramProfile}`,
     },
     card2: {
@@ -722,7 +721,7 @@ const contentLp01 = {
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
         </svg>
       ),
-      title: "Email",
+      title: 'Email',
       description: `${infos.email}@${infos.domain}`,
     },
     card3: {
@@ -738,7 +737,7 @@ const contentLp01 = {
           <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
         </svg>
       ),
-      title: "Whatsapp",
+      title: 'Whatsapp',
       description: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
     },
     card4: {
@@ -758,7 +757,7 @@ const contentLp01 = {
           <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
         </svg>
       ),
-      title: "Fixo",
+      title: 'Fixo',
       description: `(${infos.phoneSecundario.ddd}) ${infos.phoneSecundario.firstPart}-${infos.phoneSecundario.secondPart}`,
     },
   },
@@ -770,6 +769,6 @@ const contentLp01 = {
     instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
     ctaWhatsapp: `https://wa.me/+55${infosLp.phone.ddd}${infosLp.phone.firstPart}${infosLp.phone.secondPart}?text=${infosLp.whatsappDefaultMessageLP}`,
   },
-};
+}
 
-export default contentLp01;
+export default contentLp01

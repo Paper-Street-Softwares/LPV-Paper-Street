@@ -22,11 +22,11 @@ const WhatsappAnimated = React.lazy(
 export default function Lp01() {
   return (
     <div className="bg-bgFixedLight">
-      {/* <div className="bg-primary flex justify-center">
-        <h1 className="text-title2">
+      <div className="bg-primary flex justify-center p-2">
+        <h1 className="text-title1 font-secondFont text-center">
           Para Advogados(a) que precisam captar clientes na internet
         </h1>
-      </div> */}
+      </div>
       <HeroLP fullImg={true} />
       <VideoCarousel />
       <SocialProof />
