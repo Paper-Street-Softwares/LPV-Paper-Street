@@ -64,7 +64,7 @@ function FullImg({ obs }) {
                       <div className="flex flex-col items-center justify-center w-full gap-12 phone2:w-full tablet2:w-auto">
                         <MotionDivDownToUp>
                           <img
-                            src="/mockupMobile.png"
+                            src="/mockupMobile.webp"
                             alt="Site de Advogado"
                             width="500"
                             height="256"
@@ -125,7 +125,7 @@ function FullImg({ obs }) {
         {/* Imagem LCP visível no HTML */}
         <img
           // src={contentLp01.hero.bgImg}
-          src="/bgHeroLp.png"
+          src="/bgHeroLp.webp"
           alt="Advogado especialista em direito"
           fetchPriority="high"
           decoding="async"
