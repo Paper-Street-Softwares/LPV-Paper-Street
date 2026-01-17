@@ -76,10 +76,12 @@ const contentLp01 = {
       ),
       subtitle: (
         <p>
-          <span className=" opacity-70">
-            Vários advogados já captam clientes com nossas páginas pensadas para
-            anúncios e que levam os visitantes direto para o seu WhatsApp, mesmo
-            que você não entenda nada de marketing.
+          <span className="text-primary">
+            Vários advogados já captam clientes com nossas páginas{' '}
+            <span className=" opacity-70 text-white">
+              pensadas para anúncios e que levam os visitantes direto para o seu
+              WhatsApp, mesmo que você não entenda nada de marketing.
+            </span>
           </span>
         </p>
       ),
