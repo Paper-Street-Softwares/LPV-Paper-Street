@@ -1,124 +1,129 @@
-import React, { useState } from "react";
-import content from "../../content/content";
-import { getWhatsappLink } from "../util/WhatsappLink";
-import contentLp01 from "../../content/contentLp01";
+import React, { useState } from 'react'
+import content from '../../content/content'
+import { getWhatsappLink } from '../util/WhatsappLink'
+import contentLp01 from '../../content/contentLp01'
 
-export default function WhatsappAnimated() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [nome, setNome] = useState("");
-  const [telefone, setTelefone] = useState("");
-  const [nomeErro, setNomeErro] = useState("");
-  const [telefoneErro, setTelefoneErro] = useState("");
-  const [formErro, setFormErro] = useState("");
-  const [loading, setLoading] = useState(false);
+export default function WhatsappAnimated({ modal = false }) {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [nome, setNome] = useState('')
+  const [telefone, setTelefone] = useState('')
+  const [nomeErro, setNomeErro] = useState('')
+  const [telefoneErro, setTelefoneErro] = useState('')
+  const [formErro, setFormErro] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`
 
   const handleOpenModal = (e) => {
-    e.preventDefault();
-    setIsModalOpen(true);
-  };
+    if (modal === true) {
+      e.preventDefault()
+      setIsModalOpen(true)
+    }
+  }
 
   const handleNomeChange = (e) => {
-    const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, "");
-    setNome(valor);
+    const valor = e.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ\s]/g, '')
+    setNome(valor)
 
-    if (valor.trim() === "") {
-      setNomeErro("");
-      return;
+    if (valor.trim() === '') {
+      setNomeErro('')
+      return
     }
 
     if (valor.trim().length < 3) {
-      setNomeErro("Digite pelo menos 3 letras");
+      setNomeErro('Digite pelo menos 3 letras')
     } else {
-      setNomeErro("");
+      setNomeErro('')
     }
-  };
+  }
 
   const handleTelefoneChange = (e) => {
-    let valor = e.target.value.replace(/\D/g, "");
-    valor = valor.slice(0, 11);
+    let valor = e.target.value.replace(/\D/g, '')
+    valor = valor.slice(0, 11)
 
-    if (valor.length >= 1) valor = "(" + valor;
-    if (valor.length >= 3) valor = valor.slice(0, 3) + ") " + valor.slice(3);
-    if (valor.length >= 10) valor = valor.slice(0, 10) + "-" + valor.slice(10);
+    if (valor.length >= 1) valor = '(' + valor
+    if (valor.length >= 3) valor = valor.slice(0, 3) + ') ' + valor.slice(3)
+    if (valor.length >= 10) valor = valor.slice(0, 10) + '-' + valor.slice(10)
 
-    setTelefone(valor);
+    setTelefone(valor)
 
-    const soNumeros = valor.replace(/\D/g, "");
+    const soNumeros = valor.replace(/\D/g, '')
     if (soNumeros.length === 0) {
-      setTelefoneErro("");
-      return;
+      setTelefoneErro('')
+      return
     }
 
     if (soNumeros.length < 11) {
-      setTelefoneErro("Telefone incompleto");
+      setTelefoneErro('Telefone incompleto')
     } else {
-      setTelefoneErro("");
+      setTelefoneErro('')
     }
-  };
+  }
 
   const enviarParaPlanilha = async () => {
     try {
       await fetch(
-        "https://cors-proxy-seven-beige.vercel.app/api/proxy?url=" +
+        'https://cors-proxy-seven-beige.vercel.app/api/proxy?url=' +
           encodeURIComponent(
-            "https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec"
+            'https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec',
           ),
         {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             nome,
             email: telefone,
             origem: contentLp01.origem,
           }),
-        }
-      );
+        },
+      )
     } catch (error) {
-      console.log("Erro ao enviar:", error);
+      console.log('Erro ao enviar:', error)
     }
-  };
+  }
 
   const handleSubmit = async () => {
-    const telefoneNumerico = telefone.replace(/\D/g, "");
+    const telefoneNumerico = telefone.replace(/\D/g, '')
 
-    let erro = false;
+    let erro = false
 
-    if (nome.trim() === "") {
-      setNomeErro("Esse campo não pode ficar vazio");
-      erro = true;
+    if (nome.trim() === '') {
+      setNomeErro('Esse campo não pode ficar vazio')
+      erro = true
     }
-    if (telefoneNumerico === "") {
-      setTelefoneErro("Esse campo não pode ficar vazio");
-      erro = true;
+    if (telefoneNumerico === '') {
+      setTelefoneErro('Esse campo não pode ficar vazio')
+      erro = true
     }
 
-    if (erro) return;
+    if (erro) return
 
     if (nome.trim().length < 2 || telefoneNumerico.length < 11) {
-      setFormErro("Preencha os campos corretamente antes de prosseguir");
-      return;
+      setFormErro('Preencha os campos corretamente antes de prosseguir')
+      return
     }
 
-    setFormErro("");
+    setFormErro('')
 
-    const linkWhats = getWhatsappLink();
+    const linkWhats = getWhatsappLink()
 
-    const novaAba = window.open(linkWhats, "_blank");
+    const novaAba = window.open(linkWhats, '_blank')
 
-    setIsModalOpen(false);
+    setIsModalOpen(false)
 
-    setLoading(true);
+    setLoading(true)
 
-    await enviarParaPlanilha();
+    await enviarParaPlanilha()
 
-    setLoading(false);
-  };
+    setLoading(false)
+  }
 
   return (
     <>
       {/* BOTÃO FLUTUANTE */}
       <a
-        href="#"
+        href={modal ? '#' : whatsappContactLink}
+        target="_blank"
         onClick={handleOpenModal}
         className="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#075e54]"
         aria-label="WhatsApp para contato"
@@ -190,10 +195,10 @@ export default function WhatsappAnimated() {
                 className="py-4 text-white bg-[#075e54] rounded-[100px] hover:scale-105 transition-all"
               >
                 {loading ? (
-                  "Aguarde..."
+                  'Aguarde...'
                 ) : (
                   <p className="flex items-center justify-center gap-4">
-                    {" "}
+                    {' '}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -215,5 +220,5 @@ export default function WhatsappAnimated() {
         </div>
       )}
     </>
-  );
+  )
 }

@@ -1,30 +1,30 @@
-import Faq from "../components/sections/Faq";
-import Hero from "../components/sections/Hero";
-import About from "../components/sections/About";
-import Steps from "../components/sections/Steps";
-import Features from "../components/sections/Features";
-import Navbar from "../components/sections/NavbarSocial";
-import FooterSocial from "../components/sections/FooterSocial";
-import BackToTopButton from "../components/interactives/BackToTopButton";
-import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
-import CtaSecondary from "../components/sections/CtaSecondary";
-import { useTranslation } from "react-i18next";
-import "./../i18n";
-import UnderConstruction from "../components/interactives/UnderConstruction";
+import Faq from '../components/sections/Faq'
+import Hero from '../components/sections/Hero'
+import About from '../components/sections/About'
+import Steps from '../components/sections/Steps'
+import Features from '../components/sections/Features'
+import Navbar from '../components/sections/NavbarSocial'
+import FooterSocial from '../components/sections/FooterSocial'
+import BackToTopButton from '../components/interactives/BackToTopButton'
+import FloatingWhatsappButton from '../components/interactives/FloatingWhatsappButton'
+import CtaSecondary from '../components/sections/CtaSecondary'
+import { useTranslation } from 'react-i18next'
+import './../i18n'
+import UnderConstruction from '../components/interactives/UnderConstruction'
 
 export default function Index() {
-  const showUnderConstruction = false;
+  const showUnderConstruction = false
 
   // Altere esta constante para: 'default', 'light' ou 'dark'
-  const colorMode = "default";
-  const { t, i18n } = useTranslation();
+  const colorMode = 'default'
+  const { t, i18n } = useTranslation()
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   if (showUnderConstruction) {
-    return <UnderConstruction />;
+    return <UnderConstruction />
   }
 
   return (
@@ -60,5 +60,5 @@ export default function Index() {
       <FloatingWhatsappButton />
       <BackToTopButton />
     </>
-  );
+  )
 }
