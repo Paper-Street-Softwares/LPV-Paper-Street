@@ -24,7 +24,7 @@ export default function Button({
   colorMode,
   reflexAnimation = true,
   conversao = true,
-
+  modal = false,
 }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [nome, setNome] = useState('')
@@ -63,6 +63,9 @@ export default function Button({
     : buttonLink
 
   const handleOpenModal = (e) => {
+    if (modal === false) {
+      return
+    }
     e.preventDefault()
     setIsModalOpen(true)
   }
@@ -176,7 +179,7 @@ export default function Button({
       <CustomTag
         tagName={CustomTagName}
         {...(removeTarget ? {} : { target: '_blank' })}
-        {...(removeAnchor ? {} : { href: '#' })}
+        {...(removeAnchor ? {} : { href: finalButtonLink })}
         onClick={handleOpenModal}
         className="inline-block max-w-full w-fit"
       >
