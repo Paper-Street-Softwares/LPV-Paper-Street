@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -26,46 +26,7 @@
       }
     </style>
 
-    <!-- CSS não bloqueante -->
-    <link
-      rel="preload"
-      href="/src/index.css"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
-
-    <!-- PRELOAD fonts -->
-    <link
-      rel="preload"
-      href="/fonts/EBGaramond/EBGaramond-Medium.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/EBGaramond/EBGaramond-Light.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/Roboto/Roboto-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-
-    <!-- Imagens LCP -->
-    <link rel="preload" as="image" href="/bgHeroLp.webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="/mockup.webp" fetchpriority="high" />
-    <link
-      rel="preload"
-      as="image"
-      href="/mockupMobile.webp"
-      fetchpriority="high"
-    />
+    <link rel="stylesheet" href="./src/index.css" />
 
     <!-- Favicons -->
     <link
@@ -179,22 +140,22 @@
       src="https://www.googletagmanager.com/gtag/js?id=AW-17668069100"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag('js', new Date())
 
-      gtag("config", "AW-17668069100");
+      gtag('config', 'AW-17668069100')
     </script>
 
     <!-- Event snippet for ClickBotãoCTA conversion page
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function clickBotãoCTA() {
-        gtag("event", "conversion", {
-          send_to: "AW-17668069100/dWepCIW4nOcbEOyt5ehB",
-        });
+        gtag('event', 'conversion', {
+          send_to: 'AW-17668069100/dWepCIW4nOcbEOyt5ehB',
+        })
       }
     </script>
   </head>
