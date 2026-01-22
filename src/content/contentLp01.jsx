@@ -69,14 +69,16 @@ const contentLp01 = {
       alt: "Logomarca",
     },
     textArea: {
-      title: <h1>Landing Pages para Advogados</h1>,
+      title: <h1>Páginas Que Trazem Clientes</h1>,
       subtitle: (
         <p>
           <span className="text-primary">
-            Vários advogados já captam clientes com nossas páginas{" "}
-            <span className="text-white opacity-70">
-              pensadas para anúncios e que levam os visitantes direto para o seu
-              WhatsApp.
+            <span className="text-gray-300">
+              Vários advogados já captam clientes com nossas páginas que{" "}
+              <span className="opacity-100 text-primary">
+                transformam visitas em clientes{" "}
+              </span>{" "}
+              e as levam direto para o seu WhatsApp.
             </span>
           </span>
         </p>
