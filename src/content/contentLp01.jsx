@@ -69,7 +69,7 @@ const contentLp01 = {
       alt: "Logomarca",
     },
     textArea: {
-      title: <h1>Páginas Que Trazem Clientes</h1>,
+      title: <h1>Capte Clientes com Seu Site</h1>,
       subtitle: (
         <p>
           <span className="text-primary">
