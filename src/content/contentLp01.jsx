@@ -78,7 +78,7 @@ const contentLp01 = {
               <span className="opacity-100 text-primary">
                 transformam visitas em clientes{" "}
               </span>{" "}
-              e as levam direto para o seu WhatsApp.
+              e os levam direto para o seu WhatsApp.
             </span>
           </span>
         </p>
