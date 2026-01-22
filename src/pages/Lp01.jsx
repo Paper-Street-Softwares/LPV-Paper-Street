@@ -28,7 +28,7 @@ export default function Lp01() {
         </h1>
       </div>
       <HeroLP fullImg={true} />
-      {/* <VideoCarousel /> */}
+      <VideoCarousel />
       <SocialProof />
       <Client />
       <AboutParalaxeLP logo={true} />
